@@ -130,7 +130,7 @@ The grammar
 A request with two films loaded      2,676 tokens, against 396,929 to carry every offer
 ```
 
-Token counts from `measure` are estimates, one token per 4 characters. **Be careful with these.** The offers are invented, so I chose how repetitive they are. The ratio illustrates the mechanism; it is not a finding about real catalogues. What carries over is the structure: an index, a dictionary written once, packs on demand.
+Token counts from `measure` are estimates, one token per 4 characters. **Be careful with these.** The offers are invented, so I chose how repetitive they are. The ratio illustrates the mechanism; it is not a finding about real catalogues. What carries over is the structure: an index, a dictionary written once, packs sent when the sentence names the item.
 
 Measured with no model at all. A gain you can measure without the model belongs to the architecture, and survives every model swap.
 
