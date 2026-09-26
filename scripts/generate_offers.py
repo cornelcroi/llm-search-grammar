@@ -34,7 +34,28 @@ PRICES = {  # mode -> quality -> list of possible prices, in euros
 LANGUAGE_CODES = {"English": "en", "French": "fr", "German": "de", "Italian": "it", "Spanish": "es",
                   "Russian": "ru", "Japanese": "ja", "Arabic": "ar", "Portuguese": "pt", "Swedish": "sv"}
 DUBS = ["fr", "en", "de", "es", "it"]
-EDITIONS = ["theatrical", "director's cut", "extended", "remastered"]
+
+
+# Editions are named PER FILM: this is the vocabulary no model can know, and the reason a pack exists.
+def editions_for(film, rng):
+    names = ["theatrical"]
+    director = (film["directors"] or ["the director"])[0].split()[-1]
+    lead = (film["cast"] or [None])[0]
+    age = 2026 - film["year"]
+    if rng.random() < 0.3:
+        names.append(f"{director}'s cut")
+    if rng.random() < 0.3:
+        names.append(f"extended (+{rng.randint(8, 40)} min)")
+    anniversaries = [n for n in (20, 25, 30, 40, 50) if n <= age]
+    if anniversaries and rng.random() < 0.3:
+        names.append(f"{rng.choice(anniversaries)}th anniversary")
+    if film["year"] >= 2008 and {"Action", "Adventure", "Science Fiction"} & set(film["genres"]) and rng.random() < 0.5:
+        names.append("IMAX enhanced")
+    if rng.random() < 0.4:
+        person = lead if lead and rng.random() < 0.5 else (film["directors"] or [director])[0]
+        names.append(f"with commentary by {person}")
+    return names
+
 AUDIO_FORMATS = {"SD": ["stereo"], "HD": ["stereo", "5.1"], "4K": ["5.1", "atmos"]}
 SUBTITLES = ["fr", "en", "de", "es", "it", "pt", "nl", "pl", "ro", "ja"]
 
@@ -55,6 +76,7 @@ def audio_languages(film, rng):
 def offers_for(film):
     rng = random.Random(film["id"])
     audio = audio_languages(film, rng)
+    film_editions = editions_for(film, rng)
     offers = []
     for service, spec in SERVICES.items():
         if not spec["takes"](film) or rng.random() > spec["odds"]:
@@ -63,7 +85,7 @@ def offers_for(film):
         service_audio = [a for i, a in enumerate(audio) if i == 0 or rng.random() < 0.7]
         subtitles = sorted(rng.sample(SUBTITLES, rng.randint(3, len(SUBTITLES))))
         # Stores sell several editions of a well-known film; subscriptions carry one.
-        store_editions = ["theatrical"] + [e for e in EDITIONS[1:] if rng.random() < 0.35]
+        store_editions = film_editions
         for mode in spec["modes"]:
             editions = store_editions if mode in PRICES else ["theatrical"]
             for edition in editions:

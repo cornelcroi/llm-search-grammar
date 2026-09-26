@@ -18,7 +18,7 @@ DICTIONARY = """\
 OFFERS: how a film can be watched. One family per line:
   f<n> {service} · {mode} · {editions} · {qualities} · audio {languages} · sound {formats} · subs {languages} · {price}
 modes: subscription = included with the service · free = with ads · rent = 48 hours · buy = yours to keep
-editions: theatrical · director's cut · extended · remastered (a store sells each at its own price)
+editions, named per film: theatrical · {director}'s cut · extended (+{m} min) · {n}th anniversary · IMAX enhanced · with commentary by {person}
 qualities: SD · HD · 4K    sound: stereo · 5.1 · atmos
 languages: en English · fr French · de German · es Spanish · it Italian · pt Portuguese · nl Dutch · pl Polish · ro Romanian · ja Japanese · ru Russian · sv Swedish · ar Arabic
 services: StreamOne, CinePass, ClassicVault, NightOwl (subscription) · PopcornPlus (free) · RentBox, FlixMarket (rent, buy) · VidaStore (buy)
