@@ -1,6 +1,6 @@
 """One call to the model. Standard library only; the only thing it needs is OPENAI_API_KEY.
 
-    OPENAI_MODEL   defaults to gpt-6-luna, the smallest current model: parsing against a grammar
+    OPENAI_MODEL   defaults to gpt-6-luna, a small, cheap model: parsing against a grammar
                    is classification, not reasoning, and a small model does it well. Reasoning is off.
 """
 import json

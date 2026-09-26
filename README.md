@@ -130,7 +130,7 @@ The grammar
 A request with two films loaded      2,676 tokens, against 396,929 to carry every offer
 ```
 
-**Be careful with these.** The offers are invented, so I chose how repetitive they are. The ratio illustrates the mechanism; it is not a finding about real catalogues. What carries over is the structure: an index, a dictionary written once, packs on demand.
+Token counts from `measure` are estimates, one token per 4 characters. **Be careful with these.** The offers are invented, so I chose how repetitive they are. The ratio illustrates the mechanism; it is not a finding about real catalogues. What carries over is the structure: an index, a dictionary written once, packs on demand.
 
 Measured with no model at all. A gain you can measure without the model belongs to the architecture, and survives every model swap.
 
@@ -181,7 +181,7 @@ python3 -m examples.movies.measure Titanic
 python3 -m unittest discover -s tests -t .
 ```
 
-`OPENAI_MODEL` changes the model. The default is `gpt-6-luna`, the smallest current one, with reasoning off: reading a sentence against a grammar is classification, not reasoning.
+`OPENAI_MODEL` changes the model. The default is `gpt-6-luna`, a small, cheap one, with reasoning off: reading a sentence against a grammar is classification, not reasoning.
 
 ## Prior art
 

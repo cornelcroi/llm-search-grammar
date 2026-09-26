@@ -24,7 +24,7 @@ def main():
     offer_counts = [len(by_film[fid]) for fid in packs]
     family_counts = [len(families) for _, families in packs.values()]
 
-    print(f"{len(films)} films, {len(all_offers):,} offers (invented)\n")
+    print(f"{len(films)} films, {len(all_offers):,} offers (invented) · tokens estimated at 4 characters each\n")
     print("Everything, the naive way")
     print(f"  as JSON                        {tokens(raw_json):>9,} tokens")
     print(f"  one line per offer             {tokens(raw_text):>9,} tokens")
