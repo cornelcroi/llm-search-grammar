@@ -1,0 +1,7343 @@
+[
+ {
+  "id": "Q152350",
+  "title": "Battleship Potemkin",
+  "title_fr": "Le Cuirassé Potemkine",
+  "original_title": "Броненосец «Потёмкин»",
+  "year": 1925,
+  "runtime": 74,
+  "directors": [
+   "Sergei Eisenstein"
+  ],
+  "cast": [
+   "Aleksandr Pavlovich Antonov",
+   "Grigori Aleksandrov",
+   "Alexander Stepanovich Antonov",
+   "Sergei Eisenstein",
+   "Andrei Fajt",
+   "Beatrice Vitoldi",
+   "Vladimir Barsky",
+   "Aleksanteri Ahola-Valo"
+  ],
+  "genres": [
+   "Drama",
+   "History"
+  ],
+  "topics": [
+   "propaganda",
+   "silent"
+  ],
+  "countries": [
+   "SU"
+  ],
+  "languages": [
+   "Russian"
+  ]
+ },
+ {
+  "id": "Q470336",
+  "title": "La Grande Illusion",
+  "title_fr": "La Grande Illusion",
+  "original_title": "La Grande Illusion",
+  "year": 1937,
+  "runtime": 124,
+  "directors": [
+   "Jean Renoir"
+  ],
+  "cast": [
+   "Jean Gabin",
+   "Dita Parlo",
+   "Erich von Stroheim",
+   "Pierre Fresnay",
+   "Marcel Dalio",
+   "Gaston Modot",
+   "Julien Carette",
+   "Jacques Becker"
+  ],
+  "genres": [
+   "Drama"
+  ],
+  "topics": [],
+  "countries": [
+   "FR"
+  ],
+  "languages": [
+   "French",
+   "English",
+   "German",
+   "Russian"
+  ]
+ },
+ {
+  "id": "Q2875",
+  "title": "Gone with the Wind",
+  "title_fr": "Autant en emporte le vent",
+  "original_title": "Gone with the Wind",
+  "year": 1939,
+  "runtime": 238,
+  "directors": [
+   "Victor Fleming",
+   "George Cukor",
+   "Sam Wood"
+  ],
+  "cast": [
+   "Clark Gable",
+   "Vivien Leigh",
+   "Leslie Howard",
+   "Olivia de Havilland",
+   "Hattie McDaniel",
+   "Butterfly McQueen",
+   "Thomas Mitchell",
+   "Barbara O'Neil"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Romance",
+   "War"
+  ],
+  "topics": [
+   "melodrama"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q109116",
+  "title": "The Great Dictator",
+  "title_fr": "Le Dictateur",
+  "original_title": "The Great Dictator",
+  "year": 1940,
+  "runtime": 125,
+  "directors": [
+   "Charlie Chaplin"
+  ],
+  "cast": [
+   "Charlie Chaplin",
+   "Paulette Goddard",
+   "Jack Oakie",
+   "Reginald Gardiner",
+   "Henry Daniell",
+   "Billy Gilbert",
+   "Emma Dunn",
+   "Chester Conklin"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "War"
+  ],
+  "topics": [
+   "anti-war",
+   "comedy of error",
+   "political satire",
+   "slapstick"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q24815",
+  "title": "Citizen Kane",
+  "title_fr": "Citizen Kane",
+  "original_title": "Citizen Kane",
+  "year": 1941,
+  "runtime": 119,
+  "directors": [
+   "Orson Welles"
+  ],
+  "cast": [
+   "Orson Welles",
+   "Joseph Cotten",
+   "Ruth Warrick",
+   "Everett Sloane",
+   "William Alland",
+   "Paul Stewart",
+   "George Coulouris",
+   "Dorothy Comingore"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Mystery"
+  ],
+  "topics": [
+   "fiction"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q132689",
+  "title": "Casablanca",
+  "title_fr": "Casablanca",
+  "original_title": "Casablanca",
+  "year": 1942,
+  "runtime": 102,
+  "directors": [
+   "Michael Curtiz"
+  ],
+  "cast": [
+   "Humphrey Bogart",
+   "Ingrid Bergman",
+   "Paul Henreid",
+   "Claude Rains",
+   "Conrad Veidt",
+   "Sydney Greenstreet",
+   "Peter Lorre",
+   "S. Z. Sakall"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Romance",
+   "War"
+  ],
+  "topics": [
+   "film noir"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q842306",
+  "title": "Saludos Amigos",
+  "title_fr": "Saludos Amigos",
+  "original_title": "Saludos Amigos",
+  "year": 1942,
+  "runtime": 43,
+  "directors": [
+   "Wilfred Jackson",
+   "Jack Kinney",
+   "Hamilton Luske",
+   "Bill Roberts"
+  ],
+  "cast": [
+   "Lee Blair",
+   "Mary Blair",
+   "Walt Disney",
+   "Norm Ferguson",
+   "Frank Graham",
+   "Frank Thomas"
+  ],
+  "genres": [
+   "Action",
+   "Animation",
+   "Documentary",
+   "Fantasy",
+   "Music"
+  ],
+  "topics": [
+   "live-action/animated"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q679670",
+  "title": "Titanic",
+  "title_fr": "Titanic",
+  "original_title": "Titanic",
+  "year": 1943,
+  "runtime": 85,
+  "directors": [
+   "Werner Klingler",
+   "Herbert Selpin"
+  ],
+  "cast": [
+   "Sybille Schmitz",
+   "Hans Nielsen",
+   "Otto Wernicke",
+   "Claude Farell",
+   "Franz Schafheitlin",
+   "Kirsten Heiberg",
+   "Ernst Fritz Fürbringer",
+   "Karl Schönböck"
+  ],
+  "genres": [],
+  "topics": [
+   "disaster",
+   "propaganda"
+  ],
+  "countries": [
+   "DE"
+  ],
+  "languages": [
+   "German"
+  ]
+ },
+ {
+  "id": "Q736731",
+  "title": "The Three Caballeros",
+  "title_fr": "Les Trois Caballeros",
+  "original_title": "The Three Caballeros",
+  "year": 1944,
+  "runtime": 70,
+  "directors": [
+   "Norm Ferguson",
+   "Clyde Geronimi",
+   "Jack Kinney",
+   "Bill Roberts",
+   "Harold Young"
+  ],
+  "cast": [
+   "Aurora Miranda",
+   "Carmen Molina",
+   "Dora Luz",
+   "Nestor Amaral",
+   "Almirante",
+   "Trío Calaveras",
+   "Trío Ascensio del Rio",
+   "The Mexican Players"
+  ],
+  "genres": [
+   "Action",
+   "Animation",
+   "Comedy",
+   "Family",
+   "Fantasy",
+   "Music"
+  ],
+  "topics": [
+   "live-action/animated"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q204191",
+  "title": "It's a Wonderful Life",
+  "title_fr": "La vie est belle",
+  "original_title": "It's a Wonderful Life",
+  "year": 1946,
+  "runtime": 125,
+  "directors": [
+   "Frank Capra"
+  ],
+  "cast": [
+   "James Stewart",
+   "Donna Reed",
+   "Lionel Barrymore",
+   "Henry Travers",
+   "Thomas Mitchell",
+   "Samuel S. Hinds",
+   "Beulah Bondi",
+   "H. B. Warner"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Fantasy",
+   "Romance"
+  ],
+  "topics": [
+   "christmas"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q270470",
+  "title": "Peter Pan",
+  "title_fr": "Peter Pan",
+  "original_title": "Peter Pan",
+  "year": 1953,
+  "runtime": 76,
+  "directors": [
+   "Clyde Geronimi",
+   "Wilfred Jackson",
+   "Hamilton Luske"
+  ],
+  "cast": [],
+  "genres": [
+   "Animation",
+   "Family",
+   "Fantasy",
+   "Music"
+  ],
+  "topics": [
+   "cinematic fairy tale",
+   "pirate",
+   "traditionally animated"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q201293",
+  "title": "Roman Holiday",
+  "title_fr": "Vacances romaines",
+  "original_title": "Roman Holiday",
+  "year": 1953,
+  "runtime": 118,
+  "directors": [
+   "William Wyler"
+  ],
+  "cast": [
+   "Gregory Peck",
+   "Audrey Hepburn",
+   "Eddie Albert",
+   "Tullio Carminati",
+   "Paolo Carlini",
+   "Claudio Ermelli",
+   "Paola Borboni",
+   "Tania Weber"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q1197729",
+  "title": "Titanic",
+  "title_fr": "Titanic",
+  "original_title": "Titanic",
+  "year": 1953,
+  "runtime": 100,
+  "directors": [
+   "Jean Negulesco"
+  ],
+  "cast": [
+   "Clifton Webb",
+   "Barbara Stanwyck",
+   "Robert Wagner",
+   "Audrey Dalton",
+   "Harper Carter",
+   "Thelma Ritter",
+   "Brian Aherne",
+   "Richard Basehart"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "disaster"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q189540",
+  "title": "Seven Samurai",
+  "title_fr": "Les Sept Samouraïs",
+  "original_title": "七人の侍",
+  "year": 1954,
+  "runtime": 207,
+  "directors": [
+   "Akira Kurosawa"
+  ],
+  "cast": [
+   "Takashi Shimura",
+   "Toshirō Mifune",
+   "Seiji Miyaguchi",
+   "Minoru Chiaki",
+   "Isao Kimura",
+   "Keiko Tsushima",
+   "Bokuzen Hidari",
+   "Yoshio Inaba"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "History"
+  ],
+  "topics": [
+   "epic",
+   "samurai cinema"
+  ],
+  "countries": [
+   "JP"
+  ],
+  "languages": [
+   "Japanese"
+  ]
+ },
+ {
+  "id": "Q2345",
+  "title": "12 Angry Men",
+  "title_fr": "Douze Hommes en colère",
+  "original_title": "12 Angry Men",
+  "year": 1957,
+  "runtime": 95,
+  "directors": [
+   "Sidney Lumet"
+  ],
+  "cast": [
+   "Martin Balsam",
+   "John Fiedler",
+   "Lee J. Cobb",
+   "E. G. Marshall",
+   "Jack Klugman",
+   "Edward Binns",
+   "Jack Warden",
+   "Henry Fonda"
+  ],
+  "genres": [
+   "Drama"
+  ],
+  "topics": [
+   "huis-clos",
+   "trial"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q188718",
+  "title": "The Bridge on the River Kwai",
+  "title_fr": "Le Pont de la rivière Kwaï",
+  "original_title": "The Bridge on the River Kwai",
+  "year": 1957,
+  "runtime": 156,
+  "directors": [
+   "David Lean"
+  ],
+  "cast": [
+   "Jack Hawkins",
+   "William Holden",
+   "Sessue Hayakawa",
+   "Alec Guinness",
+   "James Donald",
+   "Percy Herbert",
+   "André Morell",
+   "Ann Sears"
+  ],
+  "genres": [
+   "Drama",
+   "War"
+  ],
+  "topics": [],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q180098",
+  "title": "Ben-Hur",
+  "title_fr": "Ben-Hur",
+  "original_title": "Ben-Hur",
+  "year": 1959,
+  "runtime": 222,
+  "directors": [
+   "William Wyler"
+  ],
+  "cast": [
+   "Charlton Heston",
+   "Jack Hawkins",
+   "Haya Harareet",
+   "Stephen Boyd",
+   "Hugh Griffith",
+   "Martha Scott",
+   "Cathy O'Donnell",
+   "Sam Jaffe"
+  ],
+  "genres": [
+   "Action",
+   "Drama"
+  ],
+  "topics": [
+   "epic",
+   "sword-and-sandal"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q190086",
+  "title": "Some Like It Hot",
+  "title_fr": "Certains l'aiment chaud",
+  "original_title": "Some Like It Hot",
+  "year": 1959,
+  "runtime": 120,
+  "directors": [
+   "Billy Wilder"
+  ],
+  "cast": [
+   "Marilyn Monroe",
+   "Jack Lemmon",
+   "Tony Curtis",
+   "George Raft",
+   "Pat O'Brien",
+   "Mike Mazurki",
+   "Joe E. Brown",
+   "Nehemiah Persoff"
+  ],
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Drama",
+   "Music",
+   "Romance"
+  ],
+  "topics": [
+   "lgbtq-related",
+   "screwball comedy"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q162331",
+  "title": "The 400 Blows",
+  "title_fr": "Les Quatre Cents Coups",
+  "original_title": "Les Quatre Cents Coups",
+  "year": 1959,
+  "runtime": 99,
+  "directors": [
+   "François Truffaut"
+  ],
+  "cast": [
+   "Jean-Pierre Léaud",
+   "Claire Maurier",
+   "Albert Rémy",
+   "Guy Decomble",
+   "Georges Flamant",
+   "Jeanne Moreau",
+   "Jean-Claude Brialy",
+   "Jacques Demy"
+  ],
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "topics": [],
+  "countries": [
+   "FR"
+  ],
+  "languages": [
+   "French",
+   "English"
+  ]
+ },
+ {
+  "id": "Q86427",
+  "title": "Breathless",
+  "title_fr": "À bout de souffle",
+  "original_title": "À bout de souffle",
+  "year": 1960,
+  "runtime": 87,
+  "directors": [
+   "Jean-Luc Godard"
+  ],
+  "cast": [
+   "Jean-Paul Belmondo",
+   "Jean Seberg",
+   "Daniel Boulanger",
+   "Jean-Pierre Melville",
+   "André S. Labarthe",
+   "Claude Mansard",
+   "François Moreuil",
+   "Henri-Jacques Huet"
+  ],
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "topics": [],
+  "countries": [
+   "FR"
+  ],
+  "languages": [
+   "English",
+   "French"
+  ]
+ },
+ {
+  "id": "Q163038",
+  "title": "Psycho",
+  "title_fr": "Psychose",
+  "original_title": "Psycho",
+  "year": 1960,
+  "runtime": 109,
+  "directors": [
+   "Alfred Hitchcock"
+  ],
+  "cast": [
+   "John Gavin",
+   "Martin Balsam",
+   "John McIntire",
+   "Simon Oakland",
+   "Vaughn Taylor",
+   "Frank Albertson",
+   "Lurene Tuttle",
+   "Pat Hitchcock"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "film noir",
+   "lgbtq-related",
+   "psychological drama",
+   "psychological horror",
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q102754",
+  "title": "Dr. No",
+  "title_fr": "James Bond 007 contre Dr No",
+  "original_title": "Dr. No",
+  "year": 1962,
+  "runtime": 105,
+  "directors": [
+   "Terence Young"
+  ],
+  "cast": [
+   "Sean Connery",
+   "Ursula Andress",
+   "Joseph Wiseman",
+   "Jack Lord",
+   "John Kitzmiller",
+   "Bernard Lee",
+   "Anthony Dawson",
+   "Eunice Gayson"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Thriller"
+  ],
+  "topics": [
+   "spy"
+  ],
+  "countries": [
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q512350",
+  "title": "Jules and Jim",
+  "title_fr": "Jules et Jim",
+  "original_title": "Jules et Jim",
+  "year": 1962,
+  "runtime": 105,
+  "directors": [
+   "François Truffaut"
+  ],
+  "cast": [
+   "Jeanne Moreau",
+   "Oskar Werner",
+   "Henri Serre",
+   "Marie Dubois",
+   "Sabine Haudepin",
+   "Serge Rezvani",
+   "Michel Subor",
+   "Jean-Louis Richard"
+  ],
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "buddy"
+  ],
+  "countries": [
+   "FR"
+  ],
+  "languages": [
+   "French",
+   "German",
+   "English"
+  ]
+ },
+ {
+  "id": "Q228186",
+  "title": "Lawrence of Arabia",
+  "title_fr": "Lawrence d'Arabie",
+  "original_title": "Lawrence of Arabia",
+  "year": 1962,
+  "runtime": 216,
+  "directors": [
+   "David Lean"
+  ],
+  "cast": [
+   "Jack Hawkins",
+   "Anthony Quinn",
+   "Peter O'Toole",
+   "Alec Guinness",
+   "Omar Sharif",
+   "José Ferrer",
+   "Anthony Quayle",
+   "Claude Rains"
+  ],
+  "genres": [
+   "Adventure",
+   "Drama",
+   "History",
+   "War"
+  ],
+  "topics": [
+   "epic"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Arabic",
+   "Turkish"
+  ]
+ },
+ {
+  "id": "Q596623",
+  "title": "The Leopard",
+  "title_fr": "Le Guépard",
+  "original_title": "Le Guépard",
+  "year": 1963,
+  "runtime": 183,
+  "directors": [
+   "Luchino Visconti"
+  ],
+  "cast": [
+   "Burt Lancaster",
+   "Claudia Cardinale",
+   "Alain Delon",
+   "Paolo Stoppa",
+   "Rina Morelli",
+   "Romolo Valli",
+   "Terence Hill",
+   "Pierre Clémenti"
+  ],
+  "genres": [
+   "Drama"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "IT"
+  ],
+  "languages": [
+   "Italian",
+   "French",
+   "German",
+   "Latin"
+  ]
+ },
+ {
+  "id": "Q105702",
+  "title": "Dr. Strangelove",
+  "title_fr": "Docteur Folamour",
+  "original_title": "Dr. Strangelove",
+  "year": 1964,
+  "runtime": 93,
+  "directors": [
+   "Stanley Kubrick"
+  ],
+  "cast": [
+   "Peter Sellers",
+   "George C. Scott",
+   "Sterling Hayden",
+   "Keenan Wynn",
+   "Slim Pickens",
+   "James Earl Jones",
+   "Peter Bull",
+   "Jack Creley"
+  ],
+  "genres": [
+   "Comedy",
+   "War"
+  ],
+  "topics": [
+   "black comedy"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English",
+   "Russian"
+  ]
+ },
+ {
+  "id": "Q60072",
+  "title": "The Sound of Music",
+  "title_fr": "La Mélodie du bonheur",
+  "original_title": "The Sound of Music",
+  "year": 1965,
+  "runtime": 174,
+  "directors": [
+   "Robert Wise"
+  ],
+  "cast": [
+   "Julie Andrews",
+   "Christopher Plummer",
+   "Bill Lee",
+   "Eleanor Parker",
+   "Richard Haydn",
+   "Nicholas Hammond",
+   "Peggy Wood",
+   "Angela Cartwright"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Music",
+   "Romance"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q261403",
+  "title": "A Man and a Woman",
+  "title_fr": "Un homme et une femme",
+  "original_title": "Un homme et une femme",
+  "year": 1966,
+  "runtime": 102,
+  "directors": [
+   "Claude Lelouch"
+  ],
+  "cast": [
+   "Anouk Aimée",
+   "Jean-Louis Trintignant",
+   "Pierre Barouh",
+   "Antoine Sire",
+   "Gérard Larrousse",
+   "Gérard Sire",
+   "Henri Chemin",
+   "Paul Le Person"
+  ],
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "melodrama"
+  ],
+  "countries": [
+   "FR"
+  ],
+  "languages": [
+   "French"
+  ]
+ },
+ {
+  "id": "Q487789",
+  "title": "La Grande Vadrouille",
+  "title_fr": "La Grande Vadrouille",
+  "original_title": "La Grande Vadrouille",
+  "year": 1966,
+  "runtime": 132,
+  "directors": [
+   "Gérard Oury"
+  ],
+  "cast": [
+   "Bourvil",
+   "Louis de Funès",
+   "Terry-Thomas",
+   "Helmuth Schneider",
+   "Claudio Brook",
+   "Mike Marshall",
+   "Marie Dubois",
+   "Mary Marquet"
+  ],
+  "genres": [
+   "Comedy",
+   "War"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "GB"
+  ],
+  "languages": [
+   "English",
+   "German",
+   "French"
+  ]
+ },
+ {
+  "id": "Q41483",
+  "title": "The Good, the Bad and the Ugly",
+  "title_fr": "Le Bon, la Brute et le Truand",
+  "original_title": "Il buono, il brutto, il cattivo",
+  "year": 1966,
+  "runtime": 177,
+  "directors": [
+   "Sergio Leone"
+  ],
+  "cast": [
+   "Clint Eastwood",
+   "Lee Van Cleef",
+   "Eli Wallach",
+   "Mario Brega",
+   "Aldo Giuffrè",
+   "Luigi Pistilli",
+   "Antonio Casale",
+   "Rada Rassimov"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "War",
+   "Western"
+  ],
+  "topics": [
+   "epic",
+   "spaghetti western",
+   "treasure hunt"
+  ],
+  "countries": [
+   "IT",
+   "ES",
+   "DE"
+  ],
+  "languages": [
+   "English",
+   "Italian",
+   "Spanish"
+  ]
+ },
+ {
+  "id": "Q103474",
+  "title": "2001: A Space Odyssey",
+  "title_fr": "2001, l'Odyssée de l'espace",
+  "original_title": "2001: A Space Odyssey",
+  "year": 1968,
+  "runtime": 143,
+  "directors": [
+   "Stanley Kubrick"
+  ],
+  "cast": [
+   "Keir Dullea",
+   "Gary Lockwood",
+   "William Sylvester",
+   "Leonard Rossiter",
+   "Margaret Tyzack",
+   "Robert Beatty",
+   "Sean Sullivan",
+   "Douglas Rain"
+  ],
+  "genres": [
+   "Adventure",
+   "Mystery",
+   "Science Fiction"
+  ],
+  "topics": [
+   "arthouse science fiction",
+   "epic",
+   "space adventure"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English",
+   "Russian"
+  ]
+ },
+ {
+  "id": "Q324933",
+  "title": "Stolen Kisses",
+  "title_fr": "Baisers volés",
+  "original_title": "Baisers volés",
+  "year": 1968,
+  "runtime": 87,
+  "directors": [
+   "François Truffaut"
+  ],
+  "cast": [
+   "Jean-Pierre Léaud",
+   "Delphine Seyrig",
+   "Claude Jade",
+   "Michael Lonsdale",
+   "Harry-Max",
+   "André Falcon",
+   "Daniel Ceccaldi",
+   "Marie-France Pisier"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "topics": [],
+  "countries": [
+   "FR"
+  ],
+  "languages": [
+   "French"
+  ]
+ },
+ {
+  "id": "Q181086",
+  "title": "A Clockwork Orange",
+  "title_fr": "Orange mécanique",
+  "original_title": "A Clockwork Orange",
+  "year": 1971,
+  "runtime": 136,
+  "directors": [
+   "Stanley Kubrick"
+  ],
+  "cast": [
+   "Patrick Magee",
+   "Adrienne Corri",
+   "Miriam Karlin",
+   "Godfrey Quigley",
+   "Anthony Sharp",
+   "Warren Clarke",
+   "Malcolm McDowell",
+   "Michael Tarn"
+  ],
+  "genres": [
+   "Action",
+   "Comedy",
+   "Crime",
+   "Drama",
+   "Mystery",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "arthouse science fiction",
+   "black comedy",
+   "exploitation",
+   "prison",
+   "satirical",
+   "speculative fiction"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Nadsat"
+  ]
+ },
+ {
+  "id": "Q570567",
+  "title": "Last Tango in Paris",
+  "title_fr": "Le Dernier Tango à Paris",
+  "original_title": "Ultimo tango a Parigi",
+  "year": 1972,
+  "runtime": 129,
+  "directors": [
+   "Bernardo Bertolucci"
+  ],
+  "cast": [
+   "Marlon Brando",
+   "Maria Schneider",
+   "Jean-Pierre Léaud",
+   "Massimo Girotti",
+   "Marie-Hélène Breillat",
+   "Catherine Allégret",
+   "Veronica Lazăr",
+   "Catherine Breillat"
+  ],
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "erotic"
+  ],
+  "countries": [
+   "FR",
+   "IT"
+  ],
+  "languages": [
+   "French",
+   "English"
+  ]
+ },
+ {
+  "id": "Q308920",
+  "title": "The Discreet Charm of the Bourgeoisie",
+  "title_fr": "Le Charme discret de la bourgeoisie",
+  "original_title": "Le Charme discret de la bourgeoisie",
+  "year": 1972,
+  "runtime": 96,
+  "directors": [
+   "Luis Buñuel"
+  ],
+  "cast": [
+   "Fernando Rey",
+   "Delphine Seyrig",
+   "Milena Vukotic",
+   "Michel Piccoli",
+   "Bulle Ogier",
+   "Stéphane Audran",
+   "Jean-Pierre Cassel",
+   "Alix Mahieux"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "IT",
+   "ES"
+  ],
+  "languages": [
+   "French",
+   "Spanish"
+  ]
+ },
+ {
+  "id": "Q47703",
+  "title": "The Godfather",
+  "title_fr": "Le Parrain",
+  "original_title": "The Godfather",
+  "year": 1972,
+  "runtime": 175,
+  "directors": [
+   "Francis Ford Coppola"
+  ],
+  "cast": [
+   "Marlon Brando",
+   "Al Pacino",
+   "James Caan",
+   "Richard S. Castellano",
+   "Robert Duvall",
+   "Sterling Hayden",
+   "John Cazale",
+   "Diane Keaton"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "History",
+   "Thriller"
+  ],
+  "topics": [
+   "epic",
+   "police procedural"
+  ],
+  "countries": [
+   "US",
+   "IT"
+  ],
+  "languages": [
+   "English",
+   "Italian"
+  ]
+ },
+ {
+  "id": "Q909816",
+  "title": "Day for Night",
+  "title_fr": "La Nuit américaine",
+  "original_title": "La Nuit américaine",
+  "year": 1973,
+  "runtime": 115,
+  "directors": [
+   "François Truffaut"
+  ],
+  "cast": [
+   "Niké Arrighi",
+   "Jacqueline Bisset",
+   "Jean-Pierre Léaud",
+   "Jean-Pierre Aumont",
+   "Valentina Cortese",
+   "François Truffaut",
+   "Nathalie Baye",
+   "David Markham"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "topics": [
+   "tragicomedy"
+  ],
+  "countries": [
+   "FR",
+   "IT"
+  ],
+  "languages": [
+   "French",
+   "English"
+  ]
+ },
+ {
+  "id": "Q184768",
+  "title": "The Godfather Part II",
+  "title_fr": "Le Parrain 2",
+  "original_title": "The Godfather Part II",
+  "year": 1974,
+  "runtime": 202,
+  "directors": [
+   "Francis Ford Coppola"
+  ],
+  "cast": [
+   "Al Pacino",
+   "Robert Duvall",
+   "Diane Keaton",
+   "Robert De Niro",
+   "Talia Shire",
+   "Morgana King",
+   "John Cazale",
+   "Marianna Hill"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama",
+   "History",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "epic",
+   "police procedural"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Sicilian"
+  ]
+ },
+ {
+  "id": "Q189505",
+  "title": "Jaws",
+  "title_fr": "Les Dents de la mer",
+  "original_title": "Jaws",
+  "year": 1975,
+  "runtime": 124,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "Roy Scheider",
+   "Robert Shaw",
+   "Richard Dreyfuss",
+   "Lorraine Gary",
+   "Murray Hamilton",
+   "Carl Gottlieb",
+   "Steven Spielberg",
+   "Craig Kingsbury"
+  ],
+  "genres": [
+   "Adventure",
+   "Horror",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "natural horror",
+   "survival"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q171669",
+  "title": "One Flew Over the Cuckoo's Nest",
+  "title_fr": "Vol au-dessus d'un nid de coucou",
+  "original_title": "One Flew Over the Cuckoo's Nest",
+  "year": 1975,
+  "runtime": 133,
+  "directors": [
+   "Miloš Forman"
+  ],
+  "cast": [
+   "Jack Nicholson",
+   "Louise Fletcher",
+   "Will Sampson",
+   "William Redfield",
+   "Brad Dourif",
+   "Danny DeVito",
+   "Sydney Lassick",
+   "Christopher Lloyd"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "topics": [
+   "medical drama",
+   "prison"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q188652",
+  "title": "Rocky",
+  "title_fr": "Rocky",
+  "original_title": "Rocky",
+  "year": 1976,
+  "runtime": 119,
+  "directors": [
+   "John G. Avildsen"
+  ],
+  "cast": [
+   "Talia Shire",
+   "Carl Weathers",
+   "Burt Young",
+   "Burgess Meredith",
+   "Sylvester Stallone",
+   "Tony Burton",
+   "Thayer David",
+   "Joe Spinell"
+  ],
+  "genres": [
+   "Action",
+   "Drama"
+  ],
+  "topics": [
+   "boxing"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q47221",
+  "title": "Taxi Driver",
+  "title_fr": "Taxi Driver",
+  "original_title": "Taxi Driver",
+  "year": 1976,
+  "runtime": 114,
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "cast": [
+   "Robert De Niro",
+   "Jodie Foster",
+   "Cybill Shepherd",
+   "Harvey Keitel",
+   "Peter Boyle",
+   "Albert Brooks",
+   "Leonard Harris",
+   "Martin Scorsese"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "film noir",
+   "neo-noir",
+   "police procedural",
+   "psychological drama",
+   "psychological thriller",
+   "vigilante"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q17738",
+  "title": "Star Wars: Episode IV – A New Hope",
+  "title_fr": "La Guerre des étoiles",
+  "original_title": "Star Wars: Episode IV – A New Hope",
+  "year": 1977,
+  "runtime": 121,
+  "directors": [
+   "George Lucas"
+  ],
+  "cast": [
+   "Harrison Ford",
+   "Alec Guinness",
+   "Carrie Fisher",
+   "Mark Hamill",
+   "Peter Cushing",
+   "Peter Mayhew",
+   "David Prowse",
+   "Anthony Daniels"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "coming-of-age"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q103569",
+  "title": "Alien",
+  "title_fr": "Alien",
+  "original_title": "Alien",
+  "year": 1979,
+  "runtime": 117,
+  "directors": [
+   "Ridley Scott"
+  ],
+  "cast": [
+   "Yaphet Kotto",
+   "Veronica Cartwright",
+   "Tom Skerritt",
+   "Harry Dean Stanton",
+   "John Hurt",
+   "Sigourney Weaver",
+   "Ian Holm",
+   "Eddie Powell"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Horror",
+   "Mystery",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "body horror",
+   "girls with guns"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q182692",
+  "title": "Apocalypse Now",
+  "title_fr": "Apocalypse Now",
+  "original_title": "Apocalypse Now",
+  "year": 1979,
+  "runtime": 147,
+  "directors": [
+   "Francis Ford Coppola"
+  ],
+  "cast": [
+   "Marlon Brando",
+   "Robert Duvall",
+   "Frederic Forrest",
+   "Albert Hall",
+   "Dennis Hopper",
+   "Francis Ford Coppola",
+   "Vittorio Storaro",
+   "Sam Bottoms"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Drama",
+   "Horror",
+   "Thriller",
+   "War"
+  ],
+  "topics": [
+   "epic",
+   "psychological drama",
+   "psychological horror",
+   "psychological thriller",
+   "satirical"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q181795",
+  "title": "Star Wars: Episode V – The Empire Strikes Back",
+  "title_fr": "Star Wars, épisode V : L'Empire contre-attaque",
+  "original_title": "Star Wars: Episode V",
+  "year": 1980,
+  "runtime": 124,
+  "directors": [
+   "Irvin Kershner"
+  ],
+  "cast": [
+   "Harrison Ford",
+   "Carrie Fisher",
+   "David Prowse",
+   "Mark Hamill",
+   "Billy Dee Williams",
+   "Anthony Daniels",
+   "Kenny Baker",
+   "Peter Mayhew"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "epic"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q186341",
+  "title": "The Shining",
+  "title_fr": "Shining",
+  "original_title": "The Shining",
+  "year": 1980,
+  "runtime": 144,
+  "directors": [
+   "Stanley Kubrick"
+  ],
+  "cast": [
+   "Jack Nicholson",
+   "Shelley Duvall",
+   "Danny Lloyd",
+   "Scatman Crothers",
+   "Barry Nelson",
+   "Philip Stone",
+   "Joe Turkel",
+   "Tony Burton"
+  ],
+  "genres": [
+   "Drama",
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "ghost",
+   "psychological drama",
+   "psychological horror",
+   "psychological thriller",
+   "supernatural horror"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q174284",
+  "title": "Raiders of the Lost Ark",
+  "title_fr": "Les Aventuriers de l'arche perdue",
+  "original_title": "Raiders of the Lost Ark",
+  "year": 1981,
+  "runtime": 115,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "John Rhys-Davies",
+   "Harrison Ford",
+   "Karen Allen",
+   "Denholm Elliott",
+   "Paul Freeman",
+   "Ronald Lacey",
+   "William Hootkins",
+   "Alfred Molina"
+  ],
+  "genres": [
+   "Action"
+  ],
+  "topics": [
+   "treasure hunt"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q184843",
+  "title": "Blade Runner",
+  "title_fr": "Blade Runner",
+  "original_title": "Blade Runner",
+  "year": 1982,
+  "runtime": 112,
+  "directors": [
+   "Ridley Scott"
+  ],
+  "cast": [
+   "Harrison Ford",
+   "Edward James Olmos",
+   "Rutger Hauer",
+   "Sean Young",
+   "Daryl Hannah",
+   "Brion James",
+   "Joanna Cassidy",
+   "M. Emmet Walsh"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "film noir",
+   "neo-noir",
+   "tech noir"
+  ],
+  "countries": [
+   "US",
+   "HK"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q11621",
+  "title": "E.T. the Extra-Terrestrial",
+  "title_fr": "E.T., l'extra-terrestre",
+  "original_title": "E.T. the Extra-Terrestrial",
+  "year": 1982,
+  "runtime": 115,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "Dee Wallace",
+   "Peter Coyote",
+   "Henry Thomas",
+   "Drew Barrymore",
+   "Erika Eleniak",
+   "C. Thomas Howell",
+   "Sean Frye",
+   "K. C. Martel"
+  ],
+  "genres": [
+   "Drama",
+   "Family",
+   "Science Fiction"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q47075",
+  "title": "Scarface",
+  "title_fr": "Scarface",
+  "original_title": "Scarface",
+  "year": 1983,
+  "runtime": 170,
+  "directors": [
+   "Brian De Palma"
+  ],
+  "cast": [
+   "Steven Bauer",
+   "Michelle Pfeiffer",
+   "Mary Elizabeth Mastrantonio",
+   "Robert Loggia",
+   "Paul Shenar",
+   "Harris Yulin",
+   "Mark Margolis",
+   "F. Murray Abraham"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "epic",
+   "neo-noir",
+   "police procedural"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q181803",
+  "title": "Star Wars: Episode VI – Return of the Jedi",
+  "title_fr": "Star Wars, épisode VI : Le Retour du Jedi",
+  "original_title": "Star Wars Episode VI: Return of the Jedi",
+  "year": 1983,
+  "runtime": 134,
+  "directors": [
+   "Richard Marquand"
+  ],
+  "cast": [
+   "Harrison Ford",
+   "Carrie Fisher",
+   "David Prowse",
+   "Mark Hamill",
+   "Ian McDiarmid",
+   "Billy Dee Williams",
+   "Anthony Daniels",
+   "Kenny Baker"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q190956",
+  "title": "Amadeus",
+  "title_fr": "Amadeus",
+  "original_title": "Amadeus",
+  "year": 1984,
+  "runtime": 161,
+  "directors": [
+   "Miloš Forman"
+  ],
+  "cast": [
+   "F. Murray Abraham",
+   "Tom Hulce",
+   "Elizabeth Berridge",
+   "Simon Callow",
+   "Roy Dotrice",
+   "Christine Ebersole",
+   "Jeffrey Jones",
+   "Vincent Schiavelli"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Music"
+  ],
+  "topics": [],
+  "countries": [
+   "US",
+   "CS"
+  ],
+  "languages": [
+   "English",
+   "Italian",
+   "German",
+   "Latin"
+  ]
+ },
+ {
+  "id": "Q179215",
+  "title": "Indiana Jones and the Temple of Doom",
+  "title_fr": "Indiana Jones et le Temple maudit",
+  "original_title": "Indiana Jones and the Temple of Doom",
+  "year": 1984,
+  "runtime": 114,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "Harrison Ford",
+   "Kate Capshaw",
+   "Ke Huy Quan",
+   "Amrish Puri",
+   "Roshan Seth",
+   "Philip Stone",
+   "Roy Chiao",
+   "D. R. Nanayakkara"
+  ],
+  "genres": [
+   "Action",
+   "Adventure"
+  ],
+  "topics": [
+   "treasure hunt"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q162255",
+  "title": "The Terminator",
+  "title_fr": "Terminator",
+  "original_title": "The Terminator",
+  "year": 1984,
+  "runtime": 108,
+  "directors": [
+   "James Cameron"
+  ],
+  "cast": [
+   "Arnold Schwarzenegger",
+   "Michael Biehn",
+   "Linda Hamilton",
+   "Paul Winfield",
+   "Earl Boen",
+   "Lance Henriksen",
+   "Rick Rossovich",
+   "Bill Paxton"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Crime",
+   "Drama",
+   "Fantasy",
+   "Horror",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "chase",
+   "tech-noir",
+   "techno-thriller",
+   "time-travel"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q91540",
+  "title": "Back to the Future",
+  "title_fr": "Retour vers le futur",
+  "original_title": "Back to the Future",
+  "year": 1985,
+  "runtime": 115,
+  "directors": [
+   "Robert Zemeckis"
+  ],
+  "cast": [
+   "Christopher Lloyd",
+   "Lea Thompson",
+   "Crispin Glover",
+   "Michael J. Fox",
+   "Thomas F. Wilson",
+   "Marc McClure",
+   "Wendie Jo Sperber",
+   "James Tolkan"
+  ],
+  "genres": [
+   "Adventure",
+   "Comedy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "teen",
+   "time-travel"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q104814",
+  "title": "Aliens",
+  "title_fr": "Aliens, le retour",
+  "original_title": "Aliens",
+  "year": 1986,
+  "runtime": 137,
+  "directors": [
+   "James Cameron"
+  ],
+  "cast": [
+   "William Hope",
+   "Paul Reiser",
+   "Bill Paxton",
+   "Jenette Goldstein",
+   "Al Matthews",
+   "Mark Rolston",
+   "Ricco Ross",
+   "Colette Hiller"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Horror",
+   "Science Fiction",
+   "Thriller",
+   "War"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q156911",
+  "title": "Wings of Desire",
+  "title_fr": "Les Ailes du désir",
+  "original_title": "Der Himmel über Berlin",
+  "year": 1987,
+  "runtime": 128,
+  "directors": [
+   "Wim Wenders"
+  ],
+  "cast": [
+   "Bruno Ganz",
+   "Solveig Dommartin",
+   "Otto Sander",
+   "Curt Bois",
+   "Peter Falk",
+   "Hans-Martin Stier",
+   "Annelinde Gerstl",
+   "Beatrice Manowski"
+  ],
+  "genres": [
+   "Drama",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "DE"
+  ],
+  "languages": [
+   "Spanish",
+   "German",
+   "French",
+   "English",
+   "Turkish",
+   "Hebrew",
+   "Japanese"
+  ]
+ },
+ {
+  "id": "Q105598",
+  "title": "Die Hard",
+  "title_fr": "Piège de cristal",
+  "original_title": "Die Hard",
+  "year": 1988,
+  "runtime": 131,
+  "directors": [
+   "John McTiernan"
+  ],
+  "cast": [
+   "Bruce Willis",
+   "Alexander Godunov",
+   "Bonnie Bedelia",
+   "Reginald VelJohnson",
+   "William Atherton",
+   "Paul Gleason",
+   "Al Leong",
+   "Clarence Gilyard"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "topics": [
+   "christmas"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "German"
+  ]
+ },
+ {
+  "id": "Q39571",
+  "title": "My Neighbor Totoro",
+  "title_fr": "Mon voisin Totoro",
+  "original_title": "となりのトトロ",
+  "year": 1988,
+  "runtime": 86,
+  "directors": [
+   "Hayao Miyazaki"
+  ],
+  "cast": [],
+  "genres": [
+   "Drama",
+   "Family",
+   "Fantasy"
+  ],
+  "topics": [
+   "drama anime and manga",
+   "fantasy anime and manga",
+   "supernatural anime"
+  ],
+  "countries": [
+   "JP"
+  ],
+  "languages": [
+   "Japanese"
+  ]
+ },
+ {
+  "id": "Q188845",
+  "title": "Rain Man",
+  "title_fr": "Rain Man",
+  "original_title": "Rain Man",
+  "year": 1988,
+  "runtime": 128,
+  "directors": [
+   "Barry Levinson"
+  ],
+  "cast": [
+   "Dustin Hoffman",
+   "Tom Cruise",
+   "Valeria Golino",
+   "Gerald R. Molen",
+   "Jack Murdock",
+   "Michael D. Roberts",
+   "Bonnie Hunt",
+   "Barry Levinson"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "topics": [
+   "buddy"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q109331",
+  "title": "Back to the Future Part II",
+  "title_fr": "Retour vers le futur 2",
+  "original_title": "Back to the Future Part II",
+  "year": 1989,
+  "runtime": 108,
+  "directors": [
+   "Robert Zemeckis"
+  ],
+  "cast": [
+   "Michael J. Fox",
+   "Christopher Lloyd",
+   "Lea Thompson",
+   "Thomas F. Wilson",
+   "Elisabeth Shue",
+   "James Tolkan",
+   "Flea",
+   "Casey Siemaszko"
+  ],
+  "genres": [
+   "Comedy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "teen",
+   "time-travel"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q106316",
+  "title": "Dead Poets Society",
+  "title_fr": "Le Cercle des poètes disparus",
+  "original_title": "Dead Poets Society",
+  "year": 1989,
+  "runtime": 123,
+  "directors": [
+   "Peter Weir"
+  ],
+  "cast": [
+   "Robin Williams",
+   "Robert Sean Leonard",
+   "Ethan Hawke",
+   "Josh Charles",
+   "Gale Hansen",
+   "Norman Lloyd",
+   "Kurtwood Smith",
+   "George Martin"
+  ],
+  "genres": [
+   "Drama"
+  ],
+  "topics": [
+   "coming-of-age",
+   "teen"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q42047",
+  "title": "Goodfellas",
+  "title_fr": "Les Affranchis",
+  "original_title": "Goodfellas",
+  "year": 1990,
+  "runtime": 146,
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "cast": [
+   "Joe Pesci",
+   "Robert De Niro",
+   "Ray Liotta",
+   "Lorraine Bracco",
+   "Paul Sorvino",
+   "Frank Sivero",
+   "Tony Darrow",
+   "Mike Starr"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "History",
+   "Thriller"
+  ],
+  "topics": [
+   "police procedural"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q105031",
+  "title": "Home Alone",
+  "title_fr": "Maman, j'ai raté l'avion !",
+  "original_title": "Home Alone",
+  "year": 1990,
+  "runtime": 103,
+  "directors": [
+   "Chris Columbus"
+  ],
+  "cast": [
+   "Macaulay Culkin",
+   "Joe Pesci",
+   "Daniel Stern",
+   "John Heard",
+   "Catherine O'Hara",
+   "Roberts Blossom",
+   "John Candy",
+   "Devin Ratray"
+  ],
+  "genres": [
+   "Adventure",
+   "Comedy",
+   "Family"
+  ],
+  "topics": [
+   "christmas"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q202326",
+  "title": "The Godfather Part III",
+  "title_fr": "Le Parrain 3",
+  "original_title": "The Godfather Part III",
+  "year": 1990,
+  "runtime": 162,
+  "directors": [
+   "Francis Ford Coppola"
+  ],
+  "cast": [
+   "Al Pacino",
+   "Andy Garcia",
+   "Diane Keaton",
+   "Eli Wallach",
+   "Talia Shire",
+   "Sofia Coppola",
+   "Joe Mantegna",
+   "Richard Bright"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "epic"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q170564",
+  "title": "Terminator 2: Judgment Day",
+  "title_fr": "Terminator 2 : Le Jugement dernier",
+  "original_title": "Terminator 2",
+  "year": 1991,
+  "runtime": 137,
+  "directors": [
+   "James Cameron"
+  ],
+  "cast": [
+   "Arnold Schwarzenegger",
+   "Edward Furlong",
+   "Linda Hamilton",
+   "Robert Patrick",
+   "Earl Boen",
+   "Joe Morton",
+   "S. Epatha Merkerson",
+   "Xander Berkeley"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Drama",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "black comedy",
+   "chase",
+   "girls with guns",
+   "techno-thriller",
+   "time-travel"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q133654",
+  "title": "The Silence of the Lambs",
+  "title_fr": "Le Silence des agneaux",
+  "original_title": "The Silence of the Lambs",
+  "year": 1991,
+  "runtime": 118,
+  "directors": [
+   "Jonathan Demme"
+  ],
+  "cast": [
+   "Jodie Foster",
+   "Scott Glenn",
+   "Ted Levine",
+   "Charles Napier",
+   "Kasi Lemmons",
+   "Brooke Smith",
+   "Dan Butler",
+   "Diane Baker"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Horror",
+   "Thriller"
+  ],
+  "topics": [
+   "lgbtq-related",
+   "police procedural",
+   "psychological drama",
+   "psychological horror",
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q72962",
+  "title": "Reservoir Dogs",
+  "title_fr": "Reservoir Dogs",
+  "original_title": "Reservoir Dogs",
+  "year": 1992,
+  "runtime": 99,
+  "directors": [
+   "Quentin Tarantino"
+  ],
+  "cast": [
+   "Harvey Keitel",
+   "Tim Roth",
+   "Chris Penn",
+   "Steve Buscemi",
+   "Lawrence Tierney",
+   "Michael Madsen",
+   "Quentin Tarantino",
+   "Edward Bunker"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Crime",
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "black comedy",
+   "neo-noir",
+   "psychological drama",
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q167726",
+  "title": "Jurassic Park",
+  "title_fr": "Jurassic Park",
+  "original_title": "Jurassic Park",
+  "year": 1993,
+  "runtime": 123,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "Richard Attenborough",
+   "Jeff Goldblum",
+   "Samuel L. Jackson",
+   "Sam Neill",
+   "Laura Dern",
+   "Ariana Richards",
+   "Wayne Knight",
+   "BD Wong"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Spanish"
+  ]
+ },
+ {
+  "id": "Q483941",
+  "title": "Schindler's List",
+  "title_fr": "La Liste de Schindler",
+  "original_title": "Schindler's List",
+  "year": 1993,
+  "runtime": 195,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "Ralph Fiennes",
+   "Liam Neeson",
+   "Ben Kingsley",
+   "Caroline Goodall",
+   "Embeth Davidtz",
+   "Jonathan Sagall",
+   "Beatrice Macola",
+   "Andrzej Seweryn"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "War"
+  ],
+  "topics": [
+   "anti-war",
+   "epic",
+   "psychological drama"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "German",
+   "Polish",
+   "Yiddish"
+  ]
+ },
+ {
+  "id": "Q1127167",
+  "title": "Burnt by the Sun",
+  "title_fr": "Soleil trompeur",
+  "original_title": "Утомлённые солнцем",
+  "year": 1994,
+  "runtime": 145,
+  "directors": [
+   "Nikita Mikhalkov"
+  ],
+  "cast": [
+   "Oleg Menshikov",
+   "Nikita Mikhalkov",
+   "Ingeborga Dapkūnaitė",
+   "Nadezhda Mikhalkova",
+   "André Oumansky",
+   "Svetlana Kryuchkova",
+   "Vyacheslav Tikhonov",
+   "Vladimir Ilyin"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "War"
+  ],
+  "topics": [],
+  "countries": [
+   "RU",
+   "FR"
+  ],
+  "languages": [
+   "French",
+   "Russian"
+  ]
+ },
+ {
+  "id": "Q134773",
+  "title": "Forrest Gump",
+  "title_fr": "Forrest Gump",
+  "original_title": "Forrest Gump",
+  "year": 1994,
+  "runtime": 142,
+  "directors": [
+   "Robert Zemeckis"
+  ],
+  "cast": [
+   "Tom Hanks",
+   "Gary Sinise",
+   "Sally Field",
+   "Robin Wright",
+   "Mykelti Williamson",
+   "Haley Joel Osment",
+   "Hanna R. Hall",
+   "Mary Ellen Trainor"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "History",
+   "Romance"
+  ],
+  "topics": [
+   "american football",
+   "coming-of-age",
+   "tragicomedy"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q484675",
+  "title": "Léon: The Professional",
+  "title_fr": "Léon",
+  "original_title": "Léon",
+  "year": 1994,
+  "runtime": 110,
+  "directors": [
+   "Luc Besson"
+  ],
+  "cast": [
+   "Natalie Portman",
+   "Jean Reno",
+   "Gary Oldman",
+   "Danny Aiello",
+   "Michael Badalucco",
+   "Ellen Greene",
+   "Peter Appel",
+   "Frank Senger"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "buddy"
+  ],
+  "countries": [
+   "FR",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q104123",
+  "title": "Pulp Fiction",
+  "title_fr": "Pulp Fiction",
+  "original_title": "Pulp Fiction",
+  "year": 1994,
+  "runtime": 154,
+  "directors": [
+   "Quentin Tarantino"
+  ],
+  "cast": [
+   "Bruce Willis",
+   "John Travolta",
+   "Rosanna Arquette",
+   "Uma Thurman",
+   "Samuel L. Jackson",
+   "Christopher Walken",
+   "Harvey Keitel",
+   "Tim Roth"
+  ],
+  "genres": [
+   "Action",
+   "Comedy",
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "black comedy",
+   "neo-noir"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q172241",
+  "title": "The Shawshank Redemption",
+  "title_fr": "Les Évadés",
+  "original_title": "The Shawshank Redemption",
+  "year": 1994,
+  "runtime": 142,
+  "directors": [
+   "Frank Darabont"
+  ],
+  "cast": [
+   "Tim Robbins",
+   "Morgan Freeman",
+   "Bob Gunton",
+   "William Sadler",
+   "James Whitmore",
+   "Clancy Brown",
+   "Gil Bellows",
+   "Mark Rolston"
+  ],
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "topics": [
+   "buddy",
+   "prison"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q162729",
+  "title": "Braveheart",
+  "title_fr": "Braveheart",
+  "original_title": "Braveheart",
+  "year": 1995,
+  "runtime": 177,
+  "directors": [
+   "Mel Gibson"
+  ],
+  "cast": [
+   "Mel Gibson",
+   "Sophie Marceau",
+   "Brendan Gleeson",
+   "Patrick McGoohan",
+   "Angus Macfadyen",
+   "James Cosmo",
+   "David O'Hara",
+   "Ian Bannen"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "History",
+   "War"
+  ],
+  "topics": [
+   "medieval"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q190908",
+  "title": "Seven",
+  "title_fr": "Seven",
+  "original_title": "Seven",
+  "year": 1995,
+  "runtime": 127,
+  "directors": [
+   "David Fincher"
+  ],
+  "cast": [
+   "Brad Pitt",
+   "Morgan Freeman",
+   "Gwyneth Paltrow",
+   "Kevin Spacey",
+   "R. Lee Ermey",
+   "John C. McGinley",
+   "Richard Roundtree",
+   "Richard Schiff"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama",
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "buddy cop",
+   "chase",
+   "neo-noir",
+   "police procedural",
+   "psychological drama",
+   "psychological horror",
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q105387",
+  "title": "Independence Day",
+  "title_fr": "Independence Day",
+  "original_title": "Independence Day",
+  "year": 1996,
+  "runtime": 145,
+  "directors": [
+   "Roland Emmerich"
+  ],
+  "cast": [
+   "Will Smith",
+   "Jeff Goldblum",
+   "Mary McDonnell",
+   "Vivica A. Fox",
+   "Margaret Colin",
+   "Harry Connick Jr.",
+   "Bill Pullman",
+   "Randy Quaid"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "alien invasion",
+   "disaster"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q63026",
+  "title": "The English Patient",
+  "title_fr": "Le Patient anglais",
+  "original_title": "The English Patient",
+  "year": 1996,
+  "runtime": 162,
+  "directors": [
+   "Anthony Minghella"
+  ],
+  "cast": [
+   "Ralph Fiennes",
+   "Juliette Binoche",
+   "Willem Dafoe",
+   "Kristin Scott Thomas",
+   "Naveen Andrews",
+   "Colin Firth",
+   "Julian Wadham",
+   "Jürgen Prochnow"
+  ],
+  "genres": [
+   "Drama",
+   "Romance",
+   "War"
+  ],
+  "topics": [
+   "spy"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Arabic",
+   "German",
+   "Italian"
+  ]
+ },
+ {
+  "id": "Q193835",
+  "title": "Good Will Hunting",
+  "title_fr": "Will Hunting",
+  "original_title": "Good Will Hunting",
+  "year": 1997,
+  "runtime": 126,
+  "directors": [
+   "Gus Van Sant"
+  ],
+  "cast": [
+   "Matt Damon",
+   "Robin Williams",
+   "Ben Affleck",
+   "Minnie Driver",
+   "Stellan Skarsgård",
+   "Casey Affleck",
+   "Cole Hauser",
+   "Scott William Winters"
+  ],
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "coming-of-age"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q19355",
+  "title": "Life Is Beautiful",
+  "title_fr": "La vie est belle",
+  "original_title": "La vita è bella",
+  "year": 1997,
+  "runtime": 116,
+  "directors": [
+   "Roberto Benigni"
+  ],
+  "cast": [
+   "Roberto Benigni",
+   "Nicoletta Braschi",
+   "Giorgio Cantarini",
+   "Giustino Durano",
+   "Horst Buchholz",
+   "Amerigo Fontani",
+   "Sergio Bustric",
+   "Lydia Alfonsi"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "topics": [],
+  "countries": [
+   "IT"
+  ],
+  "languages": [
+   "Italian",
+   "English",
+   "German"
+  ]
+ },
+ {
+  "id": "Q44578",
+  "title": "Titanic",
+  "title_fr": "Titanic",
+  "original_title": "Titanic",
+  "year": 1997,
+  "runtime": 195,
+  "directors": [
+   "James Cameron"
+  ],
+  "cast": [
+   "Leonardo DiCaprio",
+   "Kate Winslet",
+   "Billy Zane",
+   "Kathy Bates",
+   "Frances Fisher",
+   "Bernard Hill",
+   "Jonathan Hyde",
+   "David Warner"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Romance"
+  ],
+  "topics": [
+   "disaster",
+   "epic",
+   "melodrama"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q165817",
+  "title": "Saving Private Ryan",
+  "title_fr": "Il faut sauver le soldat Ryan",
+  "original_title": "Saving Private Ryan",
+  "year": 1998,
+  "runtime": 169,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "Tom Hanks",
+   "Matt Damon",
+   "Edward Burns",
+   "Tom Sizemore",
+   "Jeremy Davies",
+   "Adam Goldberg",
+   "Barry Pepper",
+   "Giovanni Ribisi"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "War"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "German",
+   "French"
+  ]
+ },
+ {
+  "id": "Q182944",
+  "title": "Shakespeare in Love",
+  "title_fr": "Shakespeare in Love",
+  "original_title": "Shakespeare in Love",
+  "year": 1998,
+  "runtime": 123,
+  "directors": [
+   "John Madden"
+  ],
+  "cast": [
+   "Joseph Fiennes",
+   "Gwyneth Paltrow",
+   "Geoffrey Rush",
+   "Colin Firth",
+   "Ben Affleck",
+   "Judi Dench",
+   "Tom Wilkinson",
+   "Simon Callow"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "History",
+   "Romance"
+  ],
+  "topics": [],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q214801",
+  "title": "The Truman Show",
+  "title_fr": "The Truman Show",
+  "original_title": "The Truman Show",
+  "year": 1998,
+  "runtime": 99,
+  "directors": [
+   "Peter Weir"
+  ],
+  "cast": [
+   "Jim Carrey",
+   "Ed Harris",
+   "Laura Linney",
+   "Noah Emmerich",
+   "Natascha McElhone",
+   "Holland Taylor",
+   "Brian Delate",
+   "Peter Krause"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Science Fiction"
+  ],
+  "topics": [
+   "dystopian fiction",
+   "tragicomedy"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q25139",
+  "title": "American Beauty",
+  "title_fr": "American Beauty",
+  "original_title": "American Beauty",
+  "year": 1999,
+  "runtime": 121,
+  "directors": [
+   "Sam Mendes"
+  ],
+  "cast": [
+   "Kevin Spacey",
+   "Annette Bening",
+   "Thora Birch",
+   "Wes Bentley",
+   "Mena Suvari",
+   "Chris Cooper",
+   "Peter Gallagher",
+   "Allison Janney"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "topics": [
+   "black comedy",
+   "lgbtq-related"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q190050",
+  "title": "Fight Club",
+  "title_fr": "Fight Club",
+  "original_title": "Fight Club",
+  "year": 1999,
+  "runtime": 139,
+  "directors": [
+   "David Fincher"
+  ],
+  "cast": [
+   "Edward Norton",
+   "Brad Pitt",
+   "Helena Bonham Carter",
+   "Jared Leto",
+   "Meat Loaf",
+   "Zach Grenier",
+   "David Lee Smith",
+   "Eion Bailey"
+  ],
+  "genres": [
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "psychological thriller"
+  ],
+  "countries": [
+   "US",
+   "DE"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q165713",
+  "title": "Star Wars: Episode I – The Phantom Menace",
+  "title_fr": "Star Wars, épisode I : La Menace fantôme",
+  "original_title": "Star Wars Episode I: The Phantom Menace9999",
+  "year": 1999,
+  "runtime": 133,
+  "directors": [
+   "George Lucas"
+  ],
+  "cast": [
+   "Liam Neeson",
+   "Ewan McGregor",
+   "Natalie Portman",
+   "Jake Lloyd",
+   "Ian McDiarmid",
+   "Ahmed Best",
+   "Kenny Baker",
+   "Pernilla August"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q208263",
+  "title": "The Green Mile",
+  "title_fr": "La Ligne verte",
+  "original_title": "The Green Mile",
+  "year": 1999,
+  "runtime": 189,
+  "directors": [
+   "Frank Darabont"
+  ],
+  "cast": [
+   "Tom Hanks",
+   "David Morse",
+   "Bonnie Hunt",
+   "Michael Clarke Duncan",
+   "James Cromwell",
+   "Michael Jeter",
+   "Doug Hutchison",
+   "Sam Rockwell"
+  ],
+  "genres": [
+   "Drama",
+   "Fantasy"
+  ],
+  "topics": [
+   "magic realist",
+   "prison"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q83495",
+  "title": "The Matrix",
+  "title_fr": "Matrix",
+  "original_title": "The Matrix",
+  "year": 1999,
+  "runtime": 136,
+  "directors": [
+   "Lana Wachowski",
+   "Lilly Wachowski"
+  ],
+  "cast": [
+   "Laurence Fishburne",
+   "Carrie-Anne Moss",
+   "Joe Pantoliano",
+   "Hugo Weaving",
+   "Keanu Reeves",
+   "Gloria Foster",
+   "Julian Arahanga",
+   "Anthony Ray Parker"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "film noir",
+   "superhero"
+  ],
+  "countries": [
+   "US",
+   "AU"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q202508",
+  "title": "The Mummy",
+  "title_fr": "La Momie",
+  "original_title": "The Mummy",
+  "year": 1999,
+  "runtime": 120,
+  "directors": [
+   "Stephen Sommers"
+  ],
+  "cast": [
+   "Brendan Fraser",
+   "Rachel Weisz",
+   "John Hannah",
+   "Arnold Vosloo",
+   "Kevin J. O'Connor",
+   "Oded Fehr",
+   "Jonathan Hyde",
+   "Erick Avari"
+  ],
+  "genres": [
+   "Action",
+   "Comedy",
+   "Fantasy",
+   "Horror"
+  ],
+  "topics": [
+   "treasure hunt"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "Arabic",
+   "English",
+   "Egyptian"
+  ]
+ },
+ {
+  "id": "Q128518",
+  "title": "Gladiator",
+  "title_fr": "Gladiator",
+  "original_title": "Gladiator",
+  "year": 2000,
+  "runtime": 155,
+  "directors": [
+   "Ridley Scott"
+  ],
+  "cast": [
+   "Russell Crowe",
+   "Joaquin Phoenix",
+   "Connie Nielsen",
+   "Richard Harris",
+   "Oliver Reed",
+   "Djimon Hounsou",
+   "Derek Jacobi",
+   "Tomas Arana"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "History"
+  ],
+  "topics": [
+   "epic",
+   "melodrama",
+   "sword-and-sandal"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q190525",
+  "title": "Memento",
+  "title_fr": "Memento",
+  "original_title": "Memento",
+  "year": 2000,
+  "runtime": 113,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Carrie-Anne Moss",
+   "Guy Pearce",
+   "Joe Pantoliano",
+   "Mark Boone Junior",
+   "Jorja Fox",
+   "Stephen Tobolowsky",
+   "Harriet Sansom Harris",
+   "Callum Keith Rennie"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "film based on a literary work",
+   "film noir",
+   "neo-noir"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q164103",
+  "title": "A Beautiful Mind",
+  "title_fr": "Un homme d'exception",
+  "original_title": "A Beautiful Mind",
+  "year": 2001,
+  "runtime": 135,
+  "directors": [
+   "Ron Howard"
+  ],
+  "cast": [
+   "Russell Crowe",
+   "Ed Harris",
+   "Jennifer Connelly",
+   "Paul Bettany",
+   "Vivien Cardone",
+   "Christopher Plummer",
+   "Adam Goldberg",
+   "Josh Lucas"
+  ],
+  "genres": [
+   "Drama",
+   "History"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q484048",
+  "title": "Amélie",
+  "title_fr": "Le Fabuleux Destin d'Amélie Poulain",
+  "original_title": "Le Fabuleux Destin d'Amélie Poulain",
+  "year": 2001,
+  "runtime": 122,
+  "directors": [
+   "Jean-Pierre Jeunet"
+  ],
+  "cast": [
+   "Audrey Tautou",
+   "Mathieu Kassovitz",
+   "Jamel Debbouze",
+   "Dominique Pinon",
+   "Yolande Moreau",
+   "André Dussollier",
+   "Isabelle Nanty",
+   "Rufus"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "magic realist"
+  ],
+  "countries": [
+   "FR",
+   "DE"
+  ],
+  "languages": [
+   "French"
+  ]
+ },
+ {
+  "id": "Q102438",
+  "title": "Harry Potter and the Philosopher's Stone",
+  "title_fr": "Harry Potter à l'école des sorciers",
+  "original_title": "Harry Potter and the Philosopher's Stone",
+  "year": 2001,
+  "runtime": 152,
+  "directors": [
+   "Chris Columbus"
+  ],
+  "cast": [
+   "Daniel Radcliffe",
+   "Rupert Grint",
+   "Emma Watson",
+   "John Cleese",
+   "Robbie Coltrane",
+   "Warwick Davis",
+   "Richard Griffiths",
+   "Richard Harris"
+  ],
+  "genres": [
+   "Adventure",
+   "Family",
+   "Fantasy"
+  ],
+  "topics": [
+   "speculative fiction"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q845235",
+  "title": "No Man's Land",
+  "title_fr": "No Man's Land",
+  "original_title": "Ničija zemlja",
+  "year": 2001,
+  "runtime": 98,
+  "directors": [
+   "Danis Tanović"
+  ],
+  "cast": [
+   "Branko Đurić",
+   "Rene Bitorajac",
+   "Filip Šovagović",
+   "Georges Siatidis",
+   "Serge-Henri Valcke",
+   "Mustafa Nadarević",
+   "Bogdan Diklić",
+   "Simon Callow"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "War"
+  ],
+  "topics": [],
+  "countries": [
+   "BA",
+   "SI",
+   "GB",
+   "IT",
+   "BE",
+   "FR"
+  ],
+  "languages": [
+   "German",
+   "French",
+   "Bosnian",
+   "English",
+   "Croatian",
+   "Serbian",
+   "Serbo-Croatian"
+  ]
+ },
+ {
+  "id": "Q127367",
+  "title": "The Lord of the Rings: The Fellowship of the Ring",
+  "title_fr": "Le Seigneur des anneaux : La Communauté de l'anneau",
+  "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+  "year": 2001,
+  "runtime": 178,
+  "directors": [
+   "Peter Jackson"
+  ],
+  "cast": [
+   "Elijah Wood",
+   "Ian McKellen",
+   "Liv Tyler",
+   "Viggo Mortensen",
+   "Sean Astin",
+   "Cate Blanchett",
+   "John Rhys-Davies",
+   "Billy Boyd"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "topics": [
+   "high fantasy"
+  ],
+  "countries": [
+   "NZ",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q737904",
+  "title": "Asterix & Obelix: Mission Cleopatra",
+  "title_fr": "Astérix et Obélix : Mission Cléopâtre",
+  "original_title": "Astérix et Obélix : Mission Cléopâtre",
+  "year": 2002,
+  "runtime": 107,
+  "directors": [
+   "Alain Chabat"
+  ],
+  "cast": [
+   "Christian Clavier",
+   "Gérard Depardieu",
+   "Jamel Debbouze",
+   "Monica Bellucci",
+   "Alain Chabat",
+   "Claude Rich",
+   "Pierre Tchernia",
+   "Alex Berger"
+  ],
+  "genres": [
+   "Adventure",
+   "Comedy"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "DE"
+  ],
+  "languages": [
+   "French"
+  ]
+ },
+ {
+  "id": "Q208108",
+  "title": "Catch Me If You Can",
+  "title_fr": "Arrête-moi si tu peux",
+  "original_title": "Catch Me If You Can",
+  "year": 2002,
+  "runtime": 135,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "Leonardo DiCaprio",
+   "Tom Hanks",
+   "Christopher Walken",
+   "Martin Sheen",
+   "Nathalie Baye",
+   "Amy Adams",
+   "James Brolin",
+   "Brian Howe"
+  ],
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Drama",
+   "History"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q102244",
+  "title": "Harry Potter and the Chamber of Secrets",
+  "title_fr": "Harry Potter et la Chambre des secrets",
+  "original_title": "Harry Potter and the Chamber of Secrets",
+  "year": 2002,
+  "runtime": 161,
+  "directors": [
+   "Chris Columbus"
+  ],
+  "cast": [
+   "Daniel Radcliffe",
+   "Warwick Davis",
+   "Rupert Grint",
+   "Emma Watson",
+   "Kenneth Branagh",
+   "Alan Rickman",
+   "Fiona Shaw",
+   "Julie Walters"
+  ],
+  "genres": [
+   "Adventure",
+   "Family",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q484442",
+  "title": "Spider-Man",
+  "title_fr": "Spider-Man",
+  "original_title": "Spider-Man",
+  "year": 2002,
+  "runtime": 121,
+  "directors": [
+   "Sam Raimi"
+  ],
+  "cast": [
+   "Tobey Maguire",
+   "Willem Dafoe",
+   "Kirsten Dunst",
+   "James Franco",
+   "Cliff Robertson",
+   "Rosemary Harris",
+   "J. K. Simmons",
+   "Elizabeth Banks"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "Science Fiction"
+  ],
+  "topics": [
+   "coming-of-age",
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q181069",
+  "title": "Star Wars: Episode II – Attack of the Clones",
+  "title_fr": "Star Wars, épisode II : L’Attaque des clones",
+  "original_title": "Star Wars: Episode II – Attack of the Clones",
+  "year": 2002,
+  "runtime": 142,
+  "directors": [
+   "George Lucas"
+  ],
+  "cast": [
+   "Natalie Portman",
+   "Ewan McGregor",
+   "Samuel L. Jackson",
+   "Christopher Lee",
+   "Hayden Christensen",
+   "Ian McDiarmid",
+   "Anthony Daniels",
+   "Kenny Baker"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q164963",
+  "title": "The Lord of the Rings: The Two Towers",
+  "title_fr": "Le Seigneur des anneaux : Les Deux Tours",
+  "original_title": "The Lord of the Rings: The Two Towers",
+  "year": 2002,
+  "runtime": 179,
+  "directors": [
+   "Peter Jackson"
+  ],
+  "cast": [
+   "Ian McKellen",
+   "Sean Astin",
+   "Viggo Mortensen",
+   "Andy Serkis",
+   "Liv Tyler",
+   "Cate Blanchett",
+   "John Rhys-Davies",
+   "Orlando Bloom"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "NZ",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q150804",
+  "title": "The Pianist",
+  "title_fr": "Le Pianiste",
+  "original_title": "The Pianist",
+  "year": 2002,
+  "runtime": 149,
+  "directors": [
+   "Roman Polanski"
+  ],
+  "cast": [
+   "Adrien Brody",
+   "Thomas Kretschmann",
+   "Frank Finlay",
+   "Emilia Fox",
+   "Udo Kroschwald",
+   "Maureen Lipman",
+   "Michał Żebrowski",
+   "Ed Stoppard"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Music",
+   "War"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "DE",
+   "GB",
+   "PL",
+   "US"
+  ],
+  "languages": [
+   "German",
+   "English",
+   "Russian",
+   "French"
+  ]
+ },
+ {
+  "id": "Q46717",
+  "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+  "title_fr": "Pirates des Caraïbes : La Malédiction du Black Pearl",
+  "original_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+  "year": 2003,
+  "runtime": 137,
+  "directors": [
+   "Gore Verbinski"
+  ],
+  "cast": [
+   "Geoffrey Rush",
+   "Orlando Bloom",
+   "Keira Knightley",
+   "Zoe Saldaña",
+   "Treva Etienne",
+   "Martin Klebba",
+   "Lee Arenberg",
+   "Mackenzie Crook"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "topics": [
+   "pirate",
+   "treasure hunt"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q131074",
+  "title": "The Lord of the Rings: The Return of the King",
+  "title_fr": "Le Seigneur des anneaux : Le Retour du roi",
+  "original_title": "The Lord of the Rings: The Return of the King",
+  "year": 2003,
+  "runtime": 200,
+  "directors": [
+   "Peter Jackson"
+  ],
+  "cast": [
+   "Elijah Wood",
+   "Ian McKellen",
+   "Andy Serkis",
+   "Viggo Mortensen",
+   "Liv Tyler",
+   "Sean Astin",
+   "Cate Blanchett",
+   "Christopher Lee"
+  ],
+  "genres": [
+   "Adventure",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "NZ",
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Old English",
+   "Quenya",
+   "Sindarin"
+  ]
+ },
+ {
+  "id": "Q102448",
+  "title": "Harry Potter and the Prisoner of Azkaban",
+  "title_fr": "Harry Potter et le Prisonnier d'Azkaban",
+  "original_title": "Harry Potter and the Prisoner of Azkaban",
+  "year": 2004,
+  "runtime": 141,
+  "directors": [
+   "Alfonso Cuarón"
+  ],
+  "cast": [
+   "Daniel Radcliffe",
+   "Rupert Grint",
+   "Emma Watson",
+   "Robbie Coltrane",
+   "Michael Gambon",
+   "Richard Griffiths",
+   "Gary Oldman",
+   "Alan Rickman"
+  ],
+  "genres": [
+   "Adventure",
+   "Family",
+   "Fantasy"
+  ],
+  "topics": [
+   "time-travel",
+   "werewolf"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q184255",
+  "title": "Million Dollar Baby",
+  "title_fr": "Million Dollar Baby",
+  "original_title": "Million Dollar Baby",
+  "year": 2004,
+  "runtime": 132,
+  "directors": [
+   "Clint Eastwood"
+  ],
+  "cast": [
+   "Hilary Swank",
+   "Clint Eastwood",
+   "Morgan Freeman",
+   "Jay Baruchel",
+   "Mike Colter",
+   "Lucia Rijker",
+   "Brían F. O'Byrne",
+   "Anthony Mackie"
+  ],
+  "genres": [
+   "Drama"
+  ],
+  "topics": [
+   "boxing",
+   "buddy"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Irish"
+  ]
+ },
+ {
+  "id": "Q190145",
+  "title": "Spider-Man 2",
+  "title_fr": "Spider-Man 2",
+  "original_title": "Spider-Man 2",
+  "year": 2004,
+  "runtime": 122,
+  "directors": [
+   "Sam Raimi"
+  ],
+  "cast": [
+   "Tobey Maguire",
+   "Kirsten Dunst",
+   "James Franco",
+   "Alfred Molina",
+   "Rosemary Harris",
+   "Donna Murphy",
+   "J. K. Simmons",
+   "Daniel Gillies"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q186587",
+  "title": "Troy",
+  "title_fr": "Troie",
+  "original_title": "Troy",
+  "year": 2004,
+  "runtime": 163,
+  "directors": [
+   "Wolfgang Petersen"
+  ],
+  "cast": [
+   "Brad Pitt",
+   "Eric Bana",
+   "Orlando Bloom",
+   "Diane Kruger",
+   "Peter O'Toole",
+   "Rose Byrne",
+   "Sean Bean",
+   "Brian Cox"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "War"
+  ],
+  "topics": [
+   "sword-and-sandal"
+  ],
+  "countries": [
+   "US",
+   "GB",
+   "MT"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q166262",
+  "title": "Batman Begins",
+  "title_fr": "Batman Begins",
+  "original_title": "Batman Begins",
+  "year": 2005,
+  "runtime": 140,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Christian Bale",
+   "Michael Caine",
+   "Liam Neeson",
+   "Katie Holmes",
+   "Gary Oldman",
+   "Cillian Murphy",
+   "Tom Wilkinson",
+   "Morgan Freeman"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "neo-noir",
+   "ninja",
+   "superhero"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q160618",
+  "title": "Brokeback Mountain",
+  "title_fr": "Le Secret de Brokeback Mountain",
+  "original_title": "Brokeback Mountain",
+  "year": 2005,
+  "runtime": 134,
+  "directors": [
+   "Ang Lee"
+  ],
+  "cast": [
+   "Heath Ledger",
+   "Jake Gyllenhaal",
+   "Anne Hathaway",
+   "Michelle Williams",
+   "Randy Quaid",
+   "Linda Cardellini",
+   "Anna Faris",
+   "David Harbour"
+  ],
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "lgbtq-related"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q102225",
+  "title": "Harry Potter and the Goblet of Fire",
+  "title_fr": "Harry Potter et la Coupe de feu",
+  "original_title": "Harry Potter and the Goblet of Fire",
+  "year": 2005,
+  "runtime": 151,
+  "directors": [
+   "Mike Newell"
+  ],
+  "cast": [
+   "Daniel Radcliffe",
+   "Rupert Grint",
+   "Emma Watson",
+   "Robbie Coltrane",
+   "Ralph Fiennes",
+   "Michael Gambon",
+   "Brendan Gleeson",
+   "Jason Isaacs"
+  ],
+  "genres": [
+   "Adventure",
+   "Family",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q152456",
+  "title": "Munich",
+  "title_fr": "Munich",
+  "original_title": "Munich",
+  "year": 2005,
+  "runtime": 157,
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "cast": [
+   "Eric Bana",
+   "Daniel Craig",
+   "Ciarán Hinds",
+   "Mathieu Kassovitz",
+   "Ayelet Zurer",
+   "Geoffrey Rush",
+   "Michael Lonsdale",
+   "Mathieu Amalric"
+  ],
+  "genres": [
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "political thriller",
+   "spy"
+  ],
+  "countries": [
+   "US",
+   "FR",
+   "CA"
+  ],
+  "languages": [
+   "English",
+   "Hebrew",
+   "German",
+   "Arabic",
+   "Italian",
+   "French"
+  ]
+ },
+ {
+  "id": "Q42051",
+  "title": "Star Wars: Episode III – Revenge of the Sith",
+  "title_fr": "Star Wars, épisode III : La Revanche des Sith",
+  "original_title": "Star Wars Episode III",
+  "year": 2005,
+  "runtime": 140,
+  "directors": [
+   "George Lucas"
+  ],
+  "cast": [
+   "Natalie Portman",
+   "Ewan McGregor",
+   "Samuel L. Jackson",
+   "Christopher Lee",
+   "Hayden Christensen",
+   "Frank Oz",
+   "Ian McDiarmid",
+   "Anthony Daniels"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "epic"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q5890",
+  "title": "V for Vendetta",
+  "title_fr": "V pour Vendetta",
+  "original_title": "V for Vendetta",
+  "year": 2005,
+  "runtime": 132,
+  "directors": [
+   "James McTeigue"
+  ],
+  "cast": [
+   "Hugo Weaving",
+   "Natalie Portman",
+   "Stephen Rea",
+   "John Hurt",
+   "Stephen Fry",
+   "Rupert Graves",
+   "Roger Allam",
+   "Ben Miles"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "lgbtq-related",
+   "political drama",
+   "political thriller",
+   "vigilante"
+  ],
+  "countries": [
+   "US",
+   "GB",
+   "DE"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q131390",
+  "title": "300",
+  "title_fr": "300",
+  "original_title": "300",
+  "year": 2006,
+  "runtime": 116,
+  "directors": [
+   "Zack Snyder"
+  ],
+  "cast": [
+   "Gerard Butler",
+   "Dominic West",
+   "Rodrigo Santoro",
+   "Andrew Pleavin",
+   "Andrew Tiernan",
+   "David Francis",
+   "David Wenham",
+   "Deke Richards"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "War"
+  ],
+  "topics": [
+   "classical antiquity",
+   "epic",
+   "sword-and-sandal"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q182153",
+  "title": "Cars",
+  "title_fr": "Cars",
+  "original_title": "Cars",
+  "year": 2006,
+  "runtime": 116,
+  "directors": [
+   "John Lasseter",
+   "Joe Ranft"
+  ],
+  "cast": [],
+  "genres": [
+   "Comedy"
+  ],
+  "topics": [
+   "buddy"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q151904",
+  "title": "Casino Royale",
+  "title_fr": "Casino Royale",
+  "original_title": "Casino Royale",
+  "year": 2006,
+  "runtime": 144,
+  "directors": [
+   "Martin Campbell"
+  ],
+  "cast": [
+   "Daniel Craig",
+   "Mads Mikkelsen",
+   "Eva Green",
+   "Jeffrey Wright",
+   "Giancarlo Giannini",
+   "Judi Dench",
+   "Simon Abkarian",
+   "Caterina Murino"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Crime",
+   "Thriller"
+  ],
+  "topics": [
+   "spy"
+  ],
+  "countries": [
+   "GB",
+   "US",
+   "DE",
+   "CZ",
+   "IT",
+   "BS"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q161087",
+  "title": "Pirates of the Caribbean: Dead Man's Chest",
+  "title_fr": "Pirates des Caraïbes : Le Secret du coffre maudit",
+  "original_title": "Pirates of the Caribbean: Dead Man's Chest",
+  "year": 2006,
+  "runtime": 145,
+  "directors": [
+   "Gore Verbinski"
+  ],
+  "cast": [
+   "Orlando Bloom",
+   "Keira Knightley",
+   "Stellan Skarsgård",
+   "Bill Nighy",
+   "Tom Hollander",
+   "Lee Arenberg",
+   "Mackenzie Crook",
+   "David Schofield"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "topics": [
+   "pirate",
+   "treasure hunt"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q160560",
+  "title": "The Da Vinci Code",
+  "title_fr": "Da Vinci Code",
+  "original_title": "The Da Vinci Code",
+  "year": 2006,
+  "runtime": 149,
+  "directors": [
+   "Ron Howard"
+  ],
+  "cast": [
+   "Tom Hanks",
+   "Audrey Tautou",
+   "Ian McKellen",
+   "Paul Bettany",
+   "Jean Reno",
+   "Alfred Molina",
+   "Jean-Pierre Marielle",
+   "Marie-Françoise Audollent"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "topics": [
+   "treasure hunt"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "French",
+   "Latin"
+  ]
+ },
+ {
+  "id": "Q172975",
+  "title": "The Departed",
+  "title_fr": "Les Infiltrés",
+  "original_title": "The Departed",
+  "year": 2006,
+  "runtime": 151,
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "cast": [
+   "Leonardo DiCaprio",
+   "Matt Damon",
+   "Jack Nicholson",
+   "Mark Wahlberg",
+   "Martin Sheen",
+   "Ray Winstone",
+   "Vera Farmiga",
+   "Anthony Anderson"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "epic",
+   "neo-noir"
+  ],
+  "countries": [
+   "US",
+   "HK"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q46551",
+  "title": "The Prestige",
+  "title_fr": "Le Prestige",
+  "original_title": "The Prestige",
+  "year": 2006,
+  "runtime": 125,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Christian Bale",
+   "Hugh Jackman",
+   "Michael Caine",
+   "Scarlett Johansson",
+   "Rebecca Hall",
+   "Piper Perabo",
+   "David Bowie",
+   "Andy Serkis"
+  ],
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "magic realist"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q102235",
+  "title": "Harry Potter and the Order of the Phoenix",
+  "title_fr": "Harry Potter et l'Ordre du Phénix",
+  "original_title": "Harry Potter and the Order of the Phoenix",
+  "year": 2007,
+  "runtime": 133,
+  "directors": [
+   "David Yates"
+  ],
+  "cast": [
+   "Daniel Radcliffe",
+   "Rupert Grint",
+   "Emma Watson",
+   "Helena Bonham Carter",
+   "Robbie Coltrane",
+   "Warwick Davis",
+   "Ralph Fiennes",
+   "Michael Gambon"
+  ],
+  "genres": [
+   "Family",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q236217",
+  "title": "La Vie en Rose",
+  "title_fr": "La Môme",
+  "original_title": "La Môme",
+  "year": 2007,
+  "runtime": 140,
+  "directors": [
+   "Olivier Dahan"
+  ],
+  "cast": [
+   "Marion Cotillard",
+   "Sylvie Testud",
+   "Pascal Greggory",
+   "Emmanuelle Seigner",
+   "Jean-Paul Rouve",
+   "Gérard Depardieu",
+   "Clotilde Courau",
+   "Jean-Pierre Martins"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Music"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "GB",
+   "CZ"
+  ],
+  "languages": [
+   "French",
+   "English"
+  ]
+ },
+ {
+  "id": "Q183081",
+  "title": "No Country for Old Men",
+  "title_fr": "No Country for Old Men",
+  "original_title": "No Country for Old Men",
+  "year": 2007,
+  "runtime": 122,
+  "directors": [
+   "Ethan Coen",
+   "Joel Coen"
+  ],
+  "cast": [
+   "Tommy Lee Jones",
+   "Javier Bardem",
+   "Josh Brolin",
+   "Woody Harrelson",
+   "Kelly Macdonald",
+   "Garret Dillahunt",
+   "Barry Corbin",
+   "Stephen Root"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Crime",
+   "Drama",
+   "Mystery",
+   "Thriller",
+   "Western"
+  ],
+  "topics": [
+   "contemporary western",
+   "neo-noir",
+   "psychological drama",
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Spanish"
+  ]
+ },
+ {
+  "id": "Q54274",
+  "title": "Pirates of the Caribbean: At World's End",
+  "title_fr": "Pirates des Caraïbes : Jusqu'au bout du monde",
+  "original_title": "Pirates of the Caribbean: At World's End",
+  "year": 2007,
+  "runtime": 162,
+  "directors": [
+   "Gore Verbinski"
+  ],
+  "cast": [
+   "Orlando Bloom",
+   "Keira Knightley",
+   "Geoffrey Rush",
+   "Bill Nighy",
+   "Tom Hollander",
+   "Stellan Skarsgård",
+   "Lee Arenberg",
+   "Mackenzie Crook"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Drama",
+   "Fantasy"
+  ],
+  "topics": [
+   "epic",
+   "pirate"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q192724",
+  "title": "Iron Man",
+  "title_fr": "Iron Man",
+  "original_title": "Iron Man",
+  "year": 2008,
+  "runtime": 126,
+  "directors": [
+   "Jon Favreau"
+  ],
+  "cast": [
+   "Robert Downey Jr.",
+   "Terrence Howard",
+   "Jeff Bridges",
+   "Gwyneth Paltrow",
+   "Shaun Toub",
+   "Faran Tahir",
+   "Leslie Bibb",
+   "Clark Gregg"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Persian",
+   "Urdu",
+   "Arabic",
+   "Hungarian"
+  ]
+ },
+ {
+  "id": "Q125076",
+  "title": "Slumdog Millionaire",
+  "title_fr": "Slumdog Millionaire",
+  "original_title": "Slumdog Millionaire",
+  "year": 2008,
+  "runtime": 120,
+  "directors": [
+   "Danny Boyle",
+   "Loveleen Tandan"
+  ],
+  "cast": [
+   "Dev Patel",
+   "Freida Pinto",
+   "Madhur Mittal",
+   "Anil Kapoor",
+   "Irrfan Khan",
+   "Mahesh Manjrekar",
+   "Tanay Chheda",
+   "Tanvi Ganesh Lonkar"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "coming-of-age"
+  ],
+  "countries": [
+   "GB"
+  ],
+  "languages": [
+   "English",
+   "Hindi",
+   "French"
+  ]
+ },
+ {
+  "id": "Q277080",
+  "title": "Taken",
+  "title_fr": "Taken",
+  "original_title": "Taken",
+  "year": 2008,
+  "runtime": 93,
+  "directors": [
+   "Pierre Morel"
+  ],
+  "cast": [
+   "Maggie Grace",
+   "Leland Orser",
+   "Jon Gries",
+   "David Warshofsky",
+   "Katie Cassidy",
+   "Holly Valance",
+   "Famke Janssen",
+   "Xander Berkeley"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "topics": [
+   "vigilante"
+  ],
+  "countries": [
+   "FR",
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English",
+   "French",
+   "Arabic",
+   "Albanian",
+   "Serbian"
+  ]
+ },
+ {
+  "id": "Q163872",
+  "title": "The Dark Knight",
+  "title_fr": "The Dark Knight : Le Chevalier noir",
+  "original_title": "The Dark Knight",
+  "year": 2008,
+  "runtime": 153,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Christian Bale",
+   "Michael Caine",
+   "Heath Ledger",
+   "Gary Oldman",
+   "Aaron Eckhart",
+   "Maggie Gyllenhaal",
+   "Morgan Freeman",
+   "Eric Roberts"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "neo-noir",
+   "superhero"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q160071",
+  "title": "Twilight",
+  "title_fr": "Twilight, chapitre I : Fascination",
+  "original_title": "Twilight",
+  "year": 2008,
+  "runtime": 122,
+  "directors": [
+   "Catherine Hardwicke"
+  ],
+  "cast": [
+   "Kristen Stewart",
+   "Robert Pattinson",
+   "Peter Facinelli",
+   "Elizabeth Reaser",
+   "Ashley Greene",
+   "Billy Burke",
+   "Taylor Lautner",
+   "Jackson Rathbone"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Romance"
+  ],
+  "topics": [
+   "melodrama",
+   "teen",
+   "vampire"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q184605",
+  "title": "2012",
+  "title_fr": "2012",
+  "original_title": "2012",
+  "year": 2009,
+  "runtime": 158,
+  "directors": [
+   "Roland Emmerich"
+  ],
+  "cast": [
+   "John Cusack",
+   "Chiwetel Ejiofor",
+   "Amanda Peet",
+   "Oliver Platt",
+   "Thandiwe Newton",
+   "Danny Glover",
+   "Woody Harrelson",
+   "Tom McCarthy"
+  ],
+  "genres": [
+   "Science Fiction"
+  ],
+  "topics": [
+   "disaster"
+  ],
+  "countries": [
+   "US",
+   "CA"
+  ],
+  "languages": [
+   "English",
+   "French",
+   "Tibetan",
+   "Chinese"
+  ]
+ },
+ {
+  "id": "Q24871",
+  "title": "Avatar",
+  "title_fr": "Avatar",
+  "original_title": "Avatar",
+  "year": 2009,
+  "runtime": 162,
+  "directors": [
+   "James Cameron"
+  ],
+  "cast": [
+   "Sam Worthington",
+   "Zoe Saldaña",
+   "Stephen Lang",
+   "Michelle Rodriguez",
+   "Joel David Moore",
+   "Giovanni Ribisi",
+   "Dileep Rao",
+   "Laz Alonso"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Animation",
+   "Science Fiction"
+  ],
+  "topics": [
+   "epic",
+   "live-action/animated",
+   "military science fiction",
+   "white savior"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "Na'vi",
+   "English"
+  ]
+ },
+ {
+  "id": "Q161687",
+  "title": "Harry Potter and the Half-Blood Prince",
+  "title_fr": "Harry Potter et le Prince de sang-mêlé",
+  "original_title": "Harry Potter and the Half-Blood Prince",
+  "year": 2009,
+  "runtime": 147,
+  "directors": [
+   "David Yates"
+  ],
+  "cast": [
+   "Rupert Grint",
+   "Emma Watson",
+   "Michael Gambon",
+   "Jim Broadbent",
+   "Tom Felton",
+   "Alan Rickman",
+   "Bonnie Wright",
+   "Evanna Lynch"
+  ],
+  "genres": [
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q153723",
+  "title": "Inglourious Basterds",
+  "title_fr": "Inglourious Basterds",
+  "original_title": "Inglourious Basterds",
+  "year": 2009,
+  "runtime": 153,
+  "directors": [
+   "Quentin Tarantino"
+  ],
+  "cast": [
+   "Brad Pitt",
+   "Christoph Waltz",
+   "Eli Roth",
+   "Michael Fassbender",
+   "Diane Kruger",
+   "Daniel Brühl",
+   "Til Schweiger",
+   "Mélanie Laurent"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Drama",
+   "History",
+   "Thriller",
+   "War"
+  ],
+  "topics": [
+   "alternate history",
+   "black comedy",
+   "epic",
+   "political satire"
+  ],
+  "countries": [
+   "DE",
+   "US"
+  ],
+  "languages": [
+   "English",
+   "German",
+   "French",
+   "Italian"
+  ]
+ },
+ {
+  "id": "Q174385",
+  "title": "Alice in Wonderland",
+  "title_fr": "Alice au pays des merveilles",
+  "original_title": "Alice in Wonderland",
+  "year": 2010,
+  "runtime": 109,
+  "directors": [
+   "Tim Burton"
+  ],
+  "cast": [
+   "Johnny Depp",
+   "Anne Hathaway",
+   "Crispin Glover",
+   "Marton Csokas",
+   "Lindsay Duncan",
+   "Eleanor Tomlinson",
+   "Frances de la Tour",
+   "Matt Lucas"
+  ],
+  "genres": [
+   "Fantasy"
+  ],
+  "topics": [
+   "cinematic fairy tale"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q180214",
+  "title": "Black Swan",
+  "title_fr": "Black Swan",
+  "original_title": "Black Swan",
+  "year": 2010,
+  "runtime": 108,
+  "directors": [
+   "Darren Aronofsky"
+  ],
+  "cast": [
+   "Natalie Portman",
+   "Vincent Cassel",
+   "Mila Kunis",
+   "Barbara Hershey",
+   "Winona Ryder",
+   "Ksenia Solo",
+   "Kristina Anapau",
+   "Benjamin Millepied"
+  ],
+  "genres": [
+   "Drama",
+   "Horror",
+   "Thriller"
+  ],
+  "topics": [
+   "lgbtq-related",
+   "magic realist",
+   "psychological horror fiction",
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Italian",
+   "French"
+  ]
+ },
+ {
+  "id": "Q161678",
+  "title": "Harry Potter and the Deathly Hallows – Part 1",
+  "title_fr": "Harry Potter et les Reliques de la Mort, partie 1",
+  "original_title": "Harry Potter and the Deathly Hallows – Part 1",
+  "year": 2010,
+  "runtime": 147,
+  "directors": [
+   "David Yates"
+  ],
+  "cast": [
+   "Daniel Radcliffe",
+   "Ralph Fiennes",
+   "Helena Bonham Carter",
+   "Tom Felton",
+   "Jason Isaacs",
+   "Helen McCrory",
+   "Rhys Ifans",
+   "Evanna Lynch"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English",
+   "parseltongue"
+  ]
+ },
+ {
+  "id": "Q25188",
+  "title": "Inception",
+  "title_fr": "Inception",
+  "original_title": "Inception",
+  "year": 2010,
+  "runtime": 148,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Leonardo DiCaprio",
+   "Ken Watanabe",
+   "Joseph Gordon-Levitt",
+   "Marion Cotillard",
+   "Elliot Page",
+   "Tom Hardy",
+   "Cillian Murphy",
+   "Tom Berenger"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Crime",
+   "Drama",
+   "Mystery",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Japanese",
+   "French"
+  ]
+ },
+ {
+  "id": "Q205028",
+  "title": "Iron Man 2",
+  "title_fr": "Iron Man 2",
+  "original_title": "Iron Man 2",
+  "year": 2010,
+  "runtime": 125,
+  "directors": [
+   "Jon Favreau"
+  ],
+  "cast": [
+   "Robert Downey Jr.",
+   "Gwyneth Paltrow",
+   "Don Cheadle",
+   "Scarlett Johansson",
+   "Sam Rockwell",
+   "Mickey Rourke",
+   "Samuel L. Jackson",
+   "Clark Gregg"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Russian"
+  ]
+ },
+ {
+  "id": "Q210364",
+  "title": "Shutter Island",
+  "title_fr": "Shutter Island",
+  "original_title": "Shutter Island",
+  "year": 2010,
+  "runtime": 139,
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "cast": [
+   "Leonardo DiCaprio",
+   "Mark Ruffalo",
+   "Ben Kingsley",
+   "Michelle Williams",
+   "Patricia Clarkson",
+   "Max von Sydow",
+   "Emily Mortimer",
+   "Jackie Earle Haley"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Crime",
+   "Drama",
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "topics": [
+   "neo-noir",
+   "psychological drama",
+   "psychological horror",
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q160060",
+  "title": "The King's Speech",
+  "title_fr": "Le Discours d'un roi",
+  "original_title": "The King's Speech",
+  "year": 2010,
+  "runtime": 118,
+  "directors": [
+   "Tom Hooper"
+  ],
+  "cast": [
+   "Colin Firth",
+   "Geoffrey Rush",
+   "Helena Bonham Carter",
+   "Guy Pearce",
+   "Timothy Spall",
+   "Michael Gambon",
+   "Derek Jacobi",
+   "Jennifer Ehle"
+  ],
+  "genres": [
+   "Drama",
+   "History"
+  ],
+  "topics": [],
+  "countries": [
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q185888",
+  "title": "The Social Network",
+  "title_fr": "The Social Network",
+  "original_title": "The Social Network",
+  "year": 2010,
+  "runtime": 121,
+  "directors": [
+   "David Fincher"
+  ],
+  "cast": [
+   "Jesse Eisenberg",
+   "Andrew Garfield",
+   "Justin Timberlake",
+   "Armie Hammer",
+   "Brenda Song",
+   "Rooney Mara",
+   "Max Minghella",
+   "Rashida Jones"
+  ],
+  "genres": [
+   "Drama",
+   "History"
+  ],
+  "topics": [
+   "trial"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q629975",
+  "title": "The Tourist",
+  "title_fr": "The Tourist",
+  "original_title": "The Tourist",
+  "year": 2010,
+  "runtime": 103,
+  "directors": [
+   "Florian Henckel von Donnersmarck"
+  ],
+  "cast": [
+   "Angelina Jolie",
+   "Johnny Depp",
+   "Paul Bettany",
+   "Timothy Dalton",
+   "Steven Berkoff",
+   "Rufus Sewell",
+   "Igor Jijikine",
+   "Christian De Sica"
+  ],
+  "genres": [
+   "Action",
+   "Comedy",
+   "Crime",
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "melodrama"
+  ],
+  "countries": [
+   "US",
+   "IT",
+   "FR"
+  ],
+  "languages": [
+   "Spanish",
+   "Italian",
+   "French",
+   "Russian",
+   "English"
+  ]
+ },
+ {
+  "id": "Q275120",
+  "title": "Captain America: The First Avenger",
+  "title_fr": "Captain America: First Avenger",
+  "original_title": "Captain America: The First Avenger",
+  "year": 2011,
+  "runtime": 124,
+  "directors": [
+   "Joe Johnston"
+  ],
+  "cast": [
+   "Tommy Lee Jones",
+   "Hayley Atwell",
+   "Stanley Tucci",
+   "Chris Evans",
+   "Hugo Weaving",
+   "Sebastian Stan",
+   "Dominic Cooper",
+   "Neal McDonough"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction",
+   "War"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q232009",
+  "title": "Harry Potter and the Deathly Hallows – Part 2",
+  "title_fr": "Harry Potter et les Reliques de la Mort, partie 2",
+  "original_title": "Harry Potter and the Deathly Hallows – Part 2",
+  "year": 2011,
+  "runtime": 130,
+  "directors": [
+   "David Yates"
+  ],
+  "cast": [
+   "Daniel Radcliffe",
+   "Rupert Grint",
+   "Emma Watson",
+   "Ralph Fiennes",
+   "Michael Gambon",
+   "Alan Rickman",
+   "Maggie Smith",
+   "Helena Bonham Carter"
+  ],
+  "genres": [
+   "Adventure",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q183555",
+  "title": "Pirates of the Caribbean: On Stranger Tides",
+  "title_fr": "Pirates des Caraïbes : La Fontaine de Jouvence",
+  "original_title": "Pirates of the Caribbean: On Stranger Tides",
+  "year": 2011,
+  "runtime": 136,
+  "directors": [
+   "Rob Marshall"
+  ],
+  "cast": [
+   "Penélope Cruz",
+   "Ian McShane",
+   "Geoffrey Rush",
+   "Sam Claflin",
+   "Astrid Berges-Frisbey",
+   "Gemma Ward",
+   "Stephen Graham",
+   "Richard Griffiths"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy",
+   "Horror"
+  ],
+  "topics": [
+   "pirate",
+   "treasure hunt"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q171861",
+  "title": "The Artist",
+  "title_fr": "The Artist",
+  "original_title": "The Artist",
+  "year": 2011,
+  "runtime": 100,
+  "directors": [
+   "Michel Hazanavicius"
+  ],
+  "cast": [
+   "Jean Dujardin",
+   "Bérénice Bejo",
+   "James Cromwell",
+   "John Goodman",
+   "Penelope Ann Miller",
+   "Missi Pyle",
+   "Joel Murray",
+   "Ed Lauter"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "silent"
+  ],
+  "countries": [
+   "FR",
+   "BE"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q182218",
+  "title": "The Avengers",
+  "title_fr": "Avengers",
+  "original_title": "The Avengers",
+  "year": 2011,
+  "runtime": 142,
+  "directors": [
+   "Joss Whedon"
+  ],
+  "cast": [
+   "Don Cheadle",
+   "Jillian Morgese",
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Mark Ruffalo",
+   "Chris Hemsworth",
+   "Scarlett Johansson",
+   "Jeremy Renner"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "crossover fiction",
+   "speculative fiction",
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q595",
+  "title": "The Intouchables",
+  "title_fr": "Intouchables",
+  "original_title": "Intouchables",
+  "year": 2011,
+  "runtime": 112,
+  "directors": [
+   "Olivier Nakache",
+   "Éric Toledano"
+  ],
+  "cast": [
+   "François Cluzet",
+   "Omar Sy",
+   "Alba Gaïa Bellugi",
+   "Anne Le Ny",
+   "Audrey Fleurot",
+   "Clotilde Mollet",
+   "Caroline Bourg",
+   "Cyril Mendy"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "History"
+  ],
+  "topics": [],
+  "countries": [
+   "FR"
+  ],
+  "languages": [
+   "French"
+  ]
+ },
+ {
+  "id": "Q217020",
+  "title": "Thor",
+  "title_fr": "Thor",
+  "original_title": "Thor",
+  "year": 2011,
+  "runtime": 114,
+  "directors": [
+   "Kenneth Branagh"
+  ],
+  "cast": [
+   "Kat Dennings",
+   "Chris Hemsworth",
+   "Natalie Portman",
+   "Tom Hiddleston",
+   "Stellan Skarsgård",
+   "Colm Feore",
+   "Ray Stevenson",
+   "Idris Elba"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q637820",
+  "title": "Amour",
+  "title_fr": "Amour",
+  "original_title": "Amour",
+  "year": 2012,
+  "runtime": 127,
+  "directors": [
+   "Michael Haneke"
+  ],
+  "cast": [
+   "Jean-Louis Trintignant",
+   "Emmanuelle Riva",
+   "Isabelle Huppert",
+   "Alexandre Tharaud",
+   "William Shimell",
+   "Rita Blanco",
+   "Ramón Agirre",
+   "Carole Franck"
+  ],
+  "genres": [
+   "Drama"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "DE",
+   "AT"
+  ],
+  "languages": [
+   "French"
+  ]
+ },
+ {
+  "id": "Q571032",
+  "title": "Django Unchained",
+  "title_fr": "Django Unchained",
+  "original_title": "Django Unchained",
+  "year": 2012,
+  "runtime": 165,
+  "directors": [
+   "Quentin Tarantino"
+  ],
+  "cast": [
+   "Jamie Foxx",
+   "Christoph Waltz",
+   "Leonardo DiCaprio",
+   "Kerry Washington",
+   "Samuel L. Jackson",
+   "Walton Goggins",
+   "Dennis Christopher",
+   "James Remar"
+  ],
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "History",
+   "Western"
+  ],
+  "topics": [
+   "blaxploitation",
+   "revisionist western"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q152780",
+  "title": "Life of Pi",
+  "title_fr": "L'Odyssée de Pi",
+  "original_title": "Life of Pi",
+  "year": 2012,
+  "runtime": 127,
+  "directors": [
+   "Ang Lee"
+  ],
+  "cast": [
+   "Suraj Sharma",
+   "Irrfan Khan",
+   "Rafe Spall",
+   "Gérard Depardieu",
+   "Tabu",
+   "Adil Hussain",
+   "James Saito",
+   "Andrea Di Stefano"
+  ],
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "topics": [
+   "magic realist",
+   "survival"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Tamil",
+   "Japanese",
+   "French"
+  ]
+ },
+ {
+  "id": "Q4941",
+  "title": "Skyfall",
+  "title_fr": "Skyfall",
+  "original_title": "Skyfall",
+  "year": 2012,
+  "runtime": 143,
+  "directors": [
+   "Sam Mendes"
+  ],
+  "cast": [
+   "Daniel Craig",
+   "Javier Bardem",
+   "Ralph Fiennes",
+   "Naomie Harris",
+   "Bérénice Marlohe",
+   "Albert Finney",
+   "Judi Dench",
+   "Helen McCrory"
+  ],
+  "genres": [
+   "Action",
+   "Thriller"
+  ],
+  "topics": [
+   "spy"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q189330",
+  "title": "The Dark Knight Rises",
+  "title_fr": "The Dark Knight Rises",
+  "original_title": "The Dark Knight Rises",
+  "year": 2012,
+  "runtime": 164,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Christian Bale",
+   "Michael Caine",
+   "Gary Oldman",
+   "Anne Hathaway",
+   "Tom Hardy",
+   "Marion Cotillard",
+   "Joseph Gordon-Levitt",
+   "Morgan Freeman"
+  ],
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q80379",
+  "title": "The Hobbit: An Unexpected Journey",
+  "title_fr": "Le Hobbit : Un voyage inattendu",
+  "original_title": "The Hobbit: An Unexpected Journey",
+  "year": 2012,
+  "runtime": 169,
+  "directors": [
+   "Peter Jackson"
+  ],
+  "cast": [
+   "Martin Freeman",
+   "Ian McKellen",
+   "Richard Armitage",
+   "Ken Stott",
+   "Graham McTavish",
+   "Aidan Turner",
+   "Dean O'Gorman",
+   "Mark Hadlow"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "US",
+   "NZ"
+  ],
+  "languages": [
+   "English",
+   "Sindarin",
+   "Black Speech",
+   "Khuzdûl"
+  ]
+ },
+ {
+  "id": "Q212965",
+  "title": "The Hunger Games",
+  "title_fr": "Hunger Games",
+  "original_title": "The Hunger Games",
+  "year": 2012,
+  "runtime": 142,
+  "directors": [
+   "Gary Ross"
+  ],
+  "cast": [
+   "Josh Hutcherson",
+   "Liam Hemsworth",
+   "Woody Harrelson",
+   "Lenny Kravitz",
+   "Stanley Tucci",
+   "Willow Shields",
+   "Isabelle Fuhrman",
+   "Amandla Stenberg"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q3023357",
+  "title": "12 Years a Slave",
+  "title_fr": "Twelve Years a Slave",
+  "original_title": "12 Years a Slave",
+  "year": 2013,
+  "runtime": 133,
+  "directors": [
+   "Steve McQueen"
+  ],
+  "cast": [
+   "Chiwetel Ejiofor",
+   "Michael Fassbender",
+   "Benedict Cumberbatch",
+   "Paul Dano",
+   "Paul Giamatti",
+   "Lupita Nyong'o",
+   "Sarah Paulson",
+   "Brad Pitt"
+  ],
+  "genres": [
+   "Drama",
+   "History"
+  ],
+  "topics": [],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q11648811",
+  "title": "Blue Is the Warmest Colour",
+  "title_fr": "La Vie d'Adèle",
+  "original_title": "La Vie d'Adèle : Chapitres 1 et 2",
+  "year": 2013,
+  "runtime": 179,
+  "directors": [
+   "Abdellatif Kechiche"
+  ],
+  "cast": [
+   "Léa Seydoux",
+   "Adèle Exarchopoulos",
+   "Jérémie Laheurte",
+   "Catherine Salée",
+   "Mona Walravens",
+   "Aurélien Recoing",
+   "Salim Kechiouche",
+   "Anne Loiret"
+  ],
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "coming-of-age",
+   "erotic",
+   "lesbian-related",
+   "lgbtq-related"
+  ],
+  "countries": [
+   "FR",
+   "BE",
+   "ES"
+  ],
+  "languages": [
+   "French",
+   "English"
+  ]
+ },
+ {
+  "id": "Q2579784",
+  "title": "Gravity",
+  "title_fr": "Gravity",
+  "original_title": "Gravity",
+  "year": 2013,
+  "runtime": 91,
+  "directors": [
+   "Alfonso Cuarón"
+  ],
+  "cast": [
+   "Sandra Bullock",
+   "George Clooney",
+   "Ed Harris",
+   "Paul Sharma",
+   "Amy Warren"
+  ],
+  "genres": [
+   "Drama",
+   "Horror",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "disaster",
+   "survival",
+   "techno-thriller"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q209538",
+  "title": "Iron Man 3",
+  "title_fr": "Iron Man 3",
+  "original_title": "Iron Man 3",
+  "year": 2013,
+  "runtime": 130,
+  "directors": [
+   "Shane Black"
+  ],
+  "cast": [
+   "Robert Downey Jr.",
+   "Gwyneth Paltrow",
+   "Don Cheadle",
+   "Guy Pearce",
+   "Rebecca Hall",
+   "Jon Favreau",
+   "Ben Kingsley",
+   "James Badge Dale"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q499851",
+  "title": "Now You See Me",
+  "title_fr": "Insaisissables",
+  "original_title": "Now You See Me",
+  "year": 2013,
+  "runtime": 116,
+  "directors": [
+   "Louis Leterrier"
+  ],
+  "cast": [
+   "Mark Ruffalo",
+   "Morgan Freeman",
+   "Jesse Eisenberg",
+   "Isla Fisher",
+   "Mélanie Laurent",
+   "Michael Caine",
+   "Dave Franco",
+   "Woody Harrelson"
+  ],
+  "genres": [
+   "Crime"
+  ],
+  "topics": [],
+  "countries": [
+   "US",
+   "FR"
+  ],
+  "languages": [
+   "English",
+   "French"
+  ]
+ },
+ {
+  "id": "Q719915",
+  "title": "The Hobbit: The Desolation of Smaug",
+  "title_fr": "Le Hobbit : La Désolation de Smaug",
+  "original_title": "The Hobbit: The Desolation of Smaug",
+  "year": 2013,
+  "runtime": 161,
+  "directors": [
+   "Peter Jackson"
+  ],
+  "cast": [
+   "Adam Brown",
+   "Aidan Turner",
+   "Cate Blanchett",
+   "Dean O'Gorman",
+   "Graham McTavish",
+   "James Nesbitt",
+   "Jed Brophy",
+   "John Callen"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "topics": [],
+  "countries": [
+   "US",
+   "NZ"
+  ],
+  "languages": [
+   "English",
+   "Sindarin",
+   "Black Speech",
+   "Quenya",
+   "Khuzdûl"
+  ]
+ },
+ {
+  "id": "Q1392744",
+  "title": "The Wolf of Wall Street",
+  "title_fr": "Le Loup de Wall Street",
+  "original_title": "The Wolf of Wall Street",
+  "year": 2013,
+  "runtime": 180,
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "cast": [
+   "Leonardo DiCaprio",
+   "Jonah Hill",
+   "Margot Robbie",
+   "Matthew McConaughey",
+   "Jon Favreau",
+   "Kyle Chandler",
+   "Rob Reiner",
+   "Jean Dujardin"
+  ],
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Drama",
+   "History"
+  ],
+  "topics": [
+   "black comedy",
+   "epic"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "French"
+  ]
+ },
+ {
+  "id": "Q13255497",
+  "title": "Birdman",
+  "title_fr": "Birdman",
+  "original_title": "Birdman",
+  "year": 2014,
+  "runtime": 119,
+  "directors": [
+   "Alejandro González Iñárritu"
+  ],
+  "cast": [
+   "Michael Keaton",
+   "Emma Stone",
+   "Edward Norton",
+   "Andrea Riseborough",
+   "Zach Galifianakis",
+   "Naomi Watts",
+   "Amy Ryan",
+   "Merritt Wever"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "topics": [
+   "black comedy",
+   "tragicomedy"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q1765358",
+  "title": "Captain America: The Winter Soldier",
+  "title_fr": "Captain America : Le Soldat de l'hiver",
+  "original_title": "Captain America: The Winter Soldier",
+  "year": 2014,
+  "runtime": 136,
+  "directors": [
+   "Anthony Russo",
+   "Joe Russo"
+  ],
+  "cast": [
+   "Robert Redford",
+   "Chris Evans",
+   "Scarlett Johansson",
+   "Sebastian Stan",
+   "Anthony Mackie",
+   "Cobie Smulders",
+   "Frank Grillo",
+   "Georges St-Pierre"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q5887360",
+  "title": "Guardians of the Galaxy",
+  "title_fr": "Les Gardiens de la Galaxie",
+  "original_title": "Guardians of the Galaxy",
+  "year": 2014,
+  "runtime": 121,
+  "directors": [
+   "James Gunn"
+  ],
+  "cast": [
+   "Chris Pratt",
+   "Dave Bautista",
+   "Zoe Saldaña",
+   "Michael Rooker",
+   "Lee Pace",
+   "Ophelia Lovibond",
+   "Karen Gillan",
+   "Djimon Hounsou"
+  ],
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q13417189",
+  "title": "Interstellar",
+  "title_fr": "Interstellar",
+  "original_title": "Interstellar",
+  "year": 2014,
+  "runtime": 169,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Matthew McConaughey",
+   "Anne Hathaway",
+   "Jessica Chastain",
+   "Michael Caine",
+   "Bill Irwin",
+   "Ellen Burstyn",
+   "Wes Bentley",
+   "Matt Damon"
+  ],
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Science Fiction",
+   "Thriller"
+  ],
+  "topics": [
+   "hard science fiction",
+   "time-travel"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q15624215",
+  "title": "Lucy",
+  "title_fr": "Lucy",
+  "original_title": "Lucy",
+  "year": 2014,
+  "runtime": 89,
+  "directors": [
+   "Luc Besson"
+  ],
+  "cast": [
+   "Morgan Freeman",
+   "Choi Min-sik",
+   "Amr Waked",
+   "Julian Rhind-Tutt",
+   "Pilou Asbæk",
+   "Mason Lee",
+   "Lio Tipton",
+   "Frédéric Chau"
+  ],
+  "genres": [
+   "Action",
+   "Drama",
+   "Science Fiction"
+  ],
+  "topics": [
+   "biopunk",
+   "girls with guns"
+  ],
+  "countries": [
+   "FR",
+   "DE",
+   "GB",
+   "TW"
+  ],
+  "languages": [
+   "English",
+   "Korean",
+   "French"
+  ]
+ },
+ {
+  "id": "Q14171368",
+  "title": "Avengers: Age of Ultron",
+  "title_fr": "Avengers : L'Ère d'Ultron",
+  "original_title": "Avengers: Age of Ultron",
+  "year": 2015,
+  "runtime": 141,
+  "directors": [
+   "Joss Whedon"
+  ],
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Mark Ruffalo",
+   "Samuel L. Jackson",
+   "Aaron Taylor-Johnson",
+   "Scarlett Johansson",
+   "James Spader",
+   "Hayley Atwell"
+  ],
+  "genres": [
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q13619743",
+  "title": "Minions",
+  "title_fr": "Les Minions",
+  "original_title": "Minions",
+  "year": 2015,
+  "runtime": 91,
+  "directors": [
+   "Pierre Coffin",
+   "Kyle Balda"
+  ],
+  "cast": [
+   "Katy Mixon",
+   "Hiroyuki Sanada",
+   "Ava Acres",
+   "Lori Alan",
+   "Kyle Balda",
+   "Bob Bergen",
+   "Jim Cummings",
+   "John Cygan"
+  ],
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Family"
+  ],
+  "topics": [],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q18602670",
+  "title": "Spectre",
+  "title_fr": "007 Spectre",
+  "original_title": "Spectre",
+  "year": 2015,
+  "runtime": 148,
+  "directors": [
+   "Sam Mendes"
+  ],
+  "cast": [
+   "Daniel Craig",
+   "Christoph Waltz",
+   "Monica Bellucci",
+   "Léa Seydoux",
+   "Andrew Scott",
+   "Dave Bautista",
+   "Ralph Fiennes",
+   "Naomie Harris"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Thriller"
+  ],
+  "topics": [
+   "spy"
+  ],
+  "countries": [
+   "GB",
+   "US"
+  ],
+  "languages": [
+   "English",
+   "German"
+  ]
+ },
+ {
+  "id": "Q6074",
+  "title": "Star Wars: Episode VII – The Force Awakens",
+  "title_fr": "Star Wars, épisode VII : Le Réveil de la Force",
+  "original_title": "Star Wars: The Force Awakens",
+  "year": 2015,
+  "runtime": 138,
+  "directors": [
+   "J. J. Abrams"
+  ],
+  "cast": [
+   "Carrie Fisher",
+   "Harrison Ford",
+   "Mark Hamill",
+   "Adam Driver",
+   "Daisy Ridley",
+   "John Boyega",
+   "Oscar Isaac",
+   "Lupita Nyong'o"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "speculative fiction"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q18547944",
+  "title": "The Martian",
+  "title_fr": "Seul sur Mars",
+  "original_title": "The Martian",
+  "year": 2015,
+  "runtime": 141,
+  "directors": [
+   "Ridley Scott"
+  ],
+  "cast": [
+   "Matt Damon",
+   "Jessica Chastain",
+   "Kristen Wiig",
+   "Jeff Daniels",
+   "Michael Peña",
+   "Kate Mara",
+   "Sean Bean",
+   "Sebastian Stan"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Science Fiction"
+  ],
+  "topics": [
+   "survival"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English",
+   "Standard Chinese",
+   "German"
+  ]
+ },
+ {
+  "id": "Q18002795",
+  "title": "The Revenant",
+  "title_fr": "The Revenant",
+  "original_title": "The Revenant",
+  "year": 2015,
+  "runtime": 157,
+  "directors": [
+   "Alejandro González Iñárritu"
+  ],
+  "cast": [
+   "Leonardo DiCaprio",
+   "Tom Hardy",
+   "Will Poulter",
+   "Domhnall Gleeson",
+   "Paul Anderson",
+   "Kristoffer Joner",
+   "Brad Carter",
+   "Robert Moloney"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Thriller",
+   "Western"
+  ],
+  "topics": [
+   "survival"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Arikara"
+  ]
+ },
+ {
+  "id": "Q18407657",
+  "title": "Captain America: Civil War",
+  "title_fr": "Captain America : Civil War",
+  "original_title": "Captain America: Civil War",
+  "year": 2016,
+  "runtime": 147,
+  "directors": [
+   "Anthony Russo",
+   "Joe Russo"
+  ],
+  "cast": [
+   "Robert Downey Jr.",
+   "Scarlett Johansson",
+   "Sebastian Stan",
+   "Anthony Mackie",
+   "Jeremy Renner",
+   "Don Cheadle",
+   "Elizabeth Olsen",
+   "Paul Rudd"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q19347291",
+  "title": "Deadpool",
+  "title_fr": "Deadpool",
+  "original_title": "Deadpool",
+  "year": 2016,
+  "runtime": 108,
+  "directors": [
+   "Tim Miller"
+  ],
+  "cast": [
+   "Ryan Reynolds",
+   "Morena Baccarin",
+   "Ed Skrein",
+   "T. J. Miller",
+   "Gina Carano",
+   "Brianna Hildebrand",
+   "Andre Tricoteux",
+   "Leslie Uggams"
+  ],
+  "genres": [
+   "Action",
+   "Comedy"
+  ],
+  "topics": [
+   "black comedy",
+   "erotic",
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q18406872",
+  "title": "Doctor Strange",
+  "title_fr": "Doctor Strange",
+  "original_title": "Doctor Strange",
+  "year": 2016,
+  "runtime": 115,
+  "directors": [
+   "Scott Derrickson"
+  ],
+  "cast": [
+   "Benedict Cumberbatch",
+   "Chiwetel Ejiofor",
+   "Rachel McAdams",
+   "Michael Stuhlbarg",
+   "Mads Mikkelsen",
+   "Tilda Swinton",
+   "Amy Landecker",
+   "Scott Adkins"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q20856802",
+  "title": "La La Land",
+  "title_fr": "La La Land",
+  "original_title": "La La Land",
+  "year": 2016,
+  "runtime": 128,
+  "directors": [
+   "Damien Chazelle"
+  ],
+  "cast": [
+   "Emma Stone",
+   "J. K. Simmons",
+   "Finn Wittrock",
+   "Rosemarie DeWitt",
+   "Meagen Fay",
+   "John Legend",
+   "Sonoya Mizuno",
+   "Callie Hernandez"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Music",
+   "Romance"
+  ],
+  "topics": [
+   "dance"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q25136757",
+  "title": "Call Me by Your Name",
+  "title_fr": "Call Me by Your Name",
+  "original_title": "Call Me by Your Name",
+  "year": 2017,
+  "runtime": 132,
+  "directors": [
+   "Luca Guadagnino"
+  ],
+  "cast": [
+   "Timothée Chalamet",
+   "Armie Hammer",
+   "Michael Stuhlbarg",
+   "Amira Casar",
+   "Esther Garrel",
+   "Peter Spears"
+  ],
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "topics": [
+   "coming-of-age",
+   "lgbtq-related"
+  ],
+  "countries": [
+   "IT",
+   "US",
+   "BR",
+   "FR",
+   "GB"
+  ],
+  "languages": [
+   "English",
+   "French",
+   "Italian"
+  ]
+ },
+ {
+  "id": "Q21935651",
+  "title": "Dunkirk",
+  "title_fr": "Dunkerque",
+  "original_title": "Dunkirk",
+  "year": 2017,
+  "runtime": 106,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Kenneth Branagh",
+   "Olivia Wilde",
+   "Armie Hammer",
+   "Aneurin Barnard",
+   "James D'Arcy",
+   "Cillian Murphy",
+   "Mark Rylance",
+   "Tom Hardy"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "War"
+  ],
+  "topics": [],
+  "countries": [
+   "FR",
+   "US",
+   "GB",
+   "NL"
+  ],
+  "languages": [
+   "English",
+   "French",
+   "German"
+  ]
+ },
+ {
+  "id": "Q23010088",
+  "title": "Spider-Man: Homecoming",
+  "title_fr": "Spider-Man: Homecoming",
+  "original_title": "Spider-Man: Homecoming",
+  "year": 2017,
+  "runtime": 133,
+  "directors": [
+   "Jon Watts"
+  ],
+  "cast": [
+   "Tom Holland",
+   "Marisa Tomei",
+   "Zendaya",
+   "Tony Revolori",
+   "Laura Harrier",
+   "Robert Downey Jr.",
+   "Michael Keaton",
+   "Donald Glover"
+  ],
+  "genres": [
+   "Action"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q26698156",
+  "title": "The Shape of Water",
+  "title_fr": "La Forme de l'eau",
+  "original_title": "The Shape of Water",
+  "year": 2017,
+  "runtime": 123,
+  "directors": [
+   "Guillermo del Toro"
+  ],
+  "cast": [
+   "Sally Hawkins",
+   "Michael Shannon",
+   "Octavia Spencer",
+   "Doug Jones",
+   "Richard Jenkins",
+   "Michael Stuhlbarg",
+   "Nick Searcy",
+   "Nigel Bennett"
+  ],
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "Romance",
+   "Thriller"
+  ],
+  "topics": [
+   "magic realist",
+   "melodrama"
+  ],
+  "countries": [
+   "US",
+   "MX"
+  ],
+  "languages": [
+   "English",
+   "American Sign Language",
+   "Russian",
+   "French"
+  ]
+ },
+ {
+  "id": "Q22665878",
+  "title": "Thor: Ragnarok",
+  "title_fr": "Thor : Ragnarok",
+  "original_title": "Thor: Ragnarok",
+  "year": 2017,
+  "runtime": 130,
+  "directors": [
+   "Taika Waititi"
+  ],
+  "cast": [
+   "Chris Hemsworth",
+   "Tom Hiddleston",
+   "Mark Ruffalo",
+   "Cate Blanchett",
+   "Tessa Thompson",
+   "Jeff Goldblum",
+   "Karl Urban",
+   "Idris Elba"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q20502242",
+  "title": "Wonder Woman",
+  "title_fr": "Wonder Woman",
+  "original_title": "Wonder Woman",
+  "year": 2017,
+  "runtime": 141,
+  "directors": [
+   "Patty Jenkins"
+  ],
+  "cast": [
+   "Gal Gadot",
+   "Chris Pine",
+   "Connie Nielsen",
+   "Lucy Davis",
+   "Robin Wright",
+   "Danny Huston",
+   "David Thewlis",
+   "Elena Anaya"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "War"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q23780914",
+  "title": "Avengers: Infinity War",
+  "title_fr": "Avengers: Infinity War",
+  "original_title": "Avengers: Infinity War",
+  "year": 2018,
+  "runtime": 149,
+  "directors": [
+   "Anthony Russo",
+   "Joe Russo"
+  ],
+  "cast": [
+   "Chris Hemsworth",
+   "Mark Ruffalo",
+   "Chris Evans",
+   "Josh Brolin",
+   "Tom Hiddleston",
+   "Robert Downey Jr.",
+   "Samuel L. Jackson",
+   "Chris Pratt"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q23780734",
+  "title": "Black Panther",
+  "title_fr": "Black Panther",
+  "original_title": "Black Panther",
+  "year": 2018,
+  "runtime": 134,
+  "directors": [
+   "Ryan Coogler"
+  ],
+  "cast": [
+   "Chadwick Boseman",
+   "Michael B. Jordan",
+   "Lupita Nyong'o",
+   "Danai Gurira",
+   "Winston Duke",
+   "Andy Serkis",
+   "Forest Whitaker",
+   "Florence Kasumba"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "American English"
+  ]
+ },
+ {
+  "id": "Q48673898",
+  "title": "Green Book",
+  "title_fr": "Green Book : Sur les routes du Sud",
+  "original_title": "Green Book",
+  "year": 2018,
+  "runtime": 130,
+  "directors": [
+   "Peter Farrelly"
+  ],
+  "cast": [
+   "Viggo Mortensen",
+   "Mahershala Ali",
+   "Linda Cardellini",
+   "Iqbal Theba",
+   "Sebastian Maniscalco",
+   "Brian Stepanek",
+   "Daniel Greene",
+   "Mike Cerrone"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "History"
+  ],
+  "topics": [
+   "lgbtq-related",
+   "road"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English",
+   "Italian"
+  ]
+ },
+ {
+  "id": "Q29261993",
+  "title": "Mission: Impossible – Fallout",
+  "title_fr": "Mission: Impossible – Fallout",
+  "original_title": "Mission: Impossible – Fallout",
+  "year": 2018,
+  "runtime": 147,
+  "directors": [
+   "Christopher McQuarrie"
+  ],
+  "cast": [
+   "Rebecca Ferguson",
+   "Henry Cavill",
+   "Simon Pegg",
+   "Vanessa Kirby",
+   "Alec Baldwin",
+   "Sean Harris",
+   "Angela Bassett",
+   "Tom Cruise"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Thriller"
+  ],
+  "topics": [
+   "spy"
+  ],
+  "countries": [
+   "US",
+   "FR",
+   "CN",
+   "NO"
+  ],
+  "languages": [
+   "English",
+   "French"
+  ]
+ },
+ {
+  "id": "Q23781155",
+  "title": "Avengers: Endgame",
+  "title_fr": "Avengers: Endgame",
+  "original_title": "Avengers: Endgame",
+  "year": 2019,
+  "runtime": 181,
+  "directors": [
+   "Anthony Russo",
+   "Joe Russo"
+  ],
+  "cast": [
+   "Chris Hemsworth",
+   "Mark Ruffalo",
+   "Chris Evans",
+   "Josh Brolin",
+   "Tom Hiddleston",
+   "Robert Downey Jr.",
+   "Samuel L. Jackson",
+   "Chris Pratt"
+  ],
+  "genres": [
+   "Action",
+   "Adventure"
+  ],
+  "topics": [
+   "superhero"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q42759035",
+  "title": "Joker",
+  "title_fr": "Joker",
+  "original_title": "Joker",
+  "year": 2019,
+  "runtime": 122,
+  "directors": [
+   "Todd Phillips"
+  ],
+  "cast": [
+   "Joaquin Phoenix",
+   "Zazie Beetz",
+   "Robert De Niro",
+   "Frances Conroy",
+   "Bryan Callen",
+   "Marc Maron",
+   "Bill Camp",
+   "Brett Cullen"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "psychological thriller"
+  ],
+  "countries": [
+   "US"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q47300912",
+  "title": "Once Upon a Time in Hollywood",
+  "title_fr": "Once Upon a Time in... Hollywood",
+  "original_title": "Once Upon a Time in Hollywood",
+  "year": 2019,
+  "runtime": 161,
+  "directors": [
+   "Quentin Tarantino"
+  ],
+  "cast": [
+   "Leonardo DiCaprio",
+   "Margot Robbie",
+   "Brad Pitt",
+   "Zoë Bell",
+   "Kurt Russell",
+   "Burt Reynolds",
+   "Tim Roth",
+   "Michael Madsen"
+  ],
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Drama",
+   "History"
+  ],
+  "topics": [
+   "alternate history",
+   "black comedy"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q61448040",
+  "title": "Parasite",
+  "title_fr": "Parasite",
+  "original_title": "기생충",
+  "year": 2019,
+  "runtime": 132,
+  "directors": [
+   "Bong Joon-ho"
+  ],
+  "cast": [
+   "Song Kang-ho",
+   "Lee Sun-kyun",
+   "Cho Yeo-jeong",
+   "Jang Hye-jin",
+   "Choi Woo-shik",
+   "Park So-dam",
+   "Jung Ziso",
+   "Lee Jung-eun"
+  ],
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "black comedy"
+  ],
+  "countries": [
+   "KR"
+  ],
+  "languages": [
+   "Korean"
+  ]
+ },
+ {
+  "id": "Q60834962",
+  "title": "Dune",
+  "title_fr": "Dune",
+  "original_title": "Dune",
+  "year": 2021,
+  "runtime": 155,
+  "directors": [
+   "Denis Villeneuve"
+  ],
+  "cast": [
+   "Timothée Chalamet",
+   "Rebecca Ferguson",
+   "Josh Brolin",
+   "Oscar Isaac",
+   "Jason Momoa",
+   "Javier Bardem",
+   "Dave Bautista",
+   "Zendaya"
+  ],
+  "genres": [
+   "Action",
+   "Adventure",
+   "Science Fiction"
+  ],
+  "topics": [
+   "speculative fiction"
+  ],
+  "countries": [
+   "US",
+   "HU",
+   "JO",
+   "AE",
+   "NO",
+   "CA"
+  ],
+  "languages": [
+   "English"
+  ]
+ },
+ {
+  "id": "Q117037697",
+  "title": "Anatomy of a Fall",
+  "title_fr": "Anatomie d'une chute",
+  "original_title": "Anatomie d'une chute",
+  "year": 2023,
+  "runtime": 150,
+  "directors": [
+   "Justine Triet"
+  ],
+  "cast": [
+   "Sandra Hüller",
+   "Swann Arlaud",
+   "Milo Machado-Graner",
+   "Antoine Reinartz",
+   "Samuel Theis",
+   "Jehnny Beth",
+   "Camille Rutherford",
+   "Anne Rotger"
+  ],
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "topics": [
+   "trial"
+  ],
+  "countries": [
+   "FR"
+  ],
+  "languages": [
+   "French",
+   "English",
+   "German"
+  ]
+ },
+ {
+  "id": "Q108839994",
+  "title": "Oppenheimer",
+  "title_fr": "Oppenheimer",
+  "original_title": "Oppenheimer",
+  "year": 2023,
+  "runtime": 180,
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "cast": [
+   "Cillian Murphy",
+   "Robert Downey Jr.",
+   "Matt Damon",
+   "Emily Blunt",
+   "Florence Pugh",
+   "Rami Malek",
+   "Benny Safdie",
+   "Josh Hartnett"
+  ],
+  "genres": [
+   "Drama",
+   "History",
+   "Thriller"
+  ],
+  "topics": [
+   "epic"
+  ],
+  "countries": [
+   "US",
+   "GB"
+  ],
+  "languages": [
+   "English"
+  ]
+ }
+]
