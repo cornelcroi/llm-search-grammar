@@ -187,7 +187,7 @@ python3 -m unittest discover -s tests -t .
 
 The front half is not new. LangChain's self-query retriever, LlamaIndex auto-retrieval and Typesense's natural-language search turn a sentence into filters from a described schema. Resolving the model's words to ids in code is what Lex slot synonyms and text-to-SQL value linking do. Slot filling (Lex, Dialogflow, Rasa) is the ancestor, and it sends anything out of scope to a fallback.
 
-What I did not find written up is the other half: a grammar deliberately wider than what the system can do, with each field's status stated, where the model is never asked whether something is possible; a compact index, dictionary and packs loaded on demand; and code reporting what it applied, what it could not, and why.
+What I did not find written up is the other half: a grammar deliberately wider than what the system can do, with each field's status stated, where the model is never asked whether something is possible; a compact index, dictionary and packs sent when the sentence names the item; and code reporting what it applied, what it could not, and why.
 
 ## Limits
 
