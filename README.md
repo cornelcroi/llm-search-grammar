@@ -53,7 +53,7 @@ DICTIONARY   what every film shares, written ONCE           modes, qualities, la
              cached, paid once                               {director}'s cut · extended (+{m} min) · ...
 
 PACK         one film's own options, folded into            f3 RentBox · rent · 25th anniversary/Cameron's cut/
-             families, loaded when the model ASKS               extended (+37 min)/theatrical · HD/SD · ...
+             families, loaded when the sentence names it               extended (+37 min)/theatrical · HD/SD · ...
 ```
 
 Two compressions make it small:
@@ -66,7 +66,7 @@ The pack is where the model learns what it could not know. Titanic (1997) has a 
 ## The rules
 
 1. **The model never reports failure.** No `unsupported` field. It parses, best effort. Only code says "no match", "not possible", "doesn't exist", because only code knows the data. A wish with nowhere to go is a missing field, never a model confession.
-2. **The model asks, code fetches.** It calls `load_film(names)`. Code resolves the names (typos, other languages, three films called Titanic) and loads the pack. Two slots; a third drops the oldest.
+2. **One model call.** Before it, code spots the films the sentence names (typos, other languages, three films called Titanic), loads their lines, and sends them with the sentence, each with the words it matched on. The model decides whether a film is really named: "taken seriously" is not the film *Taken*. The fixed part of the prompt comes first, so it is cached.
 3. **The model points, code owns the ids.** It answers `film m83, family f3, edition "extended (+37 min)"`. Never an offer id, never a price. Code finds the real offer.
 4. **Certainty comes from the pack.** The dictionary says what exists in general, the pack says what exists here. Not in the pack means it does not exist for this film. Said as a fact, not a guess.
 5. **Make the machine forgive.** Accents, typos, surnames, any language: code tolerates loose words, and says how sure it is in a word (exact, close, unsure), never a number.
@@ -80,24 +80,23 @@ Real output, `gpt-6-luna`, reasoning off:
 ```
 $ python3 -m examples.movies "the long version of Titanic in French, the cheapest way"
 
-1 · THE MODEL (gpt-6-luna), reads the sentence against the grammar
-    asked   load_film('Titanic') -> m83 Titanic (1997), 4 families; also m13 Titanic (1953), m8 Titanic (1943)
-    parsed  {"films": [{"title": "Titanic", "year": 1997}], "audio": ["French"],
-             "edition": ["extended (+37 min)"], "prefer": "cheapest"}
+1 · CODE loads the lines of the films the sentence names, then ONE call to gpt-6-luna
+    code    loaded m83 Titanic (1997), 4 families; also m13 Titanic (1953), m8 Titanic (1943)
+    parsed  {"films": [{"title": "Titanic", "year": 1997}], "audio": ["French"], "edition": ["extended"], "prefer": "cheapest", "label": "the long version of Titanic"}
     points  {"film": "m83", "family": "f3", "edition": "extended (+37 min)", "audio": "French"}
 
 2 · CODE, decides what can be applied
-    applied      {"films": ["Titanic"], "prefer": "cheapest", "audio": ["fr"], "edition": ["extended (+37 min)"]}
+    applied      {"films": ["Titanic"], "prefer": "cheapest", "audio": ["fr"], "edition": ["extended"]}
     why_nothing  "1 film(s) match (Titanic (1997)), but no single offer has every watch wish at once"
 
 4 · POINTERS, checked against the pack by code
     partial  Titanic (1997) · RentBox · rent · extended (+37 min) · SD · audio en · stereo · 3.49 €  [of5322]
              missing  audio French (not with RentBox rent; only on CinePass subscription)
 
-2 model calls · 10,940 prompt tokens (10,934 cached) · 227 completion tokens
+1 model call · 5,550 prompt tokens (5,547 cached) · 204 completion tokens
 ```
 
-"The long version" became the edition only the pack names. The price and the offer id came from code. And the answer is honest: that version exists, not in French.
+One call. "The long version" became the edition only the pack names. The price and the offer id came from code. And the answer is honest: that version exists, not in French.
 
 ```
 $ python3 -m examples.movies "a cosy film like Forrest Gump for my 6 year old, without Tom Cruise"
@@ -160,7 +159,7 @@ search_grammar/        the pattern, no domain in it
 examples/movies/
   fields.py            the movie grammar
   offers.py            index line, dictionary, pack
-  assistant.py         the prompt, load_film, the model loop
+  assistant.py         the prompt, the lines of the films named, the one call
   resolve.py           words into the catalogue: applied, cannot, why nothing
   picks.py             pointers checked against the pack: strict, partial, dropped
   measure.py           the numbers, no model
@@ -168,7 +167,7 @@ data/
   films.json           200 real films from Wikidata (CC0)
   offers.json          17,262 INVENTED ways to watch them: fictional services, made-up prices
 scripts/               rebuild the data, record model answers for the tests
-tests/                 22 tests, no API key needed: real model answers replayed through code
+tests/                 27 tests, no API key needed: real model answers replayed through code
 ```
 
 ## Run it
