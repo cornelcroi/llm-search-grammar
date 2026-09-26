@@ -124,7 +124,7 @@ Everything, the naive way
 The grammar
   index, one line per film           2,123 tokens   always in the prompt
   dictionary, written once             224 tokens   always in the prompt, cached
-  one pack, median                     164 tokens   loaded on demand
+  one pack, median                     164 tokens   sent when the sentence names the film
   offers per film, median               72  -> families 5
 
 A request with two films loaded      2,676 tokens, against 396,929 to carry every offer

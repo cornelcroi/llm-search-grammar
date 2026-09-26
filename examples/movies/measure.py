@@ -31,7 +31,7 @@ def main():
     print("\nThe grammar")
     print(f"  index, one line per film       {tokens(index):>9,} tokens   always in the prompt")
     print(f"  dictionary, written once       {tokens(DICTIONARY):>9,} tokens   always in the prompt, cached")
-    print(f"  one pack, median               {statistics.median(pack_tokens):>9,.0f} tokens   loaded on demand")
+    print(f"  one pack, median               {statistics.median(pack_tokens):>9,.0f} tokens   sent when the sentence names the film")
     print(f"  offers per film, median        {statistics.median(offer_counts):>9,.0f}  -> families {statistics.median(family_counts):.0f}")
     print(f"  offers per family, overall     {sum(offer_counts) / sum(family_counts):>9,.1f}")
 
