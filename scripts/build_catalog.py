@@ -148,7 +148,7 @@ def runtime(entity):
 
 def main():
     film_ids = top_films()
-    films = entities(film_ids)
+    films = entities(film_ids, props="labels|claims|sitelinks")
 
     referenced = set()
     for film in films.values():
@@ -174,6 +174,8 @@ def main():
         genres, topics = genres_and_topics(raw)
         catalog.append({
             "id": qid,
+            # How many Wikipedias have an article on it: the tie-break between three films called Titanic.
+            "popularity": len(film.get("sitelinks", {})),
             "title": label(film),
             "title_fr": label(film, "fr"),
             "original_title": titles[0] if titles else None,
