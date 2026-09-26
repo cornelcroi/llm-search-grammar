@@ -61,3 +61,40 @@ def find(wanted, candidates, limit=3):
         if score >= FLOOR:
             scored.append(Match(key, names[0], round(score, 3)))
     return sorted(scored, key=lambda m: -m.score)[:limit]
+
+
+def spot(text, candidates, loose_from=7):
+    """Names from {key: [names]} that appear inside a free sentence, strongest first.
+
+    Every run of words is compared with every name of the same length. A long name may be
+    misspelt ("inceptoin"); a short one must be exact, because short titles are ordinary words
+    ("seven", "cars"). A loose match on words that already matched a name exactly is dropped:
+    "le parrain" is The Godfather, not also "Le Parrain 2". Returns one Match per key.
+    """
+    words = normalize(text).split()
+    hits = []  # (score, start, end, key, name)
+    for key, names in candidates.items():
+        for name in filter(None, names):
+            target = normalize(name)
+            if not target:  # a title in another script normalises to nothing: never a match
+                continue
+            size = len(target.split())
+            for i in range(len(words) - size + 1):
+                window = " ".join(words[i:i + size])
+                if window == target:
+                    score = 1.0
+                elif len(target) >= loose_from:
+                    score = SequenceMatcher(None, window, target).ratio()
+                else:
+                    continue
+                if score >= CLOSE:
+                    hits.append((score, i, i + size, key, names[0]))
+
+    exact_spans = [(s, e) for score, s, e, _, _ in hits if score == 1.0]
+    found = {}
+    for score, s, e, key, name in sorted(hits, key=lambda h: -h[0]):
+        if score < 1.0 and any(s < end and start < e for start, end in exact_spans):
+            continue
+        if key not in found:
+            found[key] = Match(key, name, round(score, 3))
+    return sorted(found.values(), key=lambda m: -m.score)

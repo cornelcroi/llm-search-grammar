@@ -37,7 +37,7 @@ def replay(sentence):
 class MoviesTest(unittest.TestCase):
     def test_the_long_version_points_into_the_pack_and_code_owns_the_price(self):
         _, picks = replay("the long version of Titanic in French, the cheapest way")
-        pick = picks[0]
+        pick = next(p for p in picks if p.get("offer") and OFFERS[p["offer"]]["edition"] == "extended (+37 min)")
         self.assertEqual(pick["verdict"], "partial")
         offer = OFFERS[pick["offer"]]
         # The id and the price come from the data, never from the model's text.
@@ -88,3 +88,10 @@ class MoviesTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OneCallTest(unittest.TestCase):
+    def test_a_word_that_is_also_a_title_is_not_taken_for_the_film(self):
+        results, picks = replay("something taken seriously, a drama, not the cars kind")
+        self.assertEqual(RECORDS["something taken seriously, a drama, not the cars kind"]["answer"]["queries"][0]["films"], [])
+        self.assertEqual(picks, [])

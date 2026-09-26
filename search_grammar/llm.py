@@ -22,21 +22,18 @@ def model():
     return os.environ.get("OPENAI_MODEL", "gpt-6-luna")
 
 
-def chat(messages, schema=None, tools=None):
-    """Send the conversation; return the model's message (content, or tool calls) and the usage."""
+def chat(messages, schema=None):
+    """Send the conversation; return the model's message and the usage."""
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
         raise SystemExit("OPENAI_API_KEY is not set. Export it, then run again.")
 
     body = {"model": model(), "messages": messages}
-    # Parsing against a grammar is classification, not reasoning: no thinking tokens spent on it. The
-    # newer models also refuse function tools on this endpoint unless reasoning is off.
+    # Parsing against a grammar is classification, not reasoning: no thinking tokens spent on it.
     if model().startswith(("gpt-5", "gpt-6", "o")):
         body["reasoning_effort"] = "none"
     if schema:
         body["response_format"] = {"type": "json_schema", "json_schema": {"name": "answer", "strict": True, "schema": schema}}
-    if tools:
-        body["tools"] = tools
 
     request = urllib.request.Request(URL, data=json.dumps(body).encode(), method="POST", headers={
         "Authorization": f"Bearer {key}", "Content-Type": "application/json"})

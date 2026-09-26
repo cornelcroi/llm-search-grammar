@@ -3,7 +3,7 @@ import unittest
 
 from examples.movies.offers import load
 from examples.movies.resolve import Catalog
-from search_grammar.forgiving import find, similarity
+from search_grammar.forgiving import find, similarity, spot
 
 CATALOG = Catalog(*load())
 
@@ -38,6 +38,23 @@ class ForgivingTest(unittest.TestCase):
         # Why the model reads the pack: no fuzzy match turns "the long version" into the edition.
         self.assertLess(similarity("the long version", "extended (+37 min)"), 0.6)
         self.assertGreater(similarity("cameron cut", "Cameron's cut"), 0.8)
+
+    def spotted(self, sentence):
+        return [(CATALOG.by_id[m.key]["title"], CATALOG.by_id[m.key]["year"]) for m in spot(sentence, CATALOG.titles)]
+
+    def test_a_title_in_another_script_never_matches_everything(self):
+        # Parasite's and Seven Samurai's original titles normalise to nothing; they once matched every sentence.
+        self.assertEqual(self.spotted("a 90s Tom Hanks comedy I can rent tonight"), [])
+
+    def test_a_misspelt_long_title_is_spotted(self):
+        self.assertEqual(self.spotted("inceptoin with nolan talking over it"), [("Inception", 2010)])
+
+    def test_an_exact_title_wins_over_a_loose_one_on_the_same_words(self):
+        self.assertEqual(self.spotted("le parrain en version longue"), [("The Godfather", 1972)])
+
+    def test_a_short_title_must_be_exact(self):
+        self.assertEqual(self.spotted("a film with a car chase"), [])
+        self.assertIn(("Cars", 2006), self.spotted("the cars kind"))
 
     def test_nothing_under_the_floor(self):
         self.assertEqual(find("zzzz qqqq", CATALOG.people), [])

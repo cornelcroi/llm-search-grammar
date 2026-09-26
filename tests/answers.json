@@ -4,7 +4,7 @@
   "model": "gpt-6-luna",
   "loads": [
    [
-    "Titanic"
+    "Titanic (1997)"
    ]
   ],
   "answer": {
@@ -53,7 +53,7 @@
      "prefer": "cheapest",
      "cast_mode": "any",
      "exact": false,
-     "label": "long version Titanic in French"
+     "label": "long version of Titanic in French"
     }
    ],
    "picks": [
@@ -71,11 +71,7 @@
  {
   "sentence": "a 90s Tom Hanks comedy I can rent tonight in French for under 4 euros",
   "model": "gpt-6-luna",
-  "loads": [
-   [
-    "Tom Hanks"
-   ]
-  ],
+  "loads": [],
   "answer": {
    "queries": [
     {
@@ -119,9 +115,9 @@
      "edition": [],
      "services": [],
      "prefer": null,
-     "cast_mode": "all",
+     "cast_mode": "any",
      "exact": false,
-     "label": "a 90s Tom Hanks comedy"
+     "label": "90s Tom Hanks comedy"
     }
    ],
    "picks": []
@@ -130,7 +126,11 @@
  {
   "sentence": "a cosy film like Forrest Gump for my 6 year old, without Tom Cruise",
   "model": "gpt-6-luna",
-  "loads": [],
+  "loads": [
+   [
+    "Forrest Gump (1994)"
+   ]
+  ],
   "answer": {
    "queries": [
     {
@@ -226,7 +226,7 @@
      "edition": [],
      "services": [],
      "prefer": null,
-     "cast_mode": "all",
+     "cast_mode": "any",
      "exact": false,
      "label": "a comedy with De Niro"
     },
@@ -267,7 +267,7 @@
      "edition": [],
      "services": [],
      "prefer": null,
-     "cast_mode": "all",
+     "cast_mode": "any",
      "exact": false,
      "label": "a drama with Kevin Costner"
     }
@@ -280,13 +280,7 @@
   "model": "gpt-6-luna",
   "loads": [
    [
-    "Titanic"
-   ],
-   [
-    "Titanic (1953)"
-   ],
-   [
-    "Titanic (1943)"
+    "Titanic (1997)"
    ]
   ],
   "answer": {
@@ -344,7 +338,7 @@
   "model": "gpt-6-luna",
   "loads": [
    [
-    "Inception"
+    "Inception (2010)"
    ]
   ],
   "answer": {
@@ -352,14 +346,16 @@
     {
      "films": [
       {
-       "title": "inceptoin",
-       "year": null
+       "title": "Inception",
+       "year": 2010
       }
      ],
      "similar_to": [],
      "type": null,
      "people": [],
-     "directed_by": [],
+     "directed_by": [
+      "Christopher Nolan"
+     ],
      "people_not": [],
      "references": [],
      "people_nationality": [],
@@ -385,25 +381,79 @@
      "audio": [],
      "subtitles": [],
      "edition": [
-      "with Nolan talking over it"
+      "with commentary by Christopher Nolan"
      ],
      "services": [],
      "prefer": null,
      "cast_mode": "any",
      "exact": false,
-     "label": "inceptoin with nolan talking"
+     "label": "Inception with Nolan talking"
     }
    ],
    "picks": [
     {
      "film": "m142",
      "family": "f1",
-     "edition": "with Nolan talking over it",
+     "edition": "with commentary by Christopher Nolan",
      "quality": null,
      "audio": null,
      "sound": null
     }
    ]
+  }
+ },
+ {
+  "sentence": "something taken seriously, a drama, not the cars kind",
+  "model": "gpt-6-luna",
+  "loads": [
+   [
+    "Cars (2006)",
+    "Taken (2008)"
+   ]
+  ],
+  "answer": {
+   "queries": [
+    {
+     "films": [],
+     "similar_to": [],
+     "type": null,
+     "people": [],
+     "directed_by": [],
+     "people_not": [],
+     "references": [],
+     "people_nationality": [],
+     "genre": [
+      "Drama"
+     ],
+     "genre_not": [],
+     "genre_mode": "all",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [],
+     "audio": [],
+     "subtitles": [],
+     "edition": [],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "any",
+     "exact": false,
+     "label": "something taken seriously, a drama"
+    }
+   ],
+   "picks": []
   }
  }
 ]

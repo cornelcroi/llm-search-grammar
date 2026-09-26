@@ -28,9 +28,9 @@ def main():
     print(f'\n"{sentence}"\n')
     answer, usage = ask(sentence, session)
 
-    print(f"1 · THE MODEL ({model()}), reads the sentence against the grammar")
+    print(f"1 · CODE loads the lines of the films the sentence names, then ONE call to {model()}")
     for step in session.trace:
-        print(f"    asked   {step}")
+        print(f"    code    {step}")
     for query in answer["queries"]:
         print(f"    parsed  {json.dumps(filled(query), ensure_ascii=False)}")
     for pick in answer["picks"]:

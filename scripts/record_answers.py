@@ -2,7 +2,7 @@
 
     OPENAI_API_KEY=... python3 scripts/record_answers.py
 
-Each record keeps the sentence, the packs the model asked for, and its answer, exactly as returned.
+Each record keeps the sentence, the packs code loaded with it, and the answer, exactly as returned.
 Rerun after changing the grammar or the prompt, and read the diff: it shows what the model now does.
 """
 import json
@@ -23,6 +23,7 @@ SENTENCES = [
     "a comedy with De Niro or a drama with Kevin Costner",
     "something with the actors from Titanic, in 4K",
     "inceptoin with nolan talking over it",
+    "something taken seriously, a drama, not the cars kind",
 ]
 OUT = Path(__file__).resolve().parent.parent / "tests" / "answers.json"
 

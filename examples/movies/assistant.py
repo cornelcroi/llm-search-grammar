@@ -1,19 +1,20 @@
-"""The model's side: read the sentence against the grammar, ask for packs, point.
+"""The model's side: read the sentence against the grammar, point. ONE call.
 
-In the prompt, always: the rules, the grammar, the index of films, the offers dictionary. On
-demand: a film's pack, when the model asks for it with load_film. The model returns a structured
-object and never a sentence to show; code turns it into results and says what it did.
+In the prompt, always: the rules, the grammar, the index of films, the offers dictionary. With the
+sentence: the packs of the films it names, spotted and loaded by code before the call. The model
+returns a structured object and never a sentence to show; code turns it into results.
 """
 import json
 import re
 
 from search_grammar.grammar import listing, schema
+from search_grammar.forgiving import similarity, spot
 from search_grammar.llm import chat
 
 from examples.movies.fields import PICK, SEARCH
 from examples.movies.offers import DICTIONARY, index_line, pack
 
-SLOTS = 2  # packs kept in context; loading a third drops the oldest
+SLOTS = 2  # packs sent with one sentence
 
 RULES = """\
 READ, DO NOT JUDGE, AND NEVER REPORT FAILURE
@@ -39,22 +40,16 @@ SIMILARITY IS NOT A FILM, A TOPIC IS NOT A GENRE
   [heist], not genre Crime.
 
 PACKS AND PICKS
-  The index lists every film covered: not on it means not covered. When the sentence asks HOW to watch
-  a film it names (an edition, a language, a price, a quality), call load_film with its name to read
-  its pack: what exists for that film and nothing else. Then add a pick: the film's m<n>, the family's
-  f<n>, and a value for EVERY wish the sentence has (edition, quality, audio, sound), copied from what
-  the family lists ("the long version" is the extended edition the pack names). A wish the family does
-  not list is still written, as the viewer said it: code says what does not exist, never you. Point,
-  never copy: no offer id, no price. Also fill the watch fields as usual."""
-
-TOOLS = [{"type": "function", "function": {
-    "name": "load_film",
-    "description": "Load the packs of films named in the sentence: every way each can be watched.",
-    "parameters": {"type": "object", "additionalProperties": False,
-                   "properties": {"names": {"type": "array", "items": {"type": "string"}}},
-                   "required": ["names"]},
-    "strict": True}}]
-
+  The index lists every film covered: not on it means not covered. With the sentence come the packs of
+  films whose title appears in it, each with the words it was matched on: what exists for each film
+  and nothing else. Code matched words, not meaning. YOU decide from the sentence whether it names
+  that film: "taken seriously" is not the film Taken, "not the cars kind" is not the film Cars. A pack
+  is context, not a request: ignore the pack of a film the sentence does not name. When the sentence asks HOW to watch a
+  film it names (an edition, a language, a price, a quality), add a pick: the film's m<n>, the
+  family's f<n>, and a value for EVERY wish the sentence has (edition, quality, audio, sound), copied
+  from what the family lists ("the long version" is the extended edition the pack names). A wish the
+  family does not list is still written, as the viewer said it: code says what does not exist, never
+  you. Point, never copy: no offer id, no price. Also fill the watch fields as usual."""
 
 class Session:
     """What code holds for one request: the refs, the loaded packs. Never the model."""
@@ -70,6 +65,31 @@ class Session:
         return "\n".join(index_line(self.ref_of[f["id"]], f, len(self.catalog.offers.get(f["id"], [])))
                          for f in self.catalog.films)
 
+    def preload(self, sentence):
+        """Load the packs of the films the sentence names, before the one call."""
+        films = [self.catalog.by_id[m.key] for m in spot(sentence, self.catalog.titles)]
+        self.matched_on = {f["id"]: w for f in films for w in [self._words(sentence, f)] if w}
+        # Three films called Titanic: load the best known, and let load() report the other two.
+        best = {}
+        for film in sorted(films, key=lambda f: -f["popularity"]):
+            best.setdefault(film["title"].lower(), film)
+        names = [f"{f['title']} ({f['year']})" for f in list(best.values())[:SLOTS]]
+        return self.load(names) if names else ""
+
+    @staticmethod
+    def _words(sentence, film):
+        """The words of the sentence that matched this film's title, shown to the model as evidence."""
+        from search_grammar.forgiving import normalize
+        words = normalize(sentence).split()
+        for title in filter(None, (film["title"], film["title_fr"], film["original_title"])):
+            target = normalize(title)
+            size = len(target.split()) if target else 0
+            for i in range(len(words) - size + 1):
+                window = " ".join(words[i:i + size])
+                if size and (window == target or similarity(window, target) >= 0.8):
+                    return window
+        return None
+
     def load(self, names):
         out = []
         for name in names:
@@ -78,10 +98,12 @@ class Session:
                 name = f"{film['title']} ({film['year']})"
             year = re.search(r"\((\d{4})\)\s*$", name)
             title = name[:year.start()].strip() if year else name
-            match, others = self.catalog.film(title, int(year.group(1)) if year else None)
+            match, _ = self.catalog.film(title, int(year.group(1)) if year else None)
+            _, others = self.catalog.film(title)
+            others = [o for o in others + ([match] if match else []) if match and o.key != match.key]
             if not match or match.band == "unsure":
                 out.append(f"'{name}': not in the catalogue")
-                self.trace.append(f"load_film('{name}') -> not in the catalogue")
+                self.trace.append(f"'{name}': not in the catalogue")
                 continue
             film = self.catalog.by_id[match.key]
             text, families = pack(film, self.catalog.offers.get(film["id"], []))
@@ -92,8 +114,10 @@ class Session:
             also = [f"{self.ref_of[o.key]} {self.catalog.by_id[o.key]['title']} ({self.catalog.by_id[o.key]['year']})"
                     for o in others]
             note = f"\n(other films called that: {', '.join(also)})" if also else ""
-            out.append(f"{self.ref_of[film['id']]} {text}{note}")
-            self.trace.append(f"load_film('{name}') -> {self.ref_of[film['id']]} {film['title']} ({film['year']}), "
+            evidence = getattr(self, "matched_on", {}).get(film["id"])
+            said = f"\n(matched on the words: \"{evidence}\")" if evidence else ""
+            out.append(f"{self.ref_of[film['id']]} {text}{note}{said}")
+            self.trace.append(f"loaded {self.ref_of[film['id']]} {film['title']} ({film['year']}), "
                               f"{len(families)} families" + (f"; also {', '.join(also)}" if also else ""))
         return "\n\n".join(out)
 
@@ -113,16 +137,10 @@ def answer_schema():
             "required": ["queries", "picks"]}
 
 
-def ask(sentence, session, max_turns=4):
-    messages = [{"role": "system", "content": instructions(session)}, {"role": "user", "content": sentence}]
-    usage = []
-    for _ in range(max_turns):
-        message, used = chat(messages, schema=answer_schema(), tools=TOOLS)
-        usage.append(used)
-        if not message.get("tool_calls"):
-            return json.loads(message["content"]), usage
-        messages.append(message)
-        for call in message["tool_calls"]:
-            names = json.loads(call["function"]["arguments"])["names"]
-            messages.append({"role": "tool", "tool_call_id": call["id"], "content": session.load(names)})
-    raise SystemExit("The model kept asking for packs without answering.")
+def ask(sentence, session):
+    """ONE model call. The fixed prompt comes first so it is cached; the packs travel with the sentence."""
+    packs = session.preload(sentence)
+    user = f"SENTENCE: {sentence}" + (f"\n\nPACKS OF FILMS WHOSE TITLE APPEARS IN THE SENTENCE\n{packs}" if packs else "")
+    messages = [{"role": "system", "content": instructions(session)}, {"role": "user", "content": user}]
+    message, used = chat(messages, schema=answer_schema())
+    return json.loads(message["content"]), [used]
