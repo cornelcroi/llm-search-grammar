@@ -1,0 +1,409 @@
+[
+ {
+  "sentence": "the long version of Titanic in French, the cheapest way",
+  "model": "gpt-6-luna",
+  "loads": [
+   [
+    "Titanic"
+   ]
+  ],
+  "answer": {
+   "queries": [
+    {
+     "films": [
+      {
+       "title": "Titanic",
+       "year": 1997
+      }
+     ],
+     "similar_to": [],
+     "type": null,
+     "people": [],
+     "directed_by": [],
+     "people_not": [],
+     "references": [],
+     "people_nationality": [],
+     "genre": [],
+     "genre_not": [],
+     "genre_mode": "any",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [],
+     "audio": [
+      "French"
+     ],
+     "subtitles": [],
+     "edition": [
+      "extended (+37 min)"
+     ],
+     "services": [],
+     "prefer": "cheapest",
+     "cast_mode": "any",
+     "exact": false,
+     "label": "long version Titanic in French"
+    }
+   ],
+   "picks": [
+    {
+     "film": "m83",
+     "family": "f3",
+     "edition": "extended (+37 min)",
+     "quality": null,
+     "audio": "French",
+     "sound": null
+    }
+   ]
+  }
+ },
+ {
+  "sentence": "a 90s Tom Hanks comedy I can rent tonight in French for under 4 euros",
+  "model": "gpt-6-luna",
+  "loads": [
+   [
+    "Tom Hanks"
+   ]
+  ],
+  "answer": {
+   "queries": [
+    {
+     "films": [],
+     "similar_to": [],
+     "type": null,
+     "people": [
+      "Tom Hanks"
+     ],
+     "directed_by": [],
+     "people_not": [],
+     "references": [],
+     "people_nationality": [],
+     "genre": [
+      "Comedy"
+     ],
+     "genre_not": [],
+     "genre_mode": "all",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": 1990,
+     "year_max": 1999,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [
+      "rent"
+     ],
+     "max_price": 4,
+     "quality": [],
+     "audio": [
+      "French"
+     ],
+     "subtitles": [],
+     "edition": [],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "all",
+     "exact": false,
+     "label": "a 90s Tom Hanks comedy"
+    }
+   ],
+   "picks": []
+  }
+ },
+ {
+  "sentence": "a cosy film like Forrest Gump for my 6 year old, without Tom Cruise",
+  "model": "gpt-6-luna",
+  "loads": [],
+  "answer": {
+   "queries": [
+    {
+     "films": [],
+     "similar_to": [
+      {
+       "title": "Forrest Gump",
+       "year": 1994
+      }
+     ],
+     "type": null,
+     "people": [],
+     "directed_by": [],
+     "people_not": [
+      "Tom Cruise"
+     ],
+     "references": [],
+     "people_nationality": [],
+     "genre": [],
+     "genre_not": [],
+     "genre_mode": "any",
+     "topics": [],
+     "topics_not": [],
+     "mood": [
+      "cosy"
+     ],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": 6,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [],
+     "audio": [],
+     "subtitles": [],
+     "edition": [],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "any",
+     "exact": false,
+     "label": "cosy film like Forrest Gump"
+    }
+   ],
+   "picks": []
+  }
+ },
+ {
+  "sentence": "a comedy with De Niro or a drama with Kevin Costner",
+  "model": "gpt-6-luna",
+  "loads": [],
+  "answer": {
+   "queries": [
+    {
+     "films": [],
+     "similar_to": [],
+     "type": null,
+     "people": [
+      "Robert De Niro"
+     ],
+     "directed_by": [],
+     "people_not": [],
+     "references": [],
+     "people_nationality": [],
+     "genre": [
+      "Comedy"
+     ],
+     "genre_not": [],
+     "genre_mode": "all",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [],
+     "audio": [],
+     "subtitles": [],
+     "edition": [],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "all",
+     "exact": false,
+     "label": "a comedy with De Niro"
+    },
+    {
+     "films": [],
+     "similar_to": [],
+     "type": null,
+     "people": [
+      "Kevin Costner"
+     ],
+     "directed_by": [],
+     "people_not": [],
+     "references": [],
+     "people_nationality": [],
+     "genre": [
+      "Drama"
+     ],
+     "genre_not": [],
+     "genre_mode": "all",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [],
+     "audio": [],
+     "subtitles": [],
+     "edition": [],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "all",
+     "exact": false,
+     "label": "a drama with Kevin Costner"
+    }
+   ],
+   "picks": []
+  }
+ },
+ {
+  "sentence": "something with the actors from Titanic, in 4K",
+  "model": "gpt-6-luna",
+  "loads": [
+   [
+    "Titanic"
+   ],
+   [
+    "Titanic (1953)"
+   ],
+   [
+    "Titanic (1943)"
+   ]
+  ],
+  "answer": {
+   "queries": [
+    {
+     "films": [],
+     "similar_to": [],
+     "type": null,
+     "people": [],
+     "directed_by": [],
+     "people_not": [],
+     "references": [
+      {
+       "film": "Titanic",
+       "wants": "actors"
+      }
+     ],
+     "people_nationality": [],
+     "genre": [],
+     "genre_not": [],
+     "genre_mode": "any",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [
+      "4K"
+     ],
+     "audio": [],
+     "subtitles": [],
+     "edition": [],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "any",
+     "exact": false,
+     "label": "actors from Titanic in 4K"
+    }
+   ],
+   "picks": []
+  }
+ },
+ {
+  "sentence": "inceptoin with nolan talking over it",
+  "model": "gpt-6-luna",
+  "loads": [
+   [
+    "Inception"
+   ]
+  ],
+  "answer": {
+   "queries": [
+    {
+     "films": [
+      {
+       "title": "inceptoin",
+       "year": null
+      }
+     ],
+     "similar_to": [],
+     "type": null,
+     "people": [],
+     "directed_by": [],
+     "people_not": [],
+     "references": [],
+     "people_nationality": [],
+     "genre": [],
+     "genre_not": [],
+     "genre_mode": "any",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [],
+     "audio": [],
+     "subtitles": [],
+     "edition": [
+      "with Nolan talking over it"
+     ],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "any",
+     "exact": false,
+     "label": "inceptoin with nolan talking"
+    }
+   ],
+   "picks": [
+    {
+     "film": "m142",
+     "family": "f1",
+     "edition": "with Nolan talking over it",
+     "quality": null,
+     "audio": null,
+     "sound": null
+    }
+   ]
+  }
+ }
+]
