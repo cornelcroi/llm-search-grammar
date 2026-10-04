@@ -1,6 +1,6 @@
 """Run a sentence through the grammar and show every step.
 
-    python3 -m examples.movies "the long version of Titanic in French, the cheapest way"
+    python3 -m examples.movies "inceptoin with nolan talking over it"
 
 Needs OPENAI_API_KEY. Films are real (Wikidata); the ways to watch them are invented.
 """
@@ -21,7 +21,7 @@ def filled(query):
 
 
 def main():
-    sentence = " ".join(sys.argv[1:]) or "the long version of Titanic in French, the cheapest way"
+    sentence = " ".join(sys.argv[1:]) or "inceptoin with nolan talking over it"
     films, offers = load()
     session = Session(Catalog(films, offers))
 

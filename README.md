@@ -1,20 +1,28 @@
-# llm-search-grammar
+# llm-search-grammar: the search grammar pattern
 
-**Turn any sentence into a precise search, over a catalogue the model has never seen. The model reads. Code decides.**
+**Natural language search with LLMs, over a catalog the model has never seen. The search grammar pattern describes the offer by its dimensions, not its rows. The model reads. Code decides.**
 
 It's not the prompt. It's the grammar.
 
-## What is the search grammar?
+The full story, with diagrams and a live demo: [The Search Grammar Pattern: Natural Language Search with LLMs](https://corneliucroitoru.com/writing/search-grammar-pattern/).
 
-A pattern for putting a language model in front of a search, when every item in the catalogue has its own large set of options that no model knows.
+## Live demo
+
+[![The search grammar pattern, live: Tonight answering 9 real searches, one small LLM call each](docs/demo.png)](https://youtu.be/hoCesxy2o08)
+
+This is Tonight, my movie app at home, running the search grammar pattern on its real catalog: 9 searches, every result checked. This repo rebuilds the pattern on 200 films, so you can run it and read it.
+
+## What is the search grammar pattern?
+
+A pattern for putting a language model in front of a search, when every item in the catalog has its own large set of options that no model knows.
 
 The model never searches, never picks an id, never says "sorry, I can't". It reads the sentence against a **grammar**: a compact description of everything that can be asked and everything that exists. Code does the rest, and says exactly what it did.
 
-I built it for a chat assistant over a catalogue where each item carries hundreds of options, different for every item. This repo rebuilds it on movies, small enough to read in ten minutes.
+I found it while building Tonight, a movie app I use at home: say what you feel like watching, get films you can start now, across all my streaming services. This repo rebuilds the pattern on 200 films, small enough to read in ten minutes, with invented offers so each film has its own options no model has seen.
 
 ## The problem
 
-Ask a model what you can watch tonight. It answers with what it knows: "Titanic is probably on Netflix." It does not know your catalogue. It cannot: your offer is different for every film, and it changes.
+Ask a model what you can watch tonight. It answers with what it knows: "Titanic is probably on Netflix." It does not know your catalog. It cannot: your offer is different for every film, and it changes.
 
 The usual fixes make it worse:
 
@@ -61,7 +69,7 @@ Two compressions make it small:
 - **Families.** Offers that differ only in a few values become one line: the values become sets, the prices a range. 19 offers per line, here.
 - **Sharing.** What every film has in common is written once in the dictionary, never repeated in a pack.
 
-The pack is where the model learns what it could not know. Titanic (1997) has a *Cameron's cut* and an *extended (+37 min)*. The 1953 Titanic has a *commentary by Clifton Webb*. No model has seen those. No fuzzy match turns "the long version" into "extended (+37 min)": they score 0.25. The model, reading the pack, does.
+The pack is where the model learns what it could not know. Titanic (1997) has a *Cameron's cut* and an *extended (+37 min)*. The 1953 Titanic has a *commentary by Clifton Webb*. No model has seen those. No fuzzy match turns "nolan talking over it" into "with commentary by Christopher Nolan": they score 0.26. The model, reading the dictionary and the pack, does.
 
 ## The rules
 
@@ -78,25 +86,25 @@ The pack is where the model learns what it could not know. Titanic (1997) has a 
 Real output, `gpt-6-luna`, reasoning off:
 
 ```
-$ python3 -m examples.movies "the long version of Titanic in French, the cheapest way"
+$ python3 -m examples.movies "inceptoin with nolan talking over it"
 
 1 · CODE loads the lines of the films the sentence names, then ONE call to gpt-6-luna
-    code    loaded m83 Titanic (1997), 4 families; also m13 Titanic (1953), m8 Titanic (1943)
-    parsed  {"films": [{"title": "Titanic", "year": 1997}], "audio": ["French"], "edition": ["extended"], "prefer": "cheapest", "label": "the long version of Titanic"}
-    points  {"film": "m83", "family": "f3", "edition": "extended (+37 min)", "audio": "French"}
+    code    loaded m142 Inception (2010), 3 families
+    parsed  {"films": [{"title": "Inception", "year": 2010}], "edition": ["with commentary by Christopher Nolan"], "label": "Inception with Nolan commentary"}
+    points  {"film": "m142", "family": "f2", "edition": "with commentary by Christopher Nolan"}
 
 2 · CODE, decides what can be applied
-    applied      {"films": ["Titanic"], "prefer": "cheapest", "audio": ["fr"], "edition": ["extended"]}
-    why_nothing  "1 film(s) match (Titanic (1997)), but no single offer has every watch wish at once"
+    applied      {"films": ["Inception"], "edition": ["with commentary by Christopher Nolan"]}
+    why_nothing  "1 film(s) match (Inception (2010)), but none can be watched with edition ['with commentary by Christopher Nolan']"
 
 4 · POINTERS, checked against the pack by code
-    partial  Titanic (1997) · RentBox · rent · extended (+37 min) · SD · audio en · stereo · 3.49 €  [of5322]
-             missing  audio French (not with RentBox rent; only on CinePass subscription)
+    partial  Inception (2010) · RentBox · rent · theatrical · SD · audio en · stereo · 2.99 €  [of11110]
+             missing  edition with commentary by Christopher Nolan (not with RentBox rent; nowhere for this film)
 
-1 model call · 5,550 prompt tokens (5,547 cached) · 204 completion tokens
+1 model call · 5,492 prompt tokens · 265 completion tokens
 ```
 
-One call. "The long version" became the edition only the pack names. The price and the offer id came from code. And the answer is honest: that version exists, not in French.
+One call. "inceptoin" was found by code before the call. "nolan talking over it" became the dictionary's `with commentary by {person}`, which no fuzzy match could reach. Then code checked Inception's pack and said it plainly: that version is nowhere for this film. The offer id and the price came from code.
 
 ```
 $ python3 -m examples.movies "a cosy film like Forrest Gump for my 6 year old, without Tom Cruise"
@@ -130,7 +138,7 @@ The grammar
 A request with two films loaded      2,676 tokens, against 396,929 to carry every offer
 ```
 
-Token counts from `measure` are estimates, one token per 4 characters. **Be careful with these.** The offers are invented, so I chose how repetitive they are. The ratio illustrates the mechanism; it is not a finding about real catalogues. What carries over is the structure: an index, a dictionary written once, packs sent when the sentence names the item.
+Token counts from `measure` are estimates, one token per 4 characters. **Be careful with these.** The offers are invented, so I chose how repetitive they are. The ratio illustrates the mechanism; it is not a finding about real catalogs. What carries over is the structure: an index, a dictionary written once, packs sent when the sentence names the item.
 
 Measured with no model at all. A gain you can measure without the model belongs to the architecture, and survives every model swap.
 
@@ -160,7 +168,7 @@ examples/movies/
   fields.py            the movie grammar
   offers.py            index line, dictionary, pack
   assistant.py         the prompt, the lines of the films named, the one call
-  resolve.py           words into the catalogue: applied, cannot, why nothing
+  resolve.py           words into the catalog: applied, cannot, why nothing
   picks.py             pointers checked against the pack: strict, partial, dropped
   measure.py           the numbers, no model
 data/
@@ -191,7 +199,7 @@ What I did not find written up is the other half: a grammar deliberately wider t
 
 ## Limits
 
-- The offers are invented. Real catalogues are messier, and less repetitive.
+- The offers are invented. Real catalogs are messier, and less repetitive.
 - Ranking is basic: popularity, or price. The grammar decides what matches, not what is best.
 - Every capability is code you write. Moving a field from `later` to `ready` is work, not a prompt edit. That is the point, and the cost.
 - The model can still misread a sentence. It can no longer invent a film, an offer or a price.
