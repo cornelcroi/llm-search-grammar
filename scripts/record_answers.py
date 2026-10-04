@@ -17,13 +17,15 @@ from examples.movies.resolve import Catalog  # noqa: E402
 from search_grammar.llm import model  # noqa: E402
 
 SENTENCES = [
-    "the long version of Titanic in French, the cheapest way",
+    "titanic extended cut in french, cheapest",
     "a 90s Tom Hanks comedy I can rent tonight in French for under 4 euros",
     "a cosy film like Forrest Gump for my 6 year old, without Tom Cruise",
     "a comedy with De Niro or a drama with Kevin Costner",
     "something with the actors from Titanic, in 4K",
     "inceptoin with nolan talking over it",
     "something taken seriously, a drama, not the cars kind",
+    "a Korean thriller",
+    "a Wes Anderson comedy",
 ]
 OUT = Path(__file__).resolve().parent.parent / "tests" / "answers.json"
 

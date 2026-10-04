@@ -33,6 +33,7 @@ class Catalog:
         self.people = {name: [name] for f in films for name in f["cast"] + f["directors"]}
         self.topics = {t: [t] for f in films for t in f["topics"]}
         self.genres = sorted({g for f in films for g in f["genres"]})
+        self.languages = {l.lower(): l for f in films for l in f["languages"]}
         self.by_id = {f["id"]: f for f in films}
 
     def film(self, title, year=None):
@@ -115,9 +116,10 @@ def resolve(query, catalog):
 
     # where from, when, how long ---------------------------------------------------------
     if query["language"]:
-        # The model says the word; code finds what the catalogue calls it.
-        name = query["language"].strip().capitalize()
-        if name.lower() in CODES:
+        # The model says the word; code finds what the catalogue calls it. The films' own languages,
+        # not CODES: that table is for audio tracks, and a Korean film has no Korean audio offer here.
+        name = catalog.languages.get(query["language"].strip().lower())
+        if name:
             filters["language"] = name
             applied["language"] = name
         else:

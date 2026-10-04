@@ -36,7 +36,7 @@ def replay(sentence):
 
 class MoviesTest(unittest.TestCase):
     def test_the_long_version_points_into_the_pack_and_code_owns_the_price(self):
-        _, picks = replay("the long version of Titanic in French, the cheapest way")
+        _, picks = replay("titanic extended cut in french, cheapest")
         pick = next(p for p in picks if p.get("offer") and OFFERS[p["offer"]]["edition"] == "extended (+37 min)")
         self.assertEqual(pick["verdict"], "partial")
         offer = OFFERS[pick["offer"]]
@@ -84,6 +84,18 @@ class MoviesTest(unittest.TestCase):
         ref = next(r for r, fid in session.refs.items() if CATALOG.by_id[fid]["title"] == "Forrest Gump")
         pick = {"film": ref, "family": "f1", "edition": None, "quality": None, "audio": None, "sound": None}
         self.assertEqual(check(pick, session, named=set())["verdict"], "dropped")
+
+    def test_the_films_own_language_is_applied_not_only_audio_languages(self):
+        results, _ = replay("a Korean thriller")
+        found, _, report = results[0]
+        self.assertEqual(report["applied"]["language"], "Korean")
+        self.assertEqual([film["title"] for film, _ in found], ["Parasite"])
+
+    def test_a_person_outside_the_catalog_is_said_not_applied(self):
+        results, _ = replay("a Wes Anderson comedy")
+        _, _, report = results[0]
+        self.assertIn("Wes Anderson", report["unapplied"])
+        self.assertNotIn("director", report["applied"])
 
 
 if __name__ == "__main__":

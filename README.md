@@ -10,7 +10,17 @@ The full story, with diagrams and a live demo: [The Search Grammar Pattern: Natu
 
 [![The search grammar pattern, live: Tonight answering 9 real searches, one small LLM call each](docs/demo.png)](https://youtu.be/hoCesxy2o08)
 
-This is Tonight, my movie app at home, running the search grammar pattern on its real catalog: 9 searches, every result checked. This repo rebuilds the pattern on 200 films, so you can run it and read it.
+This is Tonight, my movie app at home, running the search grammar pattern on its real catalog: 19,072 films I can watch on 14 streaming services, the whole grammar in about 3,200 tokens, one small LLM call per search. 9 searches, every result checked film by film.
+
+**This repo is not Tonight.** Tonight is private: real catalog, real streaming data. This repo rebuilds the pattern so you can run it and read it in ten minutes:
+
+| | Tonight (the video) | This repo |
+|---|---|---|
+| Films | 19,072, everything on my 14 services | 200, the most known on Wikipedia, plus 30 French |
+| Where to watch | real streaming availability | 17,262 **invented** offers on 8 fictional services |
+| What it proves | the grammar and the forgiving search, at full size | the same, plus packs: per-film options no model has seen |
+
+So the searches from the video will not all work here. Most of those films are simply not in the 200. See [The data](#the-data) for what you can ask.
 
 ## What is the search grammar pattern?
 
@@ -175,15 +185,39 @@ data/
   films.json           200 real films from Wikidata (CC0)
   offers.json          17,262 INVENTED ways to watch them: fictional services, made-up prices
 scripts/               rebuild the data, record model answers for the tests
-tests/                 27 tests, no API key needed: real model answers replayed through code
+tests/                 29 tests, no API key needed: real model answers replayed through code
 ```
+
+## The data
+
+`data/films.json`: 200 real films from Wikidata (CC0). For each: title, French title, original title, year, runtime, directors, the first 8 actors in billing order, genres, topics, countries, languages.
+
+- **Years** 1925 to 2023, mostly 1990 to 2019.
+- **Mostly American and English-speaking** (167 US, 185 with English). 32 French, a few Italian, German, Japanese, one Korean (Parasite).
+- **Directors with several films:** Spielberg and Nolan (9 each), Scorsese, Cameron, Tarantino, Peter Jackson (5), Truffaut, Kubrick, Coppola, Lucas, Ridley Scott (4).
+- **Three films called Titanic** (1943, 1953, 1997), on purpose, so a title can be ambiguous.
+
+`data/offers.json`: 17,262 ways to watch them, **invented**. 8 fictional services, buy, rent, subscription or free, editions (theatrical, extended, IMAX, with commentary by...), HD, 4K or SD, audio and subtitle languages, prices from 0 to 18.99 €.
+
+With 200 films, a search can be read right and still find little. That is the point to watch: code says it.
+
+```
+"a Truffaut film in French"   ->  4 films: The 400 Blows, Stolen Kisses, Jules and Jim, Day for Night
+"a Korean thriller"           ->  1 film: Parasite. The only Korean thriller here.
+"a Wes Anderson comedy"       ->  unapplied ["Wes Anderson"], did_you_mean ["Paul Anderson"]
+                                  No Wes Anderson film in the 200. Code says so, then shows comedies.
+```
+
+Good searches here: the famous films, Nolan, Spielberg, Tarantino, Cameron, the French classics, the actors of Titanic or The Godfather, editions, 4K, French audio, a price. For a bigger catalog, raise the counts in `scripts/build_catalog.py`, then run it and `scripts/generate_offers.py`.
 
 ## Run it
 
 Python 3.10+. No dependencies.
 
+It needs an OpenAI API key: each search is one call, about 5,500 prompt tokens, mostly cached, to a small model. The tests and `measure` need no key.
+
 ```bash
-export OPENAI_API_KEY=...
+cp .env.example .env        # then put your key in .env (git-ignored), or export OPENAI_API_KEY
 python3 -m examples.movies "something with the actors from Titanic, in 4K"
 python3 -m examples.movies.measure Titanic
 python3 -m unittest discover -s tests -t .
@@ -199,6 +233,7 @@ What I did not find written up is the other half: a grammar deliberately wider t
 
 ## Limits
 
+- 200 films. Many searches find little or nothing, and code says why. Tonight shows the full size.
 - The offers are invented. Real catalogs are messier, and less repetitive.
 - Ranking is basic: popularity, or price. The grammar decides what matches, not what is best.
 - Every capability is code you write. Moving a field from `later` to `ready` is work, not a prompt edit. That is the point, and the cost.

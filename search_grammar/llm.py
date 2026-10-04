@@ -1,4 +1,5 @@
-"""One call to the model. Standard library only; the only thing it needs is OPENAI_API_KEY.
+"""One call to the model. Standard library only; the only thing it needs is OPENAI_API_KEY,
+from the environment or from a .env file at the repo root (copy .env.example).
 
     OPENAI_MODEL   defaults to gpt-6-luna, a small, cheap model: parsing against a grammar
                    is classification, not reasoning, and a small model does it well. Reasoning is off.
@@ -8,6 +9,7 @@ import os
 import ssl
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 URL = "https://api.openai.com/v1/chat/completions"
 
@@ -18,6 +20,20 @@ except ImportError:
     CONTEXT = ssl.create_default_context()
 
 
+def _load_env_file():
+    """Reads KEY=value lines from .env at the repo root. The environment wins over the file."""
+    env = Path(__file__).resolve().parent.parent / ".env"
+    if not env.exists():
+        return
+    for line in env.read_text().splitlines():
+        name, sep, value = line.strip().partition("=")
+        if sep and not name.startswith("#") and value.strip():
+            os.environ.setdefault(name.strip(), value.strip().strip('"').strip("'"))
+
+
+_load_env_file()
+
+
 def model():
     return os.environ.get("OPENAI_MODEL", "gpt-6-luna")
 
@@ -26,7 +42,7 @@ def chat(messages, schema=None):
     """Send the conversation; return the model's message and the usage."""
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
-        raise SystemExit("OPENAI_API_KEY is not set. Export it, then run again.")
+        raise SystemExit("OPENAI_API_KEY is not set. Copy .env.example to .env and put your key in it, or export it.")
 
     body = {"model": model(), "messages": messages}
     # Parsing against a grammar is classification, not reasoning: no thinking tokens spent on it.

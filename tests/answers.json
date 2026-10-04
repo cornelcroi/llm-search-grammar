@@ -1,6 +1,6 @@
 [
  {
-  "sentence": "the long version of Titanic in French, the cheapest way",
+  "sentence": "titanic extended cut in french, cheapest",
   "model": "gpt-6-luna",
   "loads": [
    [
@@ -53,13 +53,21 @@
      "prefer": "cheapest",
      "cast_mode": "any",
      "exact": false,
-     "label": "long version of Titanic in French"
+     "label": "Titanic extended cut in French"
     }
    ],
    "picks": [
     {
      "film": "m83",
      "family": "f3",
+     "edition": "extended (+37 min)",
+     "quality": null,
+     "audio": "French",
+     "sound": null
+    },
+    {
+     "film": "m83",
+     "family": "f4",
      "edition": "extended (+37 min)",
      "quality": null,
      "audio": "French",
@@ -451,6 +459,106 @@
      "cast_mode": "any",
      "exact": false,
      "label": "something taken seriously, a drama"
+    }
+   ],
+   "picks": []
+  }
+ },
+ {
+  "sentence": "a Korean thriller",
+  "model": "gpt-6-luna",
+  "loads": [],
+  "answer": {
+   "queries": [
+    {
+     "films": [],
+     "similar_to": [],
+     "type": null,
+     "people": [],
+     "directed_by": [],
+     "people_not": [],
+     "references": [],
+     "people_nationality": [],
+     "genre": [
+      "Thriller"
+     ],
+     "genre_not": [],
+     "genre_mode": "all",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": "Korean",
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [],
+     "audio": [],
+     "subtitles": [],
+     "edition": [],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "any",
+     "exact": false,
+     "label": "a Korean thriller"
+    }
+   ],
+   "picks": []
+  }
+ },
+ {
+  "sentence": "a Wes Anderson comedy",
+  "model": "gpt-6-luna",
+  "loads": [],
+  "answer": {
+   "queries": [
+    {
+     "films": [],
+     "similar_to": [],
+     "type": null,
+     "people": [],
+     "directed_by": [
+      "Wes Anderson"
+     ],
+     "people_not": [],
+     "references": [],
+     "people_nationality": [],
+     "genre": [
+      "Comedy"
+     ],
+     "genre_not": [],
+     "genre_mode": "all",
+     "topics": [],
+     "topics_not": [],
+     "mood": [],
+     "language": null,
+     "country": [],
+     "country_not": [],
+     "year_min": null,
+     "year_max": null,
+     "runtime_max": null,
+     "age": null,
+     "audience": [],
+     "awards": [],
+     "occasion": [],
+     "watch_mode": [],
+     "max_price": null,
+     "quality": [],
+     "audio": [],
+     "subtitles": [],
+     "edition": [],
+     "services": [],
+     "prefer": null,
+     "cast_mode": "any",
+     "exact": false,
+     "label": "a Wes Anderson comedy"
     }
    ],
    "picks": []
