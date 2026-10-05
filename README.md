@@ -25,15 +25,39 @@ I tried a prompt with tools first. It failed in the same places every time. The 
 
 Everything you hand the model, you can only **ask**. Everything you keep in code, you can **guarantee**.
 
+## The search grammar pattern
+
+**Describe the offer by its dimensions, not its rows.**
+
+Putting the catalog in the prompt doesn't scale: the 17,262 offers here are about 397,000 tokens, on every request. RAG doesn't fix it either. It retrieves the few rows that look closest to the sentence, so the model sees a sample of the catalog, misses what wasn't retrieved, and fills the gaps from what it already knows.
+
+The grammar goes the other way. It describes what a person can ask and what kinds of values exist: the fields, what each one means, the few closed values. That fits the whole offer into a short prompt. A real excerpt of what the model reads:
+
+```
+THE FIELDS
+  directed_by   people the sentence says DIRECTED it: 'directed by Kubrick', 'a Nolan film'
+  references    a person reached THROUGH a film rather than named: 'actors from Titanic'
+  genre_mode    'all' when every genre at once ('a crime drama'), 'any' when either will do
+  year_min      earliest year. 'the 90s' is 1990, 'recent' is 2015
+  age           the age of the youngest person watching. A NUMBER, never a rating
+  ...           34 fields in all
+GENRES, use these words exactly: Action, Adventure, Animation, Comedy, ... (18)
+THE INDEX, every film covered
+  m83 Titanic (1997) · 80 offers
+  ...           one line per film: enough to recognise it, nothing more
+```
+
+The few values are listed, so the model can only pick from them: 18 genres. The many stay out: people, keywords, and everything about a film beyond its title, unless the sentence names the film (then its own options come in, see packs below). The model writes what you said, and code finds the real thing. With 200 films, this repo can afford one index line per film. A real catalog of 19,072 films lists none, and code spots the titles in the sentence instead: the whole offer then fits in about 3,200 tokens (the article has the measurement).
+
+The context stays short, and it's the same on every request, so it's cached. The model reads. It never searches, never picks an id, never decides what exists. Code runs the query on every row.
+
 ## How it works
 
 ![How one sentence becomes a query over the whole catalog: code spots the films named, one LLM call reads the sentence against the grammar, the resolver turns words into catalog values, code queries every film](docs/how-it-works.png)
 
 **1 · Code spots the films named.** A forgiving search, plain fuzzy matching with no embeddings, finds "titanic" in the sentence and loads what the model needs to know about it. Several matches are never hidden: the others come back as "did you mean".
 
-**2 · One LLM call reads the sentence against the grammar.** The grammar is the offer described by its dimensions instead of its rows: every field a person can mean, plus the few closed values (19 genres). Not the catalog. The model fills the fields as strict JSON. It never searches, never picks an id, never says "I can't".
-
-In this repo, measured by `measure.py` with no model: carrying every offer would cost about 397,000 tokens per request; the grammar with two films loaded costs about 2,700, mostly the same on every request, so it's cached. The offers are invented, so read the ratio as an illustration; the article measures a real catalog.
+**2 · One LLM call reads the sentence against the grammar** and fills its fields as strict JSON. It never says "I can't": a wish with nowhere to go is a missing field. With two films loaded, the whole request is about 2,700 tokens (`measure.py`), against 397,000 to carry every offer. The offers are invented, so read that ratio as an illustration.
 
 **3 · The resolver turns the model's words into catalog values.** The model writes loose words; code finds the real thing and says how sure it is. Without this, the model's words would match nothing.
 

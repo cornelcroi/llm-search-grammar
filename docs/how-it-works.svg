@@ -27,7 +27,7 @@
 <text x="520" y="442" font-size="15" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace" xml:space="preserve">    { &quot;film&quot;: &quot;Titanic&quot;, &quot;wants&quot;: &quot;lead_actors&quot; }</text>
 <text x="520" y="466" font-size="15" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace" xml:space="preserve">  ]</text>
 <text x="520" y="490" font-size="15" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace" xml:space="preserve">}</text>
-<text x="132" y="534" font-size="13" fill="#6f7680" font-weight="400" text-anchor="start" xml:space="preserve">the model&#x27;s real JSON (empty fields left out). It saw the grammar, never the rows</text>
+<text x="132" y="534" font-size="13" fill="#6f7680" font-weight="400" text-anchor="start" xml:space="preserve">the model&#x27;s real JSON (empty fields left out). It read the grammar and a one-line index, never the films&#x27; data</text>
 <line x1="600" y1="554" x2="600" y2="574" stroke="#a9a397" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="60" y="578" width="1080" height="218" rx="12" fill="#161d26" stroke="#2c3440" />
 <circle cx="100" cy="614" r="17" fill="#e2a75a"/>
@@ -54,5 +54,5 @@
 <line x1="600" y1="970" x2="600" y2="990" stroke="#a9a397" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="60" y="994" width="1080" height="64" rx="12" fill="#1b2a26" stroke="#7fc4b4" stroke-width="1.4"/>
 <text x="84" y="1034" font-size="18" fill="#7fc4b4" font-weight="600" text-anchor="start" xml:space="preserve">The Departed (2006)  ·  The Wolf of Wall Street (2013)  ·  Shutter Island (2010)</text>
-<text x="600" y="1086" font-size="17" fill="#f3efe6" font-weight="600" text-anchor="middle" xml:space="preserve">No RAG. No embeddings. No vector database. The model never sees a row of the catalog.</text>
+<text x="600" y="1086" font-size="17" fill="#f3efe6" font-weight="600" text-anchor="middle" xml:space="preserve">No RAG. No embeddings. No vector database. The model reads the grammar; code reads the rows.</text>
 </svg>
