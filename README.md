@@ -29,11 +29,18 @@ Everything you hand the model, you can only **ask**. Everything you keep in code
 
 **Describe the offer by its dimensions, not its rows.**
 
-The grammar does two things. It **condenses the whole offer** into a short prompt. And it gives the model **a precise way to point at it**: fields to fill, closed values to choose from, ids like `m83` instead of names. The model points; code picks the real thing.
+In a few words:
 
-Putting the catalog in the prompt doesn't scale: the 17,262 offers here are about 397,000 tokens, on every request. RAG doesn't fix it either. It retrieves the few rows that look closest to the sentence, so the model sees a sample of the catalog, misses what wasn't retrieved, and fills the gaps from what it already knows.
+1. **The grammar.** A short description of everything the catalog can answer: the fields a person can ask about, what each one means, and the few closed values (18 genres). It condenses the whole offer into a few thousand tokens, the same on every request, so it's cached.
+2. **One LLM call.** The model reads the sentence against the grammar and fills the fields, as strict JSON. It points at what you want; it never searches, never writes an offer id or a price.
+3. **The forgiving search.** The model writes loose words: "scorcese", "godfathr", "le parrain". Code turns them into the real names and titles, and says how sure it is: exact, close, or "did you mean".
+4. **The query.** Code searches every row with those values, and says back what it applied, what it couldn't, and why.
 
-The grammar goes the other way. It describes what a person can ask and what kinds of values exist: the fields, what each one means, the few closed values. That fits the whole offer into a short prompt. A real excerpt of what the model reads:
+The model reads. Code decides. Without the forgiving search, the model's words match nothing. Without the grammar, the model has nothing precise to aim at.
+
+**Why not the whole catalog, or RAG?** The whole catalog in the prompt doesn't scale: the 17,262 offers here are about 397,000 tokens, on every request. RAG retrieves the few rows that look closest to the sentence: the model sees a sample, misses what wasn't retrieved, and fills the gaps from what it already knows. The grammar gives it the shape of everything instead: about 5,500 tokens per call here, almost all of them cached after the first.
+
+**What the model actually reads**, a real excerpt:
 
 ```
 THE FIELDS
@@ -49,29 +56,13 @@ THE INDEX, every film covered
   ...           one line per film: enough to recognise it, nothing more
 ```
 
-The few values are listed, so the model can only pick from them: 18 genres. The many stay out, people and keywords: the model writes what you said, and code finds the real thing. With 200 films this repo also lists one line per film; a large catalog lists none, and code spots the titles in the sentence instead.
-
-The context stays short, and it's the same on every request, so it's cached. The model reads. It never searches, never picks an id, never decides what exists. Code runs the query on every row.
-
-**The other half is a forgiving search.** The model writes loose words: "scorcese", "godfathr", "le parrain". Code turns them into the real names and titles, and says how sure it is: exact, close, or "did you mean". Without it, the model's words match nothing. Without the grammar, the model has nothing precise to aim at. Neither works alone.
+The few values are listed, so the model can only pick from them. The many stay out, people and keywords: the model writes what you said, and code finds the real thing. With 200 films this repo also lists one line per film; a large catalog lists none, and code spots the titles in the sentence instead.
 
 ## How it works
 
 ![How one sentence becomes a query over the whole catalog: code spots the films named, one LLM call reads the sentence against the grammar, the resolver turns words into catalog values, code queries every film](docs/how-it-works.png)
 
-**1 · Code spots the films named.** A forgiving search, plain fuzzy matching with no embeddings, finds "titanic" in the sentence and loads what the model needs to know about it. Several matches are never hidden: the others come back as "did you mean".
-
-**2 · One LLM call reads the sentence against the grammar** and fills its fields as strict JSON. It never says "I can't": a wish with nowhere to go is a missing field. With two films loaded, the whole request is about 2,700 tokens (`measure.py`), against 397,000 to carry every offer. The offers are invented, so read that ratio as an illustration.
-
-**3 · The resolver turns the model's words into catalog values,** with the forgiving search:
-
-```
-"de nino"     ->  Robert De Niro          close
-"godfathr"    ->  The Godfather (1972)    close
-"le parrain"  ->  The Godfather (1972)    exact   every title, in every language
-```
-
-**4 · Code queries every film.** The filters run over the whole catalog: plain Python here; with a database, the same filters become SQL. Then code says back what it did: applied, cannot (with the reason), not found, did you mean. Only code says "can't", because only code knows the data.
+One real sentence through the four steps, with the JSON each step hands to the next.
 
 ## One step further: packs
 
