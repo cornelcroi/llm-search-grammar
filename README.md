@@ -47,7 +47,7 @@ THE INDEX, every film covered
   ...           one line per film: enough to recognise it, nothing more
 ```
 
-The few values are listed, so the model can only pick from them: 18 genres. The many stay out: people, keywords, and everything about a film beyond its title, unless the sentence names the film (then its own options come in, see packs below). The model writes what you said, and code finds the real thing. With 200 films, this repo can afford one index line per film. A real catalog of 19,072 films lists none, and code spots the titles in the sentence instead: the whole offer then fits in about 3,200 tokens (the article has the measurement).
+The few values are listed, so the model can only pick from them: 18 genres. The many stay out, people and keywords: the model writes what you said, and code finds the real thing. With 200 films this repo also lists one line per film; a large catalog lists none, and code spots the titles in the sentence instead.
 
 The context stays short, and it's the same on every request, so it's cached. The model reads. It never searches, never picks an id, never decides what exists. Code runs the query on every row.
 
