@@ -4,13 +4,11 @@
 
 Movies are the example here: a movie search over 200 films, with a web demo. The same works for an online shop, hotels, flights. The trick is the search grammar pattern.
 
-The full story, with the diagrams and the numbers: [The Search Grammar Pattern: Natural Language Search with LLMs](https://corneliucroitoru.com/writing/search-grammar-pattern/).
+The full story, on a real catalog of 19,072 films, with the numbers: [The Search Grammar Pattern: Natural Language Search with LLMs](https://corneliucroitoru.com/writing/search-grammar-pattern/).
 
 ![The web demo in this repo: a sentence typed, one model call, the films with their posters, every step in plain words, and a director not in the data said plainly](docs/demo.gif)
 
 *The web demo in this repo: `python3 -m examples.movies.web`. 200 films, one model call per search, and every step code took, shown under the results.*
-
-The pattern comes from Tonight, my movie app at home, on 19,072 real films: [the full tour on YouTube](https://youtu.be/hoCesxy2o08).
 
 ## The problem
 
@@ -35,9 +33,7 @@ Everything you hand the model, you can only **ask**. Everything you keep in code
 
 **2 · One LLM call reads the sentence against the grammar.** The grammar is the offer described by its dimensions instead of its rows: every field a person can mean, plus the few closed values (19 genres). Not the catalog. The model fills the fields as strict JSON. It never searches, never picks an id, never says "I can't".
 
-![Tonight's 19,072 films as rows (about 1.1 million tokens) or as dimensions (about 3,200 tokens)](docs/rows-vs-dimensions.png)
-
-Measured on Tonight's real data, 19,072 films: about 1.1 million tokens as rows, about 3,200 as a grammar. The same on every request, so it's cached.
+In this repo, measured by `measure.py` with no model: carrying every offer would cost about 397,000 tokens per request; the grammar with two films loaded costs about 2,700, mostly the same on every request, so it's cached. The offers are invented, so read the ratio as an illustration; the article measures a real catalog.
 
 **3 · The resolver turns the model's words into catalog values.** The model writes loose words; code finds the real thing and says how sure it is. Without this, the model's words would match nothing.
 
@@ -47,25 +43,11 @@ Measured on Tonight's real data, 19,072 films: about 1.1 million tokens as rows,
 "le parrain"  ->  The Godfather (1972)    exact   every title, in every language
 ```
 
-**4 · Code queries every film.** The filters run over the whole catalog: SQL in Tonight, plain Python here. Then code says back what it did: applied, cannot (with the reason), not found, did you mean. Only code says "can't", because only code knows the data.
-
-## Tonight and this repo
-
-Tonight is the real app: 9 searches in the [full video on YouTube](https://youtu.be/hoCesxy2o08), one model call each, every result checked film by film.
-
-**This repo is not Tonight.** Tonight is private: real catalog, real streaming data, its own interface. This repo rebuilds the engine, with a small web demo, so you can run it and read it in ten minutes:
-
-| | Tonight (the video) | This repo |
-|---|---|---|
-| Films | 19,072, everything on my 14 services | 200, the most known on Wikipedia, plus 30 French |
-| Where to watch | real streaming availability | 17,262 **invented** offers on 8 fictional services |
-| What it shows | the grammar and the forgiving search, at full size | the same, plus packs: options each film has that no model has seen |
-
-So the searches from the video will not all work here. Most of those films are simply not in the 200. See [The data](#the-data).
+**4 · Code queries every film.** The filters run over the whole catalog: plain Python here; with a database, the same filters become SQL. Then code says back what it did: applied, cannot (with the reason), not found, did you mean. Only code says "can't", because only code knows the data.
 
 ## One step further: packs
 
-In Tonight, a film is on a service or not. Some catalogs go further: every item has its own options. Here, Titanic (1997) has a *Cameron's cut* and an *extended (+37 min)*, on some services, in some languages. No model knows that.
+In a simple catalog, a film is on a service or not. Some catalogs go further: every item has its own options. Here, Titanic (1997) has a *Cameron's cut* and an *extended (+37 min)*, on some services, in some languages. No model knows that.
 
 So the repo adds two things to the grammar:
 
@@ -149,7 +131,7 @@ What I did not find written up: a grammar deliberately wider than what the syste
 
 ## Limits
 
-- 200 films. Many searches find little, and code says why. Tonight shows the full size.
+- 200 films. Many searches find little, and code says why.
 - The offers are invented. Real catalogs are messier, and less repetitive.
 - Ranking is basic: popularity, or price. The grammar decides what matches, not what is best.
 - Every capability is code you write. Moving a field from `later` to `ready` is work, not a prompt edit.

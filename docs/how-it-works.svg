@@ -50,7 +50,7 @@
 <text x="520" y="858" font-size="15" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace" xml:space="preserve">WHERE director = &#x27;Martin Scorsese&#x27;</text>
 <text x="520" y="882" font-size="15" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace" xml:space="preserve">  AND cast INCLUDES ANY (&#x27;Leonardo DiCaprio&#x27;, &#x27;Kate Winslet&#x27;)</text>
 <text x="520" y="906" font-size="15" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace" xml:space="preserve">  AND film &lt;&gt; &#x27;Q44578&#x27;</text>
-<text x="132" y="950" font-size="13" fill="#6f7680" font-weight="400" text-anchor="start" xml:space="preserve">SQL in Tonight, plain Python in this repo</text>
+<text x="132" y="950" font-size="13" fill="#6f7680" font-weight="400" text-anchor="start" xml:space="preserve">plain Python in this repo; with a database, the same filters become SQL</text>
 <line x1="600" y1="970" x2="600" y2="990" stroke="#a9a397" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="60" y="994" width="1080" height="64" rx="12" fill="#1b2a26" stroke="#7fc4b4" stroke-width="1.4"/>
 <text x="84" y="1034" font-size="18" fill="#7fc4b4" font-weight="600" text-anchor="start" xml:space="preserve">The Departed (2006)  ·  The Wolf of Wall Street (2013)  ·  Shutter Island (2010)</text>
