@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="Instrument Sans, Helvetica Neue, Arial, sans-serif">
+<title>How one sentence becomes a query over the whole catalog: code spots the names, one LLM call reads the sentence against the grammar, code resolves the words and queries every film</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a9a397"/></marker></defs>
+<rect width="1200" height="900" fill="#0f141b"/>
+<text x="60" y="62" font-size="13" fill="#e2a75a" font-weight="700" text-anchor="start" letter-spacing="1.4">HOW ONE SENTENCE BECOMES A QUERY OVER THE WHOLE CATALOG</text>
+<rect x="60" y="86" width="1080" height="70" rx="12" fill="#11171f" stroke="#93b1e6" stroke-width="1.6"/>
+<text x="84" y="116" font-size="11" fill="#6f7680" font-weight="700" text-anchor="start" letter-spacing="1.2">SOMEONE TYPES</text>
+<text x="84" y="142" font-size="19" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">“a movie with the leading actors from titanic, directed by scorcese”</text>
+<line x1="600" y1="162" x2="600" y2="182" stroke="#a9a397" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="60" y="186" width="1080" height="118" rx="12" fill="#161d26" stroke="#2c3440" />
+<circle cx="100" cy="222" r="17" fill="#e2a75a"/>
+<text x="100" y="228" font-size="16" fill="#0f141b" font-weight="800" text-anchor="middle">1</text>
+<text x="132" y="220" font-size="13" fill="#e2a75a" font-weight="700" text-anchor="start" letter-spacing="1.2">CODE</text>
+<text x="132" y="242" font-size="16" fill="#f3efe6" font-weight="600" text-anchor="start">spots the films named</text>
+<text x="520" y="222" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">titanic  →  Titanic (1997)</text>
+<text x="520" y="248" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">also the 1953 and 1943 films: offered as “did you mean”</text>
+<text x="132" y="286" font-size="13" fill="#6f7680" font-weight="400" text-anchor="start">fuzzy match on titles, no embeddings</text>
+<line x1="600" y1="306" x2="600" y2="326" stroke="#a9a397" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="60" y="330" width="1080" height="118" rx="12" fill="#161d26" stroke="#2c3440" />
+<circle cx="100" cy="366" r="17" fill="#93b1e6"/>
+<text x="100" y="372" font-size="16" fill="#0f141b" font-weight="800" text-anchor="middle">2</text>
+<text x="132" y="364" font-size="13" fill="#93b1e6" font-weight="700" text-anchor="start" letter-spacing="1.2">ONE LLM CALL</text>
+<text x="132" y="386" font-size="16" fill="#f3efe6" font-weight="600" text-anchor="start">reads the sentence against the grammar</text>
+<text x="520" y="366" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">directed_by: &quot;Martin Scorsese&quot;</text>
+<text x="520" y="392" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">references: the lead_actors of &quot;Titanic&quot;</text>
+<text x="132" y="430" font-size="13" fill="#6f7680" font-weight="400" text-anchor="start">the grammar: every field a person can mean, the closed values, the films named. Not the rows</text>
+<line x1="600" y1="450" x2="600" y2="470" stroke="#a9a397" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="60" y="474" width="1080" height="118" rx="12" fill="#161d26" stroke="#2c3440" />
+<circle cx="100" cy="510" r="17" fill="#e2a75a"/>
+<text x="100" y="516" font-size="16" fill="#0f141b" font-weight="800" text-anchor="middle">3</text>
+<text x="132" y="508" font-size="13" fill="#e2a75a" font-weight="700" text-anchor="start" letter-spacing="1.2">CODE</text>
+<text x="132" y="530" font-size="16" fill="#f3efe6" font-weight="600" text-anchor="start">the resolver: words into catalog values</text>
+<text x="520" y="510" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">Martin Scorsese  →  exact match</text>
+<text x="520" y="536" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">lead actors of Titanic (1997)  →  Leonardo DiCaprio, Kate Winslet</text>
+<text x="132" y="574" font-size="13" fill="#6f7680" font-weight="400" text-anchor="start">the model normalised “scorcese”; code checks every name against the catalog</text>
+<line x1="600" y1="594" x2="600" y2="614" stroke="#a9a397" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="60" y="618" width="1080" height="140" rx="12" fill="#161d26" stroke="#2c3440" />
+<circle cx="100" cy="654" r="17" fill="#e2a75a"/>
+<text x="100" y="660" font-size="16" fill="#0f141b" font-weight="800" text-anchor="middle">4</text>
+<text x="132" y="652" font-size="13" fill="#e2a75a" font-weight="700" text-anchor="start" letter-spacing="1.2">CODE</text>
+<text x="132" y="674" font-size="16" fill="#f3efe6" font-weight="600" text-anchor="start">queries every film</text>
+<text x="520" y="654" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">WHERE director = &#x27;Martin Scorsese&#x27;</text>
+<text x="520" y="680" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">  AND cast INCLUDES ANY (&#x27;Leonardo DiCaprio&#x27;, &#x27;Kate Winslet&#x27;)</text>
+<text x="520" y="706" font-size="16" fill="#f3efe6" font-weight="400" text-anchor="start" font-family="Menlo, SF Mono, Consolas, monospace">  AND film &lt;&gt; Titanic (1997)</text>
+<text x="132" y="740" font-size="13" fill="#6f7680" font-weight="400" text-anchor="start">SQL in Tonight, plain Python in this repo</text>
+<line x1="600" y1="760" x2="600" y2="780" stroke="#a9a397" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="60" y="784" width="1080" height="64" rx="12" fill="#1b2a26" stroke="#7fc4b4" stroke-width="1.4"/>
+<text x="84" y="824" font-size="18" fill="#7fc4b4" font-weight="600" text-anchor="start">The Departed (2006)  ·  The Wolf of Wall Street (2013)  ·  Shutter Island (2010)</text>
+<text x="600" y="876" font-size="17" fill="#f3efe6" font-weight="600" text-anchor="middle">No RAG. No embeddings. No vector database. The model never sees a row of the catalog.</text>
+</svg>

@@ -1,8 +1,8 @@
-# llm-search-grammar: natural language movie search with LLMs
+# Natural language search over your whole catalog, without RAG
 
-**Say what you feel like watching, in your own words. Get real films from the catalog, never invented ones. One small LLM call per search.**
+**Type a sentence, get real results from every row. One small LLM call reads it against a grammar of your catalog, and code runs the query. No embeddings, no vector database, nothing invented.**
 
-How it works is the search grammar pattern: the model reads your sentence against a compact grammar of the catalog, and code decides what exists. Movies are the example. The same works for any catalog: an online shop, hotels, flights.
+Movies are the example here: a movie search over 200 films, with a web demo. The same works for an online shop, hotels, flights. The trick is the search grammar pattern.
 
 The full story, with the diagrams and the numbers: [The Search Grammar Pattern: Natural Language Search with LLMs](https://corneliucroitoru.com/writing/search-grammar-pattern/).
 
@@ -28,6 +28,8 @@ I tried a prompt with tools first. It failed in the same places every time. The 
 Everything you hand the model, you can only **ask**. Everything you keep in code, you can **guarantee**.
 
 ## The solution: the search grammar pattern
+
+![How one sentence becomes a query over the whole catalog: code spots the films named, one LLM call reads the sentence against the grammar, the resolver turns words into catalog values, code queries every film](docs/how-it-works.png)
 
 **The offer, described by its dimensions instead of its rows.**
 
