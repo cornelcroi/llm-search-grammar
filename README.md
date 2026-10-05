@@ -4,6 +4,12 @@
 
 The full story, with the diagrams and the numbers: [The Search Grammar Pattern: Natural Language Search with LLMs](https://corneliucroitoru.com/writing/search-grammar-pattern/).
 
+[![Tonight, my movie app, answering "a movie with the leading actors from titanic, directed by scorcese": one small LLM call, then code finds the films](docs/demo.gif)](https://youtu.be/hoCesxy2o08)
+
+*Tonight, my movie app at home, running the pattern on 19,072 real films. Click for the full tour on YouTube.*
+
+**This repo is the engine, not the app.** No UI: you run it in the terminal and get what the model parsed, what code applied, and the films, as text. Tonight's interface stays private.
+
 ## The problem
 
 At home we pay for several streaming services. I wanted one search across all of them, in plain words:
@@ -42,13 +48,11 @@ Neither works alone. Without the forgiving search, the model's loose words match
 
 Then code runs the query, and says back what it did: `applied`, `cannot` (with the reason), `unapplied`, `did_you_mean`. The model never says "I can't". Only code does, because only code knows the data.
 
-## Live demo
+## Tonight and this repo
 
-[![The search grammar pattern, live: Tonight answering 9 real searches, one small LLM call each](docs/demo.png)](https://youtu.be/hoCesxy2o08)
+The demo above is Tonight: 9 real searches in the full video, one model call each, every result checked film by film.
 
-Tonight on my machine: 9 real searches, one model call each, every result checked film by film.
-
-**This repo is not Tonight.** Tonight is private: real catalog, real streaming data. This repo rebuilds the pattern so you can run it and read it in ten minutes:
+**This repo is not Tonight.** Tonight is private: real catalog, real streaming data, its own interface. This repo is the engine, rebuilt so you can run it and read it in ten minutes:
 
 | | Tonight (the video) | This repo |
 |---|---|---|
