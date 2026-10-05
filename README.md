@@ -29,6 +29,22 @@ Everything you hand the model, you can only **ask**. Everything you keep in code
 
 **Describe the offer by its dimensions, not its rows.**
 
+One sentence, real output:
+
+```
+YOU     "a movie with the leading actors from titanic, directed by scorcese"
+
+MODEL   { "directed_by": ["Martin Scorsese"],                        ← fixed the spelling
+          "references": [{ "film": "Titanic", "wants": "lead_actors" }] }   ← never saw the cast
+
+CODE    { "director": ["Martin Scorsese"],                           ← checked in the catalog
+          "cast": ["Leonardo DiCaprio", "Kate Winslet"] }            ← Titanic's first two names
+
+RESULT  The Departed · The Wolf of Wall Street · Shutter Island
+```
+
+The model writes what you meant, in the grammar's words, without knowing the data. Code turns those words into catalog values. Then it's a plain query.
+
 In a few words:
 
 1. **The grammar.** A short description of everything the catalog can answer: the fields a person can ask about, what each one means, and the few closed values (18 genres). It condenses the whole offer into a few thousand tokens, the same on every request, so it's cached.
