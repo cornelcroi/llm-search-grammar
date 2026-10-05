@@ -33,12 +33,12 @@ Everything you hand the model, you can only **ask**. Everything you keep in code
 
 The model writes what you meant, in the grammar's words, without knowing the data: `"wants": "lead_actors"`. Code turns those words into catalog values: Leonardo DiCaprio, Kate Winslet. Then it's a plain query.
 
-In a few words:
+The four steps of the diagram:
 
-1. **The grammar.** A short description of everything the catalog can answer: the fields a person can ask about, what each one means, and the few closed values (18 genres). It condenses the whole offer into a few thousand tokens, the same on every request, so it's cached.
-2. **One LLM call.** The model reads the sentence against the grammar and fills the fields, as strict JSON. It points at what you want; it never searches, never writes an offer id or a price.
-3. **The resolver.** Some fields go straight into the query: years, genres. Others mean nothing to a database as written, so code resolves them first. Loose names become real ones through a forgiving search ("scorcese", "godfathr", "le parrain"), with how sure it is: exact, close, or "did you mean". "The lead actors of Titanic" becomes the first two names of its cast. "My 6 year old" becomes the genres allowed. So the grammar can offer any field the resolver knows how to turn into a filter, not only the database's columns.
-4. **The query.** Code searches every row with those values, and says back what it applied, what it couldn't, and why.
+1. **Code spots the films named.** A forgiving search, plain fuzzy matching on titles, finds "titanic" in the sentence and adds what the model needs to know about it. Other films with the same name come back as "did you mean", never hidden.
+2. **One LLM call reads the sentence against the grammar.** The grammar is a short description of everything the catalog can answer: the fields a person can ask about, what each one means, and the few closed values (18 genres). It condenses the whole offer into a few thousand tokens, the same on every request, so it's cached. The model fills the fields as strict JSON. It points at what you want; it never searches, never writes an offer id or a price.
+3. **The resolver turns the model's words into catalog values.** Some fields go straight into the query: years, genres. Others mean nothing to a database as written, so code resolves them first. Loose names become real ones ("scorcese", "godfathr", "le parrain"), with how sure it is: exact, close, or "did you mean". "The lead actors of Titanic" becomes the first two names of its cast. "My 6 year old" becomes the genres allowed. So the grammar can offer any field the resolver knows how to turn into a filter, not only the database's columns.
+4. **Code queries every film** with those values, and says back what it applied, what it couldn't, and why.
 
 The model reads. Code decides. Without the resolver, the model's words match nothing. Without the grammar, the model has nothing precise to aim at.
 
