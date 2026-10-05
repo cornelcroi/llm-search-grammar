@@ -150,6 +150,7 @@ The question is always the same: what does each item have that no model can know
 ## What's in the repo
 
 ```
+CLAUDE.md              the index for AI coding assistants: where each step lives, the rules
 search_grammar/        the pattern, no domain in it
   grammar.py           fields with a status -> the prompt listing and the strict schema
   compact.py           folding options into families
@@ -168,6 +169,8 @@ data/                  200 real films (Wikidata, CC0) with their TMDB poster pat
 scripts/               rebuild the data, add the posters, record model answers for the tests
 tests/                 35 tests, no API key: real model answers replayed through code and the web server
 ```
+
+**Working on it with an AI coding assistant?** Start from `CLAUDE.md`: the flow in six steps, which file to read for which change, and the rules that keep the pattern true. It's the [librarian pattern](https://corneliucroitoru.com/writing/librarian-pattern/), kept light for a small repo.
 
 ## Prior art
 
