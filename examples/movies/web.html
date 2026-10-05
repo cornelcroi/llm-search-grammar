@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search grammar · demo</title>
+<style>
+  /* The look of Tonight, the app this pattern comes from: black, white at opacities, one blue. */
+  :root {
+    --bg: #000; --ink: #fff; --accent: #1485FF; --on: #29C766; --note: #73DB9E; --warn: #F5B14C; --off: #FF7A6E;
+    --ink-body: rgb(255 255 255 / .75); --ink-quiet: rgb(255 255 255 / .6); --ink-dim: rgb(255 255 255 / .45);
+    --fill-pill: rgb(255 255 255 / .12); --fill-panel: rgb(255 255 255 / .05); --line: rgb(255 255 255 / .14);
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", system-ui, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); -webkit-font-smoothing: antialiased; }
+  main { max-width: 1180px; margin: 0 auto; padding: 28px 24px 60px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
+  .mark { font-size: 22px; font-weight: 700; letter-spacing: -.01em; }
+  .mark span { color: var(--ink-dim); font-weight: 500; font-size: 15px; margin-left: 10px; }
+  form { display: flex; gap: 10px; }
+  input { flex: 1; min-width: 0; padding: 14px 18px; border-radius: 14px; border: 1px solid var(--line); background: var(--fill-pill);
+          color: var(--ink); font: 500 18px var(--font); outline: none; }
+  input:focus { border-color: var(--accent); }
+  button { padding: 0 24px; border: 0; border-radius: 14px; background: var(--accent); color: #fff; font: 600 17px var(--font); cursor: pointer; }
+  button:disabled { opacity: .5; cursor: wait; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 26px; }
+  .pill { padding: 7px 14px; border-radius: 999px; background: var(--fill-pill); color: var(--ink-body); font-size: 14px; cursor: pointer; border: 0; font-family: var(--font); }
+  .pill:hover { color: var(--ink); background: rgb(255 255 255 / .2); }
+  h2 { font-size: 20px; margin: 6px 0 14px; font-weight: 650; }
+  .count { color: var(--ink-dim); font-weight: 500; margin-left: 8px; font-size: 16px; }
+  .row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin-bottom: 30px; }
+  .card { position: relative; }
+  .poster { aspect-ratio: 2 / 3; border-radius: 10px; background: rgb(255 255 255 / .07) center / cover no-repeat; overflow: hidden; position: relative; }
+  .poster .badge { position: absolute; left: 6px; bottom: 6px; padding: 3px 7px; border-radius: 6px; background: rgb(0 0 0 / .75); font-size: 11px; font-weight: 600; }
+  .card .t { font-size: 14px; font-weight: 600; margin-top: 8px; line-height: 1.25; }
+  .card .s { font-size: 12px; color: var(--ink-quiet); margin-top: 3px; line-height: 1.35; }
+  .steps { display: grid; gap: 12px; }
+  .step { background: var(--fill-panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .step h3 { margin: 0 0 10px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-dim); font-weight: 650; }
+  .step h3 b { color: var(--ink); font-weight: 650; }
+  .kv { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { padding: 6px 11px; border-radius: 8px; background: var(--fill-pill); font-size: 14px; }
+  .chip code { font-family: var(--mono); color: var(--ink-quiet); font-size: 12px; margin-right: 6px; }
+  .chip.applied { background: rgb(41 199 102 / .16); color: var(--note); }
+  .chip.cannot { background: rgb(245 177 76 / .14); color: var(--warn); }
+  .chip.unapplied { background: rgb(255 122 110 / .14); color: var(--off); }
+  .chip.mean { cursor: pointer; border: 1px dashed var(--line); background: none; color: var(--ink); font-family: var(--font); }
+  .note { color: var(--ink-body); font-size: 15px; line-height: 1.5; }
+  .muted { color: var(--ink-dim); font-size: 13px; }
+  .error { padding: 16px 18px; border-radius: 14px; background: rgb(255 122 110 / .12); color: var(--off); }
+  footer { margin-top: 40px; display: flex; align-items: center; gap: 14px; color: var(--ink-dim); font-size: 13px; line-height: 1.5; }
+  footer img { height: 14px; }
+  footer a { color: var(--ink-quiet); }
+  @media (max-width: 640px) { header { flex-direction: column; } .row { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark">Search grammar <span>demo · 200 real films · invented offers</span></div>
+    <a class="muted" href="https://github.com/cornelcroi/llm-search-grammar">github.com/cornelcroi/llm-search-grammar</a>
+  </header>
+  <form id="f">
+    <input id="q" autocomplete="off" placeholder="Say what you feel like watching" value="a movie with the leading actors from titanic, directed by scorcese">
+    <button id="go">Search</button>
+  </form>
+  <div class="pills" id="examples"></div>
+  <section id="out"></section>
+  <footer>
+    <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="TMDB">
+    <span>Posters from <a href="https://www.themoviedb.org">TMDB</a>. This product uses the TMDB API but is not endorsed or certified by TMDB.
+      Films from Wikidata. The offers (services, prices, editions) are invented.</span>
+  </footer>
+</main>
+<script>
+const EXAMPLES = [
+  "a movie with the leading actors from titanic, directed by scorcese",
+  "inceptoin with nolan talking over it",
+  "titanic extended cut in french, cheapest",
+  "a Truffaut film in French",
+  "a 90s Tom Hanks comedy I can rent tonight in French for under 4 euros",
+  "a cosy film like Forrest Gump for my 6 year old, without Tom Cruise",
+  "a Wes Anderson comedy",
+];
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const price = (p) => (p === 0 ? "included" : `${p.toFixed(2)} €`);
+// Values as a person reads them: lists joined, a reference like {film, wants} as "actors of Titanic".
+const val = (v) => Array.isArray(v) ? v.map(val).join(", ")
+  : v && typeof v === "object" ? (v.film && v.wants ? `${v.wants} of ${v.film}` : v.title ? `${v.title}${v.year ? ` (${v.year})` : ""}` : Object.values(v).map(val).join(" · "))
+  : v;
+
+for (const s of EXAMPLES) {
+  const b = Object.assign(document.createElement("button"), { className: "pill", textContent: s, type: "button" });
+  b.onclick = () => { $("#q").value = s; run(); };
+  $("#examples").appendChild(b);
+}
+$("#f").onsubmit = (e) => { e.preventDefault(); run(); };
+
+async function run() {
+  const q = $("#q").value.trim();
+  if (!q) return;
+  $("#go").disabled = true;
+  $("#out").innerHTML = `<p class="muted">One model call, then code…</p>`;
+  try {
+    const r = await fetch(`/search?q=${encodeURIComponent(q)}`);
+    const data = await r.json();
+    $("#out").innerHTML = data.error ? `<div class="error">${esc(data.error)}</div>` : render(data);
+    for (const m of document.querySelectorAll(".chip.mean")) m.onclick = () => { $("#q").value = m.dataset.q; run(); };
+  } catch (e) {
+    $("#out").innerHTML = `<div class="error">The demo server did not answer: ${esc(e.message)}</div>`;
+  } finally {
+    $("#go").disabled = false;
+  }
+}
+
+function card(f) {
+  const w = f.way;
+  const style = f.poster ? `style="background-image:url('${esc(f.poster)}')"` : "";
+  return `<div class="card">
+    <div class="poster" data-poster="${esc(f.poster || "")}" ${style}>${w ? `<span class="badge">${esc(w.service)}</span>` : ""}</div>
+    <div class="t">${esc(f.title)} <span class="muted">${f.year}</span></div>
+    <div class="s">${w ? `${esc(w.mode)} · ${esc(w.quality)} · ${esc(w.edition)} · ${price(w.price)}` : esc(f.directors.join(", "))}</div>
+  </div>`;
+}
+
+function chips(obj, cls) {
+  return Object.entries(obj).map(([k, v]) =>
+    `<span class="chip ${cls}"><code>${esc(k)}</code>${esc(cls === "cannot" ? `${val(v.asked ?? "")} — ${v.why}` : val(v))}</span>`).join("");
+}
+
+function render(d) {
+  let html = "";
+  for (const q of d.queries) {
+    html += `<h2>${esc(q.label || d.sentence)}<span class="count">${q.total} film${q.total === 1 ? "" : "s"}</span></h2>`;
+    html += q.films.length ? `<div class="row">${q.films.map(card).join("")}</div>` : `<p class="note">${esc(q.report.why_nothing || "Nothing matches.")}</p>`;
+  }
+  // The steps: what the model parsed, then what code did with it.
+  html += `<div class="steps">`;
+  html += `<div class="step"><h3><b>1 · The model</b> reads the sentence against the grammar</h3><div class="kv">`;
+  for (const t of d.trace) html += `<span class="chip"><code>code</code>${esc(t)}</span>`;
+  for (const q of d.queries) html += chips(q.parsed, "");
+  for (const p of d.picks) html += `<span class="chip"><code>points</code>${esc(val(p.pointer))}</span>`;
+  html += `</div></div>`;
+  html += `<div class="step"><h3><b>2 · Code</b> decides what can be applied</h3><div class="kv">`;
+  for (const q of d.queries) {
+    const r = q.report;
+    if (r.applied) html += chips(r.applied, "applied");
+    if (r.cannot) html += chips(r.cannot, "cannot");
+    if (r.unapplied) html += r.unapplied.map((u) => `<span class="chip unapplied"><code>not applied</code>${esc(u)}</span>`).join("");
+    if (r.did_you_mean) html += r.did_you_mean.map((m) => `<button class="chip mean" data-q="${esc(m)}"><code>did you mean</code>${esc(m)}</button>`).join("");
+    if (r.relaxed && r.relaxed.length) html += `<span class="chip cannot"><code>relaxed</code>${esc(val(r.relaxed))}</span>`;
+  }
+  html += `</div></div>`;
+  if (d.picks.length) {
+    html += `<div class="step"><h3><b>3 · Pointers</b>, checked against the pack by code</h3>`;
+    for (const p of d.picks) {
+      const r = p.result;
+      html += r.verdict === "dropped"
+        ? `<p class="note">dropped · ${esc(r.why)}</p>`
+        : `<p class="note"><b>${esc(r.verdict)}</b> · ${esc(r.film)} · ${esc(r.what)} · ${price(r.price)}${(r.missing || []).map((m) => `<br><span class="muted">missing: ${esc(m)}</span>`).join("")}</p>`;
+    }
+    html += `</div>`;
+  }
+  const u = d.usage;
+  html += `<p class="muted">${u.calls} model call · ${u.prompt_tokens.toLocaleString()} prompt tokens (${u.cached_tokens.toLocaleString()} cached) · ${u.completion_tokens} completion tokens · ${esc(d.model)}</p>`;
+  return html + `</div>`;
+}
+run();
+</script>
+</body>
+</html>

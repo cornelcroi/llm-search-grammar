@@ -4,11 +4,11 @@
 
 The full story, with the diagrams and the numbers: [The Search Grammar Pattern: Natural Language Search with LLMs](https://corneliucroitoru.com/writing/search-grammar-pattern/).
 
-[![Tonight, my movie app, answering "a movie with the leading actors from titanic, directed by scorcese": one small LLM call, then code finds the films](docs/demo.gif)](https://youtu.be/hoCesxy2o08)
+![The web demo in this repo: a sentence typed, one small LLM call, the films with their posters, then what the model parsed and what code applied](docs/demo.gif)
 
-*Tonight, my movie app at home, running the pattern on 19,072 real films. Click for the full tour on YouTube.*
+*The web demo in this repo: `python3 -m examples.movies.web`. 200 films, one model call per search, and every step code took, shown under the results.*
 
-**This repo is the engine, not the app.** No UI: you run it in the terminal and get what the model parsed, what code applied, and the films, as text. Tonight's interface stays private.
+The pattern comes from Tonight, my movie app at home, on 19,072 real films. See it below, or the [full tour on YouTube](https://youtu.be/hoCesxy2o08).
 
 ## The problem
 
@@ -50,9 +50,11 @@ Then code runs the query, and says back what it did: `applied`, `cannot` (with t
 
 ## Tonight and this repo
 
-The demo above is Tonight: 9 real searches in the full video, one model call each, every result checked film by film.
+[![Tonight, my movie app, answering "a movie with the leading actors from titanic, directed by scorcese": one small LLM call, then code finds the films](docs/tonight.gif)](https://youtu.be/hoCesxy2o08)
 
-**This repo is not Tonight.** Tonight is private: real catalog, real streaming data, its own interface. This repo is the engine, rebuilt so you can run it and read it in ten minutes:
+*Tonight, the real app: 9 searches in the [full video](https://youtu.be/hoCesxy2o08), one model call each, every result checked film by film.*
+
+**This repo is not Tonight.** Tonight is private: real catalog, real streaming data, its own interface. This repo rebuilds the engine, with a small web demo, so you can run it and read it in ten minutes:
 
 | | Tonight (the video) | This repo |
 |---|---|---|
@@ -96,7 +98,7 @@ The grammar is also **wider than what the system can do**. Each field has a stat
 
 ## The data
 
-`data/films.json`: 200 real films from Wikidata (CC0). For each: title, French title, original title, year, runtime, directors, the first 8 actors in billing order, genres, topics, countries, languages.
+`data/films.json`: 200 real films from Wikidata (CC0). For each: title, French title, original title, year, runtime, directors, the first 8 actors in billing order, genres, topics, countries, languages, and the TMDB poster path for the web demo (`scripts/add_posters.py`).
 
 - **Years** 1925 to 2023, mostly 1990 to 2019.
 - **Mostly American and English-speaking** (167 US, 185 with English). 32 French, a few Italian, German, Japanese, one Korean (Parasite).
@@ -120,11 +122,12 @@ Good searches here: the famous films, Nolan, Spielberg, Tarantino, the French cl
 
 Python 3.10+. No dependencies.
 
-It needs an OpenAI API key: each search is one call, about 5,500 prompt tokens, mostly cached, to a small model. The tests and `measure` need no key.
+It needs an OpenAI API key: each search is one call, about 5,500 prompt tokens, mostly cached, to a small model. The tests and `measure` need no key. The posters need no key either: they load from TMDB's image server.
 
 ```bash
 cp .env.example .env        # then put your key in .env (git-ignored), or export OPENAI_API_KEY
-python3 -m examples.movies "something with the actors from Titanic, in 4K"
+python3 -m examples.movies.web                       # the web demo: http://127.0.0.1:8000
+python3 -m examples.movies "something with the actors from Titanic, in 4K"   # the same steps, in the terminal
 python3 -m examples.movies.measure Titanic
 python3 -m unittest discover -s tests -t .
 ```
@@ -158,10 +161,12 @@ examples/movies/
   assistant.py         the prompt, the lines of the films named, the one call
   resolve.py           words into the catalog: applied, cannot, why nothing
   picks.py             pointers checked against the pack: strict, partial, dropped
+  explain.py           one search, every step, as data: what the terminal and the web demo show
+  web.py, web.html     the web demo: standard library server, one page, posters from TMDB
   measure.py           token counts, no model
-data/                  200 real films (Wikidata, CC0), 17,262 invented offers
-scripts/               rebuild the data, record model answers for the tests
-tests/                 29 tests, no API key: real model answers replayed through code
+data/                  200 real films (Wikidata, CC0) with their TMDB poster paths, 17,262 invented offers
+scripts/               rebuild the data, add the posters, record model answers for the tests
+tests/                 35 tests, no API key: real model answers replayed through code and the web server
 ```
 
 ## Prior art
@@ -180,4 +185,4 @@ What I did not find written up: a grammar deliberately wider than what the syste
 
 ## Licence
 
-MIT. Films from Wikidata, public domain.
+MIT. Films from Wikidata, public domain. Posters from [TMDB](https://www.themoviedb.org): this product uses the TMDB API but is not endorsed or certified by TMDB. The posters themselves are not in the repo; the demo loads them from TMDB.
