@@ -1,0 +1,33 @@
+#!/bin/sh
+# Flow-doc guard (the librarian pattern). Source files declare the flows they implement in a
+# FLOW-CRITICAL header naming flows/*.md. If such a file is committed and NONE of its flow docs are in
+# the same commit, warn: the change may have altered a documented flow without updating the doc.
+# Warning only: plenty of edits (typos, style) don't touch the flow, and a hard block teaches bypassing.
+# Enable once per clone:  git config core.hooksPath scripts/hooks
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+warned=0
+for f in $staged; do
+  case "$f" in
+    *.py|*.html) ;;
+    *) continue ;;
+  esac
+  [ -f "$f" ] || continue
+  docs=$(head -5 "$f" | grep -o 'flows/[a-z-]*\.md' | sort -u)
+  [ -z "$docs" ] && continue
+  found=0
+  for doc in $docs; do
+    if printf '%s\n' "$staged" | grep -qx "$doc"; then
+      found=1
+      break
+    fi
+  done
+  if [ "$found" -eq 0 ]; then
+    echo "flow-doc guard: $f changed, but none of its flow docs are in this commit:"
+    for doc in $docs; do echo "  - $doc"; done
+    warned=1
+  fi
+done
+if [ "$warned" -eq 1 ]; then
+  echo "flow-doc guard: if the flow itself didn't change, ignore this. (warning only)"
+fi
+exit 0

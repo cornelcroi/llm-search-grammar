@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/search.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """One search, every step, as data: what code loaded, what the model parsed, what code applied and why,
 the films found, the pointers checked. The terminal demo prints it, the web demo shows it.
 """

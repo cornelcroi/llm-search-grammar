@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/data.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """Record real model answers for the tests, so they run without an API key.
 
     OPENAI_API_KEY=... python3 scripts/record_answers.py

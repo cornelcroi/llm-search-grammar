@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/grammar.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """The search grammar: every field a person can mean, in one place.
 
 A field is what it means (in the words the model reads), its JSON shape, and a STATUS:

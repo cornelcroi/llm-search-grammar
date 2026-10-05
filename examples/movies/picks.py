@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/packs.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """The model points; code owns the ids.
 
 A pick names a film ref, a family ref and some values. Code checks each against the pack it was

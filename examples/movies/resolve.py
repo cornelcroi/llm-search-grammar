@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/search.md, flows/grammar.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """Words into the catalogue. No model here: this is the half that knows the data.
 
 Everything a viewer reads about what was done comes from here: `applied` is what code applied,

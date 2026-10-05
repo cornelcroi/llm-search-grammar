@@ -129,7 +129,8 @@ The question is always the same: what does each item have that no model can know
 ## What's in the repo
 
 ```
-CLAUDE.md              the index for AI coding assistants: where each step lives, the rules
+CLAUDE.md, FLOWS.md    for AI coding assistants: the rules, and the index of the flows
+flows/                 one doc per flow: search, grammar, packs, data
 search_grammar/        the pattern, no domain in it
   grammar.py           fields with a status -> the prompt listing and the strict schema
   compact.py           folding options into families
@@ -146,10 +147,11 @@ examples/movies/
   measure.py           token counts, no model
 data/                  200 real films (Wikidata, CC0) with their TMDB poster paths, 17,262 invented offers
 scripts/               rebuild the data, add the posters, record model answers for the tests
+  hooks/pre-commit     warns when a flow's code changes without its doc
 tests/                 35 tests, no API key: real model answers replayed through code and the web server
 ```
 
-**Working on it with an AI coding assistant?** Start from `CLAUDE.md`: the flow in six steps, which file to read for which change, and the rules that keep the pattern true. It's the [librarian pattern](https://corneliucroitoru.com/writing/librarian-pattern/), kept light for a small repo.
+**Working on it with an AI coding assistant?** The repo uses the [librarian pattern](https://corneliucroitoru.com/writing/librarian-pattern/). `CLAUDE.md` has the rules and points to `FLOWS.md`, the index: one line per flow, one doc per flow in `flows/`. Every source file names its flow doc in its first line, and `scripts/hooks/pre-commit` warns when a flow's code changes without its doc (`git config core.hooksPath scripts/hooks` to enable it). The assistant reads the index, then only the doc it needs.
 
 ## Prior art
 

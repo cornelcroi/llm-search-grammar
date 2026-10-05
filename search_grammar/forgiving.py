@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/search.md, flows/packs.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """The forgiving search: loose words in, the real thing out, and an honest word about how sure.
 
 A compact grammar lets the model write loose words ("inceptoin", "the nolan one", "cameron cut").

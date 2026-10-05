@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/search.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """The same search, in a browser: posters, and every step code took.
 
     python3 -m examples.movies.web          ->  http://127.0.0.1:8000

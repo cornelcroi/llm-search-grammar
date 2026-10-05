@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/packs.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """The watch offers of the movie example, as a compact grammar.
 
 The offers are INVENTED (scripts/generate_offers.py): fictional services, made-up prices. They stand

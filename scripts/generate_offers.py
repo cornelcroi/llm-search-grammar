@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/data.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """Invent the watch offers for data/films.json: where, and how, each film can be watched.
 
     python3 scripts/generate_offers.py

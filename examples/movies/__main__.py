@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/search.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """Run a sentence through the grammar and show every step.
 
     python3 -m examples.movies "inceptoin with nolan talking over it"

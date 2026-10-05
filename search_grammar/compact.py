@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/packs.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """The compact grammar: everything that exists, small enough for a model to hold.
 
 Three layers, each with one job:

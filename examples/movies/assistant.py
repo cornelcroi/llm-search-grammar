@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/search.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """The model's side: read the sentence against the grammar, point. ONE call.
 
 In the prompt, always: the rules, the grammar, the index of films, the offers dictionary. With the

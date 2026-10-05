@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/data.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """Add each film's TMDB id and poster path to data/films.json, for the web demo.
 
     TMDB_TOKEN=... python3 scripts/add_posters.py

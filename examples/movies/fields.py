@@ -1,3 +1,5 @@
+# FLOW-CRITICAL: implements flows/grammar.md
+# Read the doc before changing behavior here; a change that alters the flow updates the doc in the same commit.
 """The movie grammar: every field a viewer can mean. The one place the search vocabulary exists.
 
 Nothing here names a database column, a rating code or a service's internal id. The model reads a
