@@ -4,11 +4,11 @@
 
 The full story, with the diagrams and the numbers: [The Search Grammar Pattern: Natural Language Search with LLMs](https://corneliucroitoru.com/writing/search-grammar-pattern/).
 
-![The web demo in this repo: a sentence typed, one small LLM call, the films with their posters, then what the model parsed and what code applied](docs/demo.gif)
+![The web demo in this repo: a sentence typed, one model call, the films with their posters, every step in plain words, and a director not in the data said plainly](docs/demo.gif)
 
 *The web demo in this repo: `python3 -m examples.movies.web`. 200 films, one model call per search, and every step code took, shown under the results.*
 
-The pattern comes from Tonight, my movie app at home, on 19,072 real films. See it below, or the [full tour on YouTube](https://youtu.be/hoCesxy2o08).
+The pattern comes from Tonight, my movie app at home, on 19,072 real films: [the full tour on YouTube](https://youtu.be/hoCesxy2o08).
 
 ## The problem
 
@@ -50,9 +50,7 @@ Then code runs the query, and says back what it did: `applied`, `cannot` (with t
 
 ## Tonight and this repo
 
-[![Tonight, my movie app, answering "a movie with the leading actors from titanic, directed by scorcese": one small LLM call, then code finds the films](docs/tonight.gif)](https://youtu.be/hoCesxy2o08)
-
-*Tonight, the real app: 9 searches in the [full video](https://youtu.be/hoCesxy2o08), one model call each, every result checked film by film.*
+Tonight is the real app: 9 searches in the [full video on YouTube](https://youtu.be/hoCesxy2o08), one model call each, every result checked film by film.
 
 **This repo is not Tonight.** Tonight is private: real catalog, real streaming data, its own interface. This repo rebuilds the engine, with a small web demo, so you can run it and read it in ten minutes:
 

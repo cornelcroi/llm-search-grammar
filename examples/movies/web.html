@@ -126,9 +126,30 @@ function card(f) {
   </div>`;
 }
 
-function chips(obj, cls) {
-  return Object.entries(obj).map(([k, v]) =>
-    `<span class="chip ${cls}"><code>${esc(k)}</code>${esc(cls === "cannot" ? `${val(v.asked ?? "")} — ${v.why}` : val(v))}</span>`).join("");
+// Plain words for the grammar's field names (what the model filled) and code's filter names (what it applied).
+const SAID = {
+  films: "the film", similar_to: "like", people: "with", directed_by: "directed by", people_not: "without",
+  references: "", people_nationality: "people from", genre: "genre", genre_not: "not", topics: "about",
+  topics_not: "not about", mood: "mood", language: "in", country: "from", country_not: "not from",
+  year_min: "from", year_max: "until", runtime_max: "under, minutes", age: "for a child of", audience: "for",
+  awards: "awards", occasion: "for", watch_mode: "to", max_price: "under, €", quality: "in", audio: "audio",
+  subtitles: "subtitles", edition: "edition", services: "on", prefer: "the", exact: "exactly",
+};
+const DID = {
+  cast: "actors", director: "director", cast_not: "without", through: "found through", genre: "genre",
+  genre_not: "not", topics: "about", topics_not: "not about", language: "language", country: "from",
+  country_not: "not from", year_min: "from", year_max: "until", runtime_max: "at most, minutes", age: "for age",
+  audience: "for", edition: "edition", prefer: "sorted by", quality: "quality", audio: "audio", subtitles: "subtitles",
+  max_price: "under, €", watch_mode: "to", services: "on", films: "the film",
+};
+const SKIP = new Set(["label", "genre_mode", "cast_mode", "type"]);
+const words = (k, dict) => (k in dict ? dict[k] : k.replace(/_/g, " "));
+// {film, wants} -> "the lead actors of Titanic"
+const ref = (r) => `the ${String(r.wants).replace(/_/g, " ").replace(/^lead actor$/, "lead actor")} of ${r.film}`;
+const said = (k, v) => k === "references" ? [].concat(v).map(ref).join(", ") : val(v);
+
+function chip(cls, label, text) {
+  return `<span class="chip ${cls}">${label ? `<code>${esc(label)}</code>` : ""}${esc(text)}</span>`;
 }
 
 function render(d) {
@@ -137,30 +158,37 @@ function render(d) {
     html += `<h2>${esc(q.label || d.sentence)}<span class="count">${q.total} film${q.total === 1 ? "" : "s"}</span></h2>`;
     html += q.films.length ? `<div class="row">${q.films.map(card).join("")}</div>` : `<p class="note">${esc(q.report.why_nothing || "Nothing matches.")}</p>`;
   }
-  // The steps: what the model parsed, then what code did with it.
+  // The steps, in plain words: what code spotted, what the model understood, what code did with it.
   html += `<div class="steps">`;
-  html += `<div class="step"><h3><b>1 · The model</b> reads the sentence against the grammar</h3><div class="kv">`;
-  for (const t of d.trace) html += `<span class="chip"><code>code</code>${esc(t)}</span>`;
-  for (const q of d.queries) html += chips(q.parsed, "");
-  for (const p of d.picks) html += `<span class="chip"><code>points</code>${esc(val(p.pointer))}</span>`;
+  if (d.trace.length) {
+    html += `<div class="step"><h3><b>1 · Films you named</b>, spotted by code before the model</h3><div class="kv">`;
+    for (const tr of d.trace) {
+      const text = tr.replace(/^loaded /, "").replace(/\bm\d+ /g, "").replace(/, \d+ famil(?:y|ies)/g, "").replace("; also ", " · also ");
+      html += chip("", "", text);
+    }
+    html += `</div></div>`;
+  }
+  html += `<div class="step"><h3><b>${d.trace.length ? 2 : 1} · What the model understood</b> · one call</h3><div class="kv">`;
+  for (const q of d.queries)
+    for (const [k, v] of Object.entries(q.parsed)) if (!SKIP.has(k)) html += chip("", words(k, SAID), said(k, v));
   html += `</div></div>`;
-  html += `<div class="step"><h3><b>2 · Code</b> decides what can be applied</h3><div class="kv">`;
+  html += `<div class="step"><h3><b>${d.trace.length ? 3 : 2} · What code did with it</b></h3><div class="kv">`;
   for (const q of d.queries) {
     const r = q.report;
-    if (r.applied) html += chips(r.applied, "applied");
-    if (r.cannot) html += chips(r.cannot, "cannot");
-    if (r.unapplied) html += r.unapplied.map((u) => `<span class="chip unapplied"><code>not applied</code>${esc(u)}</span>`).join("");
-    if (r.did_you_mean) html += r.did_you_mean.map((m) => `<button class="chip mean" data-q="${esc(m)}"><code>did you mean</code>${esc(m)}</button>`).join("");
-    if (r.relaxed && r.relaxed.length) html += `<span class="chip cannot"><code>relaxed</code>${esc(val(r.relaxed))}</span>`;
+    for (const [k, v] of Object.entries(r.applied || {})) html += chip("applied", "✓ " + words(k, DID), val(v));
+    for (const u of r.unapplied || []) html += chip("unapplied", "✗ not in these 200 films", u);
+    for (const [k, v] of Object.entries(r.cannot || {})) html += chip("cannot", "can't yet", `${words(k, SAID)} ${val(v.asked ?? "")}: ${v.why}`);
+    for (const m of r.did_you_mean || []) html += `<button class="chip mean" data-q="${esc(m)}"><code>did you mean?</code>${esc(m)}</button>`;
+    if (r.relaxed && r.relaxed.length) html += chip("cannot", "loosened to find films", val(r.relaxed));
   }
   html += `</div></div>`;
   if (d.picks.length) {
-    html += `<div class="step"><h3><b>3 · Pointers</b>, checked against the pack by code</h3>`;
+    html += `<div class="step"><h3><b>${d.trace.length ? 4 : 3} · The version you asked for</b>, checked by code against what exists</h3>`;
     for (const p of d.picks) {
       const r = p.result;
       html += r.verdict === "dropped"
-        ? `<p class="note">dropped · ${esc(r.why)}</p>`
-        : `<p class="note"><b>${esc(r.verdict)}</b> · ${esc(r.film)} · ${esc(r.what)} · ${price(r.price)}${(r.missing || []).map((m) => `<br><span class="muted">missing: ${esc(m)}</span>`).join("")}</p>`;
+        ? `<p class="note">ignored · ${esc(r.why)}</p>`
+        : `<p class="note"><b>${r.verdict === "strict" ? "✓ exists" : "closest"}</b> · ${esc(r.film)} · ${esc(r.what)} · ${price(r.price)}${(r.missing || []).map((m) => `<br><span class="muted">✗ ${esc(m)}</span>`).join("")}</p>`;
     }
     html += `</div>`;
   }
