@@ -40,21 +40,32 @@ The model reads. Code decides. Without the forgiving search, the model's words m
 
 **Why not the whole catalog, or RAG?** The whole catalog in the prompt doesn't scale: the 17,262 offers here are about 397,000 tokens, on every request. RAG retrieves the few rows that look closest to the sentence: the model sees a sample, misses what wasn't retrieved, and fills the gaps from what it already knows. The grammar gives it the shape of everything instead: about 5,500 tokens per call here, almost all of them cached after the first.
 
-**What the model actually reads**, a real excerpt:
+**What the model actually reads**, a real excerpt. Most of the work is in the distinctions:
 
 ```
 THE FIELDS
-  directed_by   people the sentence says DIRECTED it: 'directed by Kubrick', 'a Nolan film'
-  references    a person reached THROUGH a film rather than named: 'actors from Titanic'
+  films         a film named for any reason other than wanting something like it
+  similar_to    films the viewer wants results LIKE: 'a movie like Forrest Gump'
+  references    a person reached THROUGH a film rather than named: 'actors from Titanic', 'the director of Heat'
+  language      the language a film is in, as a word: French, Italian
+  audio         the language they want to HEAR, as a word: 'in French', 'the original voices'
   genre_mode    'all' when every genre at once ('a crime drama'), 'any' when either will do
-  year_min      earliest year. 'the 90s' is 1990, 'recent' is 2015
+  topics        what the film is ABOUT, narrower than a genre and never flattened into one: heist, superhero
   age           the age of the youngest person watching. A NUMBER, never a rating
+  exact         true only if the viewer insisted: only, must, exactly. It stops the search widening
   ...           34 fields in all
 GENRES, use these words exactly: Action, Adventure, Animation, Comedy, ... (18)
+
+READ, DO NOT JUDGE, AND NEVER REPORT FAILURE
+  Fill every field the sentence asks for, best effort. There is no field to say something cannot be
+  done and you must never try: code that knows the catalogue decides that afterwards.
+
 THE INDEX, every film covered
   m83 Titanic (1997) · 80 offers
   ...           one line per film: enough to recognise it, nothing more
 ```
+
+Each line settles something a model would otherwise guess. "Titanic" in "like Titanic" and in "the actors from Titanic" are two different fields. "French" is the film's language or the audio you want to hear, not both. "Crime drama" is both genres at once. "For my 6 year old" is a number, and code decides what a 6-year-old may watch here. And the model never says what can't be done: a wish with nowhere to go is a missing field, and code is the one that says "can't".
 
 The few values are listed, so the model can only pick from them. The many stay out, people and keywords: the model writes what you said, and code finds the real thing. With 200 films this repo also lists one line per film; a large catalog lists none, and code spots the titles in the sentence instead.
 
