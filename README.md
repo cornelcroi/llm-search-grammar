@@ -33,10 +33,10 @@ In a few words:
 
 1. **The grammar.** A short description of everything the catalog can answer: the fields a person can ask about, what each one means, and the few closed values (18 genres). It condenses the whole offer into a few thousand tokens, the same on every request, so it's cached.
 2. **One LLM call.** The model reads the sentence against the grammar and fills the fields, as strict JSON. It points at what you want; it never searches, never writes an offer id or a price.
-3. **The forgiving search.** The model writes loose words: "scorcese", "godfathr", "le parrain". Code turns them into the real names and titles, and says how sure it is: exact, close, or "did you mean".
+3. **The resolver.** Some fields go straight into the query: years, genres. Others mean nothing to a database as written, so code resolves them first. Loose names become real ones through a forgiving search ("scorcese", "godfathr", "le parrain"), with how sure it is: exact, close, or "did you mean". "The lead actors of Titanic" becomes the first two names of its cast. "My 6 year old" becomes the genres allowed. So the grammar can offer any field the resolver knows how to turn into a filter, not only the database's columns.
 4. **The query.** Code searches every row with those values, and says back what it applied, what it couldn't, and why.
 
-The model reads. Code decides. Without the forgiving search, the model's words match nothing. Without the grammar, the model has nothing precise to aim at.
+The model reads. Code decides. Without the resolver, the model's words match nothing. Without the grammar, the model has nothing precise to aim at.
 
 **Why not the whole catalog, or RAG?** The whole catalog in the prompt doesn't scale: the 17,262 offers here are about 397,000 tokens, on every request. RAG retrieves the few rows that look closest to the sentence: the model sees a sample, misses what wasn't retrieved, and fills the gaps from what it already knows. The grammar gives it the shape of everything instead: about 5,500 tokens per call here, almost all of them cached after the first.
 
