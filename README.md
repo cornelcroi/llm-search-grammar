@@ -53,6 +53,8 @@ The few values are listed, so the model can only pick from them: 18 genres. The 
 
 The context stays short, and it's the same on every request, so it's cached. The model reads. It never searches, never picks an id, never decides what exists. Code runs the query on every row.
 
+**The other half is a forgiving search.** The model writes loose words: "scorcese", "godfathr", "le parrain". Code turns them into the real names and titles, and says how sure it is: exact, close, or "did you mean". Without it, the model's words match nothing. Without the grammar, the model has nothing precise to aim at. Neither works alone.
+
 ## How it works
 
 ![How one sentence becomes a query over the whole catalog: code spots the films named, one LLM call reads the sentence against the grammar, the resolver turns words into catalog values, code queries every film](docs/how-it-works.png)
@@ -61,7 +63,7 @@ The context stays short, and it's the same on every request, so it's cached. The
 
 **2 · One LLM call reads the sentence against the grammar** and fills its fields as strict JSON. It never says "I can't": a wish with nowhere to go is a missing field. With two films loaded, the whole request is about 2,700 tokens (`measure.py`), against 397,000 to carry every offer. The offers are invented, so read that ratio as an illustration.
 
-**3 · The resolver turns the model's words into catalog values.** The model writes loose words; code finds the real thing and says how sure it is. Without this, the model's words would match nothing.
+**3 · The resolver turns the model's words into catalog values,** with the forgiving search:
 
 ```
 "de nino"     ->  Robert De Niro          close
