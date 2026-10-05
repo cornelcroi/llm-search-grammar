@@ -1,6 +1,8 @@
-# llm-search-grammar: the search grammar pattern
+# llm-search-grammar: natural language movie search with LLMs
 
-**Natural language search with LLMs, over a catalog the model has never seen. One small LLM call per search. The model reads. Code decides.**
+**Say what you feel like watching, in your own words. Get real films from the catalog, never invented ones. One small LLM call per search.**
+
+How it works is the search grammar pattern: the model reads your sentence against a compact grammar of the catalog, and code decides what exists. Movies are the example. The same works for any catalog: an online shop, hotels, flights.
 
 The full story, with the diagrams and the numbers: [The Search Grammar Pattern: Natural Language Search with LLMs](https://corneliucroitoru.com/writing/search-grammar-pattern/).
 
