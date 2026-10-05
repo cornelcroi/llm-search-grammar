@@ -29,6 +29,8 @@ Everything you hand the model, you can only **ask**. Everything you keep in code
 
 **Describe the offer by its dimensions, not its rows.**
 
+The grammar does two things. It **condenses the whole offer** into a short prompt. And it gives the model **a precise way to point at it**: fields to fill, closed values to choose from, ids like `m83` instead of names. The model points; code picks the real thing.
+
 Putting the catalog in the prompt doesn't scale: the 17,262 offers here are about 397,000 tokens, on every request. RAG doesn't fix it either. It retrieves the few rows that look closest to the sentence, so the model sees a sample of the catalog, misses what wasn't retrieved, and fills the gaps from what it already knows.
 
 The grammar goes the other way. It describes what a person can ask and what kinds of values exist: the fields, what each one means, the few closed values. That fits the whole offer into a short prompt. A real excerpt of what the model reads:
