@@ -29,21 +29,9 @@ Everything you hand the model, you can only **ask**. Everything you keep in code
 
 **Describe the offer by its dimensions, not its rows.**
 
-One sentence, real output:
+![One real sentence, step by step: code spots the films named, one LLM call fills the grammar as JSON, the resolver turns those words into catalog values, code queries every film](docs/how-it-works.png)
 
-```
-YOU     "a movie with the leading actors from titanic, directed by scorcese"
-
-MODEL   { "directed_by": ["Martin Scorsese"],                        ← fixed the spelling
-          "references": [{ "film": "Titanic", "wants": "lead_actors" }] }   ← never saw the cast
-
-CODE    { "director": ["Martin Scorsese"],                           ← checked in the catalog
-          "cast": ["Leonardo DiCaprio", "Kate Winslet"] }            ← Titanic's first two names
-
-RESULT  The Departed · The Wolf of Wall Street · Shutter Island
-```
-
-The model writes what you meant, in the grammar's words, without knowing the data. Code turns those words into catalog values. Then it's a plain query.
+The model writes what you meant, in the grammar's words, without knowing the data: `"wants": "lead_actors"`. Code turns those words into catalog values: Leonardo DiCaprio, Kate Winslet. Then it's a plain query.
 
 In a few words:
 
@@ -84,12 +72,6 @@ THE INDEX, every film covered
 Each line settles something a model would otherwise guess. "Titanic" in "like Titanic" and in "the actors from Titanic" are two different fields. "French" is the film's language or the audio you want to hear, not both. "Crime drama" is both genres at once. "For my 6 year old" is a number, and code decides what a 6-year-old may watch here. And the model never says what can't be done: a wish with nowhere to go is a missing field, and code is the one that says "can't".
 
 The few values are listed, so the model can only pick from them. The many stay out, people and keywords: the model writes what you said, and code finds the real thing. With 200 films this repo also lists one line per film; a large catalog lists none, and code spots the titles in the sentence instead.
-
-## How it works
-
-![How one sentence becomes a query over the whole catalog: code spots the films named, one LLM call reads the sentence against the grammar, the resolver turns words into catalog values, code queries every film](docs/how-it-works.png)
-
-One real sentence through the four steps, with the JSON each step hands to the next.
 
 ## One step further: packs
 
