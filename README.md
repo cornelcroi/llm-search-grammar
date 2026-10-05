@@ -27,30 +27,27 @@ I tried a prompt with tools first. It failed in the same places every time. The 
 
 Everything you hand the model, you can only **ask**. Everything you keep in code, you can **guarantee**.
 
-## The solution: the search grammar pattern
+## How it works
 
 ![How one sentence becomes a query over the whole catalog: code spots the films named, one LLM call reads the sentence against the grammar, the resolver turns words into catalog values, code queries every film](docs/how-it-works.png)
 
-**The offer, described by its dimensions instead of its rows.**
+**1 · Code spots the films named.** A forgiving search, plain fuzzy matching with no embeddings, finds "titanic" in the sentence and loads what the model needs to know about it. Several matches are never hidden: the others come back as "did you mean".
 
-The model gets a grammar: the fields a person can mean, and the few closed values that exist (19 genres, for example). Not the catalog. It reads the sentence against that grammar and fills the fields. One call, strict JSON. It never searches, never picks an id.
+**2 · One LLM call reads the sentence against the grammar.** The grammar is the offer described by its dimensions instead of its rows: every field a person can mean, plus the few closed values (19 genres). Not the catalog. The model fills the fields as strict JSON. It never searches, never picks an id, never says "I can't".
 
 ![Tonight's 19,072 films as rows (about 1.1 million tokens) or as dimensions (about 3,200 tokens)](docs/rows-vs-dimensions.png)
 
-Measured on Tonight, my movie app, on its real data: 19,072 films on 14 services. As rows, about 1.1 million tokens. As a grammar, about 3,200. The same on every request, so it's cached.
+Measured on Tonight's real data, 19,072 films: about 1.1 million tokens as rows, about 3,200 as a grammar. The same on every request, so it's cached.
 
-**It only works with a forgiving search.** The model writes loose words. Code turns them into the real thing, and says how sure it is:
+**3 · The resolver turns the model's words into catalog values.** The model writes loose words; code finds the real thing and says how sure it is. Without this, the model's words would match nothing.
 
 ```
 "de nino"     ->  Robert De Niro          close
 "godfathr"    ->  The Godfather (1972)    close
 "le parrain"  ->  The Godfather (1972)    exact   every title, in every language
-"titanic"     ->  Titanic (1997)          exact   1953 and 1943 reported, never hidden
 ```
 
-Neither works alone. Without the forgiving search, the model's loose words match nothing. Without the grammar, the model has nothing precise to aim at.
-
-Then code runs the query, and says back what it did: `applied`, `cannot` (with the reason), `unapplied`, `did_you_mean`. The model never says "I can't". Only code does, because only code knows the data.
+**4 · Code queries every film.** The filters run over the whole catalog: SQL in Tonight, plain Python here. Then code says back what it did: applied, cannot (with the reason), not found, did you mean. Only code says "can't", because only code knows the data.
 
 ## Tonight and this repo
 
@@ -78,47 +75,17 @@ PACK         one film's own options, folded into a few lines,  f3 RentBox · ren
              sent only when the sentence names the film                   /theatrical · HD/SD · ...
 ```
 
-The model points into the pack: `film m83, family f3, edition "extended (+37 min)"`. Code finds the real offer, the id and the price. A pointer at a film the sentence did not name is dropped by code.
+The model points into the pack: `film m83, family f3, edition "extended (+37 min)"`. Code finds the real offer, its id and its price. Try "titanic extended cut in french, cheapest" in the demo: "extended cut" becomes the edition only this film has, and code says French audio exists only on another service.
 
-```
-$ python3 -m examples.movies "titanic extended cut in french, cheapest"
-
-2 · CODE, decides what can be applied
-    applied      {"films": ["Titanic"], "prefer": "cheapest", "audio": ["fr"], "edition": ["extended (+37 min)"]}
-    why_nothing  "1 film(s) match (Titanic (1997)), but no single offer has every watch wish at once"
-
-4 · POINTERS, checked against the pack by code
-    partial  Titanic (1997) · RentBox · rent · extended (+37 min) · SD · audio en · stereo · 3.49 €  [of5322]
-             missing  audio French (not with RentBox rent; only on CinePass subscription)
-
-1 model call · 5,547 prompt tokens (5,544 cached) · 209 completion tokens
-```
-
-"extended cut" became the edition only this film has. Then code said exactly what is missing, and where it exists.
-
-The grammar is also **wider than what the system can do**. Each field has a status: `ready` (code applies it), `dictionary` (the model says a neutral fact like "age 6", code decides what it means here), `later` (understood, not possible yet, with a reason). Nothing is dropped silently, and the list of `cannot` is your roadmap.
+Each field also has a status: `ready` (code applies it), `dictionary` (the model says a neutral fact like "age 6", code decides what it means here), `later` (understood, not possible yet, with the reason). Nothing is dropped silently.
 
 ## The data
 
-`data/films.json`: 200 real films from Wikidata (CC0). For each: title, French title, original title, year, runtime, directors, the first 8 actors in billing order, genres, topics, countries, languages, and the TMDB poster path for the web demo (`scripts/add_posters.py`).
+`data/films.json`: 200 real films from Wikidata (CC0): titles in three forms, year, runtime, directors, the first 8 actors, genres, topics, countries, languages, and the TMDB poster path. Mostly famous American and English-language films from 1990 to 2019, 32 French, one Korean (Parasite), and three films called Titanic on purpose, so a title can be ambiguous.
 
-- **Years** 1925 to 2023, mostly 1990 to 2019.
-- **Mostly American and English-speaking** (167 US, 185 with English). 32 French, a few Italian, German, Japanese, one Korean (Parasite).
-- **Directors with several films:** Spielberg and Nolan (9 each), Scorsese, Cameron, Tarantino, Peter Jackson (5), Truffaut, Kubrick, Coppola, Lucas, Ridley Scott (4).
-- **Three films called Titanic** (1943, 1953, 1997), on purpose, so a title can be ambiguous.
+`data/offers.json`: 17,262 ways to watch them, **invented**: 8 fictional services, buy, rent, subscription or free, editions, HD, 4K or SD, audio and subtitles, prices from 0 to 18.99 €.
 
-`data/offers.json`: 17,262 ways to watch them, **invented**. 8 fictional services, buy, rent, subscription or free, editions, HD, 4K or SD, audio and subtitle languages, prices from 0 to 18.99 €.
-
-With 200 films, a search can be read right and still find little. Code says it:
-
-```
-"a Truffaut film in French"   ->  4 films: The 400 Blows, Stolen Kisses, Jules and Jim, Day for Night
-"a Korean thriller"           ->  1 film: Parasite, the only Korean thriller here
-"a Wes Anderson comedy"       ->  unapplied ["Wes Anderson"], did_you_mean ["Paul Anderson"]
-                                  No Wes Anderson film in the 200. Code says so, then shows comedies.
-```
-
-Good searches here: the famous films, Nolan, Spielberg, Tarantino, the French classics, the actors of Titanic or The Godfather, editions, 4K, French audio, a price. For a bigger catalog, raise the counts in `scripts/build_catalog.py`, then run it and `scripts/generate_offers.py`.
+With 200 films, a search can be read right and still find little, and code says so ("a Wes Anderson comedy": not in these 200 films). Good searches here: the famous films, Nolan, Spielberg, Tarantino, the French classics, the actors of Titanic or The Godfather, editions, 4K, French audio, a price. For a bigger catalog, raise the counts in `scripts/build_catalog.py`, then run it and `scripts/generate_offers.py`.
 
 ## Run it
 
